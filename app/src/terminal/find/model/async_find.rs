@@ -244,11 +244,6 @@ impl Ord for AbsoluteMatch {
     fn cmp(&self, other: &Self) -> std::cmp::Ordering {
         // Sort by end point (for ascending order iteration during rendering),
         // then by start point for consistency with derived PartialEq.
-        //
-        // This ordering assumes matches within a single grid do not overlap,
-        // which is guaranteed by `find_in_range` producing non-overlapping
-        // results. `update_dirty_matches` relies on this property to use
-        // positional range-based splicing for merging.
         self.end.cmp(&other.end).then(self.start.cmp(&other.start))
     }
 }
@@ -367,57 +362,21 @@ impl BlockFindResults {
             .entry((block_index, grid_type))
             .or_default();
 
-        // If there are no current matches, just insert the new ones.
-        if matches.is_empty() {
-            *matches = new_matches;
-            return;
-        }
+        // Rescans can overlap retained matches beyond the dirty rows, so end-point order does
+        // not guarantee start-row order. Remove dirty matches individually, even after a reorder.
+        matches
+            .retain(|m| m.end_row() < *dirty_range.start() || m.start_row() > *dirty_range.end());
 
-        // If the dirty range is before all existing matches, insert at the start.
-        if matches
+        let insert_at = new_matches
             .first()
-            .is_some_and(|first_match| *dirty_range.end() < first_match.start_row())
-        {
-            matches.splice(0..0, new_matches);
-            return;
-        }
-
-        // If the dirty range is after all existing matches, append at the end.
-        if matches
-            .last()
-            .is_some_and(|last_match| last_match.end_row() < *dirty_range.start())
-        {
-            matches.extend(new_matches);
-            return;
-        }
-
-        // Find the range of matches that overlap with the dirty range.
-        // A match overlaps if: match.start <= dirty.end AND match.end >= dirty.start
-        let replace_start = matches
-            .iter()
-            .position(|m| m.end_row() >= *dirty_range.start())
+            .map(|first_new| matches.partition_point(|m| m <= first_new))
             .unwrap_or(matches.len());
+        matches.splice(insert_at..insert_at, new_matches);
 
-        let replace_end = matches
-            .iter()
-            .rposition(|m| m.start_row() <= *dirty_range.end())
-            .map(|pos| pos + 1)
-            .unwrap_or(replace_start);
-
-        let replace_range = if replace_start <= replace_end {
-            replace_start..replace_end
-        } else {
-            // Dirty range lies between two adjacent matches; insert without replacing.
-            replace_start..replace_start
-        };
-
-        matches.splice(replace_range, new_matches);
-
-        // Assert that matches are still in ascending order.
-        debug_assert!(
-            matches.windows(2).all(|w| w[0] <= w[1]),
-            "Matches should be in ascending order after update_dirty_matches"
-        );
+        // Later matches in the new batch can span past a retained neighbor at the dirty boundary.
+        if !matches.is_sorted() {
+            matches.sort_unstable();
+        }
     }
 }
 

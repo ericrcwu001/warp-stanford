@@ -606,6 +606,75 @@ fn test_update_dirty_matches_append() {
 }
 
 #[test]
+fn test_update_dirty_matches_boundary_spanning_insertion_is_sorted() {
+    let mut results = BlockFindResults::default();
+    let key = (BlockIndex(0), GridType::Output);
+    let before = make_match(9);
+    let neighbor = make_match_at(11, 0, 2);
+    let spanning = AbsoluteMatch {
+        start: AbsolutePoint { row: 10, col: 0 },
+        end: AbsolutePoint { row: 11, col: 4 },
+        is_filtered: false,
+    };
+    results
+        .terminal_matches
+        .insert(key, vec![before.clone(), neighbor.clone()]);
+
+    results.update_dirty_matches(key.0, key.1, 10..=10, vec![spanning.clone()]);
+
+    assert_eq!(
+        results.terminal_matches[&key],
+        vec![before, neighbor, spanning]
+    );
+}
+
+#[test]
+fn test_update_dirty_matches_boundary_spanning_prepend_is_sorted() {
+    let mut results = BlockFindResults::default();
+    let key = (BlockIndex(0), GridType::Output);
+    let neighbor = make_match_at(11, 0, 2);
+    let first_new = make_match(10);
+    let spanning = AbsoluteMatch {
+        start: AbsolutePoint { row: 10, col: 6 },
+        end: AbsolutePoint { row: 11, col: 4 },
+        is_filtered: false,
+    };
+    results.terminal_matches.insert(key, vec![neighbor.clone()]);
+
+    results.update_dirty_matches(
+        key.0,
+        key.1,
+        10..=10,
+        vec![first_new.clone(), spanning.clone()],
+    );
+
+    assert_eq!(
+        results.terminal_matches[&key],
+        vec![first_new, neighbor, spanning]
+    );
+}
+
+#[test]
+fn test_update_dirty_matches_clears_only_overlapping_rows() {
+    let mut results = BlockFindResults::default();
+    let key = (BlockIndex(0), GridType::Output);
+    let neighbor = make_match_at(11, 0, 2);
+    let spanning = AbsoluteMatch {
+        start: AbsolutePoint { row: 10, col: 0 },
+        end: AbsolutePoint { row: 11, col: 4 },
+        is_filtered: false,
+    };
+    // End-point order can differ from start-row order after a boundary-spanning update.
+    results
+        .terminal_matches
+        .insert(key, vec![neighbor.clone(), spanning]);
+
+    results.update_dirty_matches(key.0, key.1, 10..=10, vec![]);
+
+    assert_eq!(results.terminal_matches[&key], vec![neighbor]);
+}
+
+#[test]
 fn test_update_dirty_matches_replace_middle() {
     let mut results = BlockFindResults::default();
     let block_index = BlockIndex(0);
