@@ -1,0 +1,557 @@
+Installing common agent skills from skills-lock.json into .agents/skills.
+
+[38;5;250m███████╗██╗  ██╗██╗██╗     ██╗     ███████╗[0m
+[38;5;248m██╔════╝██║ ██╔╝██║██║     ██║     ██╔════╝[0m
+[38;5;245m███████╗█████╔╝ ██║██║     ██║     ███████╗[0m
+[38;5;243m╚════██║██╔═██╗ ██║██║     ██║     ╚════██║[0m
+[38;5;240m███████║██║  ██╗██║███████╗███████╗███████║[0m
+[38;5;238m╚══════╝╚═╝  ╚═╝╚═╝╚══════╝╚══════╝╚══════╝[0m
+│
+●  Restoring 28 skills from skills-lock.json into .agents/skills/
+
+┌   skills 
+│
+│  Tip: use the --yes (-y) and --global (-g) flags to install without prompts.
+[?25l│
+◇  Source: https://github.com/warpdotdev/common-skills.git
+[?25h[?25l│
+◒  Cloning repository[999D[J◐  Cloning repository[999D[J◓  Cloning repository[999D[J◑  Cloning repository[999D[J◒  Cloning repository[999D[J◐  Cloning repository[999D[J◓  Cloning repository[999D[J◑  Cloning repository[999D[J◒  Cloning repository.[999D[J◐  Cloning repository.[999D[J◇  Repository cloned
+[?25h[?25l│
+[999D[J◇  Found 28 skills
+[?25h│
+●  Selected 28 skills: brandalf, check-impl-against-spec, complain, council, create-pr, cross-critique, diagnose-ci-failures, fix-errors, implement-specs, migrate-to-factory, pr-walkthrough, readout, reproduce-bug-report, research, resolve-merge-conflicts, respond-to-pr-comments-in-blocklist, review-pr, saga, scan-new-specs, skill-doctor, spec-driven-implementation, suggestion-box, update-skill, validate-changes-match-specs, write-feature-docs, write-pr-description, write-product-spec, write-tech-spec
+
+│
+◇  Installation Summary ───────────────────────────────────────────────╮
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/brandalf                             │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/check-impl-against-spec              │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/complain                             │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/council                              │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/create-pr                            │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/cross-critique                       │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/diagnose-ci-failures                 │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/fix-errors                           │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/implement-specs                      │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/migrate-to-factory                   │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/pr-walkthrough                       │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/readout                              │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/reproduce-bug-report                 │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/research                             │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/resolve-merge-conflicts              │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/respond-to-pr-comments-in-blocklist  │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/review-pr                            │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/saga                                 │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/scan-new-specs                       │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/skill-doctor                         │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/spec-driven-implementation           │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/suggestion-box                       │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/update-skill                         │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/validate-changes-match-specs         │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/write-feature-docs                   │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/write-pr-description                 │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/write-product-spec                   │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+│  ~/warp-stanford/.agents/skills/write-tech-spec                      │
+│    copy → Amp, Antigravity, Cline, Codex, Cursor +8 more             │
+│                                                                      │
+├──────────────────────────────────────────────────────────────────────╯
+│
+◇  Security Risk Assessments ─────────────────────────────────────────────────────────╮
+│                                                                                     │
+│                                       Gen               Socket            Snyk      │
+│  brandalf                             Safe              0 alerts          Med Risk  │
+│  check-impl-against-spec              Safe              0 alerts          Low Risk  │
+│  complain                             Safe              1 alert           Med Risk  │
+│  council                              Safe              0 alerts          Med Risk  │
+│  create-pr                            Safe              0 alerts          Low Risk  │
+│  cross-critique                       Safe              0 alerts          Low Risk  │
+│  diagnose-ci-failures                 Safe              0 alerts          Med Risk  │
+│  fix-errors                           Safe              0 alerts          Low Risk  │
+│  implement-specs                      Safe              0 alerts          Low Risk  │
+│  migrate-to-factory                   Safe              0 alerts          Low Risk  │
+│  pr-walkthrough                       Safe              0 alerts          Med Risk  │
+│  readout                              Safe              0 alerts          Low Risk  │
+│  reproduce-bug-report                 Safe              0 alerts          Med Risk  │
+│  research                             Safe              0 alerts          Low Risk  │
+│  resolve-merge-conflicts              Safe              0 alerts          Low Risk  │
+│  respond-to-pr-comments-in-blocklist  Safe              0 alerts          Med Risk  │
+│  review-pr                            Safe              0 alerts          Med Risk  │
+│  saga                                 Med Risk          0 alerts          Low Risk  │
+│  scan-new-specs                       Safe              0 alerts          Med Risk  │
+│  skill-doctor                         Safe              0 alerts          Med Risk  │
+│  spec-driven-implementation           Safe              0 alerts          Low Risk  │
+│  suggestion-box                       Safe              1 alert           Med Risk  │
+│  update-skill                         Safe              0 alerts          Low Risk  │
+│  validate-changes-match-specs         Safe              0 alerts          Med Risk  │
+│  write-feature-docs                   Safe              0 alerts          Low Risk  │
+│  write-pr-description                 Safe              0 alerts          Low Risk  │
+│  write-product-spec                   Safe              0 alerts          Med Risk  │
+│  write-tech-spec                      Safe              0 alerts          Med Risk  │
+│                                                                                     │
+│  Details: https://skills.sh/warpdotdev/common-skills                                │
+│                                                                                     │
+├─────────────────────────────────────────────────────────────────────────────────────╯
+[?25l│
+[999D[J◒  Installing skills[999D[J◐  Installing skills[999D[J◓  Installing skills[999D[J◑  Installing skills[999D[J◒  Installing skills[999D[J◐  Installing skills[999D[J◓  Installing skills[999D[J◑  Installing skills[999D[J◒  Installing skills.[999D[J◐  Installing skills.[999D[J◓  Installing skills.[999D[J◇  Installation complete
+[?25h
+│
+◇  Installed 28 skills ────────────────────────────────────────────────────╮
+│                                                                          │
+│  ✓ brandalf (copied)                                                     │
+│    → ~/warp-stanford/.agents/skills/brandalf                             │
+│    → ~/warp-stanford/.agents/skills/brandalf                             │
+│    → ~/warp-stanford/.agents/skills/brandalf                             │
+│    → ~/warp-stanford/.agents/skills/brandalf                             │
+│    → ~/warp-stanford/.agents/skills/brandalf                             │
+│    → ~/warp-stanford/.agents/skills/brandalf                             │
+│    → ~/warp-stanford/.agents/skills/brandalf                             │
+│    → ~/warp-stanford/.agents/skills/brandalf                             │
+│    → ~/warp-stanford/.agents/skills/brandalf                             │
+│    → ~/warp-stanford/.agents/skills/brandalf                             │
+│    → ~/warp-stanford/.agents/skills/brandalf                             │
+│    → ~/warp-stanford/.agents/skills/brandalf                             │
+│    → ~/warp-stanford/.agents/skills/brandalf                             │
+│  ✓ check-impl-against-spec (copied)                                      │
+│    → ~/warp-stanford/.agents/skills/check-impl-against-spec              │
+│    → ~/warp-stanford/.agents/skills/check-impl-against-spec              │
+│    → ~/warp-stanford/.agents/skills/check-impl-against-spec              │
+│    → ~/warp-stanford/.agents/skills/check-impl-against-spec              │
+│    → ~/warp-stanford/.agents/skills/check-impl-against-spec              │
+│    → ~/warp-stanford/.agents/skills/check-impl-against-spec              │
+│    → ~/warp-stanford/.agents/skills/check-impl-against-spec              │
+│    → ~/warp-stanford/.agents/skills/check-impl-against-spec              │
+│    → ~/warp-stanford/.agents/skills/check-impl-against-spec              │
+│    → ~/warp-stanford/.agents/skills/check-impl-against-spec              │
+│    → ~/warp-stanford/.agents/skills/check-impl-against-spec              │
+│    → ~/warp-stanford/.agents/skills/check-impl-against-spec              │
+│    → ~/warp-stanford/.agents/skills/check-impl-against-spec              │
+│  ✓ complain (copied)                                                     │
+│    → ~/warp-stanford/.agents/skills/complain                             │
+│    → ~/warp-stanford/.agents/skills/complain                             │
+│    → ~/warp-stanford/.agents/skills/complain                             │
+│    → ~/warp-stanford/.agents/skills/complain                             │
+│    → ~/warp-stanford/.agents/skills/complain                             │
+│    → ~/warp-stanford/.agents/skills/complain                             │
+│    → ~/warp-stanford/.agents/skills/complain                             │
+│    → ~/warp-stanford/.agents/skills/complain                             │
+│    → ~/warp-stanford/.agents/skills/complain                             │
+│    → ~/warp-stanford/.agents/skills/complain                             │
+│    → ~/warp-stanford/.agents/skills/complain                             │
+│    → ~/warp-stanford/.agents/skills/complain                             │
+│    → ~/warp-stanford/.agents/skills/complain                             │
+│  ✓ council (copied)                                                      │
+│    → ~/warp-stanford/.agents/skills/council                              │
+│    → ~/warp-stanford/.agents/skills/council                              │
+│    → ~/warp-stanford/.agents/skills/council                              │
+│    → ~/warp-stanford/.agents/skills/council                              │
+│    → ~/warp-stanford/.agents/skills/council                              │
+│    → ~/warp-stanford/.agents/skills/council                              │
+│    → ~/warp-stanford/.agents/skills/council                              │
+│    → ~/warp-stanford/.agents/skills/council                              │
+│    → ~/warp-stanford/.agents/skills/council                              │
+│    → ~/warp-stanford/.agents/skills/council                              │
+│    → ~/warp-stanford/.agents/skills/council                              │
+│    → ~/warp-stanford/.agents/skills/council                              │
+│    → ~/warp-stanford/.agents/skills/council                              │
+│  ✓ create-pr (copied)                                                    │
+│    → ~/warp-stanford/.agents/skills/create-pr                            │
+│    → ~/warp-stanford/.agents/skills/create-pr                            │
+│    → ~/warp-stanford/.agents/skills/create-pr                            │
+│    → ~/warp-stanford/.agents/skills/create-pr                            │
+│    → ~/warp-stanford/.agents/skills/create-pr                            │
+│    → ~/warp-stanford/.agents/skills/create-pr                            │
+│    → ~/warp-stanford/.agents/skills/create-pr                            │
+│    → ~/warp-stanford/.agents/skills/create-pr                            │
+│    → ~/warp-stanford/.agents/skills/create-pr                            │
+│    → ~/warp-stanford/.agents/skills/create-pr                            │
+│    → ~/warp-stanford/.agents/skills/create-pr                            │
+│    → ~/warp-stanford/.agents/skills/create-pr                            │
+│    → ~/warp-stanford/.agents/skills/create-pr                            │
+│  ✓ cross-critique (copied)                                               │
+│    → ~/warp-stanford/.agents/skills/cross-critique                       │
+│    → ~/warp-stanford/.agents/skills/cross-critique                       │
+│    → ~/warp-stanford/.agents/skills/cross-critique                       │
+│    → ~/warp-stanford/.agents/skills/cross-critique                       │
+│    → ~/warp-stanford/.agents/skills/cross-critique                       │
+│    → ~/warp-stanford/.agents/skills/cross-critique                       │
+│    → ~/warp-stanford/.agents/skills/cross-critique                       │
+│    → ~/warp-stanford/.agents/skills/cross-critique                       │
+│    → ~/warp-stanford/.agents/skills/cross-critique                       │
+│    → ~/warp-stanford/.agents/skills/cross-critique                       │
+│    → ~/warp-stanford/.agents/skills/cross-critique                       │
+│    → ~/warp-stanford/.agents/skills/cross-critique                       │
+│    → ~/warp-stanford/.agents/skills/cross-critique                       │
+│  ✓ diagnose-ci-failures (copied)                                         │
+│    → ~/warp-stanford/.agents/skills/diagnose-ci-failures                 │
+│    → ~/warp-stanford/.agents/skills/diagnose-ci-failures                 │
+│    → ~/warp-stanford/.agents/skills/diagnose-ci-failures                 │
+│    → ~/warp-stanford/.agents/skills/diagnose-ci-failures                 │
+│    → ~/warp-stanford/.agents/skills/diagnose-ci-failures                 │
+│    → ~/warp-stanford/.agents/skills/diagnose-ci-failures                 │
+│    → ~/warp-stanford/.agents/skills/diagnose-ci-failures                 │
+│    → ~/warp-stanford/.agents/skills/diagnose-ci-failures                 │
+│    → ~/warp-stanford/.agents/skills/diagnose-ci-failures                 │
+│    → ~/warp-stanford/.agents/skills/diagnose-ci-failures                 │
+│    → ~/warp-stanford/.agents/skills/diagnose-ci-failures                 │
+│    → ~/warp-stanford/.agents/skills/diagnose-ci-failures                 │
+│    → ~/warp-stanford/.agents/skills/diagnose-ci-failures                 │
+│  ✓ fix-errors (copied)                                                   │
+│    → ~/warp-stanford/.agents/skills/fix-errors                           │
+│    → ~/warp-stanford/.agents/skills/fix-errors                           │
+│    → ~/warp-stanford/.agents/skills/fix-errors                           │
+│    → ~/warp-stanford/.agents/skills/fix-errors                           │
+│    → ~/warp-stanford/.agents/skills/fix-errors                           │
+│    → ~/warp-stanford/.agents/skills/fix-errors                           │
+│    → ~/warp-stanford/.agents/skills/fix-errors                           │
+│    → ~/warp-stanford/.agents/skills/fix-errors                           │
+│    → ~/warp-stanford/.agents/skills/fix-errors                           │
+│    → ~/warp-stanford/.agents/skills/fix-errors                           │
+│    → ~/warp-stanford/.agents/skills/fix-errors                           │
+│    → ~/warp-stanford/.agents/skills/fix-errors                           │
+│    → ~/warp-stanford/.agents/skills/fix-errors                           │
+│  ✓ implement-specs (copied)                                              │
+│    → ~/warp-stanford/.agents/skills/implement-specs                      │
+│    → ~/warp-stanford/.agents/skills/implement-specs                      │
+│    → ~/warp-stanford/.agents/skills/implement-specs                      │
+│    → ~/warp-stanford/.agents/skills/implement-specs                      │
+│    → ~/warp-stanford/.agents/skills/implement-specs                      │
+│    → ~/warp-stanford/.agents/skills/implement-specs                      │
+│    → ~/warp-stanford/.agents/skills/implement-specs                      │
+│    → ~/warp-stanford/.agents/skills/implement-specs                      │
+│    → ~/warp-stanford/.agents/skills/implement-specs                      │
+│    → ~/warp-stanford/.agents/skills/implement-specs                      │
+│    → ~/warp-stanford/.agents/skills/implement-specs                      │
+│    → ~/warp-stanford/.agents/skills/implement-specs                      │
+│    → ~/warp-stanford/.agents/skills/implement-specs                      │
+│  ✓ migrate-to-factory (copied)                                           │
+│    → ~/warp-stanford/.agents/skills/migrate-to-factory                   │
+│    → ~/warp-stanford/.agents/skills/migrate-to-factory                   │
+│    → ~/warp-stanford/.agents/skills/migrate-to-factory                   │
+│    → ~/warp-stanford/.agents/skills/migrate-to-factory                   │
+│    → ~/warp-stanford/.agents/skills/migrate-to-factory                   │
+│    → ~/warp-stanford/.agents/skills/migrate-to-factory                   │
+│    → ~/warp-stanford/.agents/skills/migrate-to-factory                   │
+│    → ~/warp-stanford/.agents/skills/migrate-to-factory                   │
+│    → ~/warp-stanford/.agents/skills/migrate-to-factory                   │
+│    → ~/warp-stanford/.agents/skills/migrate-to-factory                   │
+│    → ~/warp-stanford/.agents/skills/migrate-to-factory                   │
+│    → ~/warp-stanford/.agents/skills/migrate-to-factory                   │
+│    → ~/warp-stanford/.agents/skills/migrate-to-factory                   │
+│  ✓ pr-walkthrough (copied)                                               │
+│    → ~/warp-stanford/.agents/skills/pr-walkthrough                       │
+│    → ~/warp-stanford/.agents/skills/pr-walkthrough                       │
+│    → ~/warp-stanford/.agents/skills/pr-walkthrough                       │
+│    → ~/warp-stanford/.agents/skills/pr-walkthrough                       │
+│    → ~/warp-stanford/.agents/skills/pr-walkthrough                       │
+│    → ~/warp-stanford/.agents/skills/pr-walkthrough                       │
+│    → ~/warp-stanford/.agents/skills/pr-walkthrough                       │
+│    → ~/warp-stanford/.agents/skills/pr-walkthrough                       │
+│    → ~/warp-stanford/.agents/skills/pr-walkthrough                       │
+│    → ~/warp-stanford/.agents/skills/pr-walkthrough                       │
+│    → ~/warp-stanford/.agents/skills/pr-walkthrough                       │
+│    → ~/warp-stanford/.agents/skills/pr-walkthrough                       │
+│    → ~/warp-stanford/.agents/skills/pr-walkthrough                       │
+│  ✓ readout (copied)                                                      │
+│    → ~/warp-stanford/.agents/skills/readout                              │
+│    → ~/warp-stanford/.agents/skills/readout                              │
+│    → ~/warp-stanford/.agents/skills/readout                              │
+│    → ~/warp-stanford/.agents/skills/readout                              │
+│    → ~/warp-stanford/.agents/skills/readout                              │
+│    → ~/warp-stanford/.agents/skills/readout                              │
+│    → ~/warp-stanford/.agents/skills/readout                              │
+│    → ~/warp-stanford/.agents/skills/readout                              │
+│    → ~/warp-stanford/.agents/skills/readout                              │
+│    → ~/warp-stanford/.agents/skills/readout                              │
+│    → ~/warp-stanford/.agents/skills/readout                              │
+│    → ~/warp-stanford/.agents/skills/readout                              │
+│    → ~/warp-stanford/.agents/skills/readout                              │
+│  ✓ reproduce-bug-report (copied)                                         │
+│    → ~/warp-stanford/.agents/skills/reproduce-bug-report                 │
+│    → ~/warp-stanford/.agents/skills/reproduce-bug-report                 │
+│    → ~/warp-stanford/.agents/skills/reproduce-bug-report                 │
+│    → ~/warp-stanford/.agents/skills/reproduce-bug-report                 │
+│    → ~/warp-stanford/.agents/skills/reproduce-bug-report                 │
+│    → ~/warp-stanford/.agents/skills/reproduce-bug-report                 │
+│    → ~/warp-stanford/.agents/skills/reproduce-bug-report                 │
+│    → ~/warp-stanford/.agents/skills/reproduce-bug-report                 │
+│    → ~/warp-stanford/.agents/skills/reproduce-bug-report                 │
+│    → ~/warp-stanford/.agents/skills/reproduce-bug-report                 │
+│    → ~/warp-stanford/.agents/skills/reproduce-bug-report                 │
+│    → ~/warp-stanford/.agents/skills/reproduce-bug-report                 │
+│    → ~/warp-stanford/.agents/skills/reproduce-bug-report                 │
+│  ✓ research (copied)                                                     │
+│    → ~/warp-stanford/.agents/skills/research                             │
+│    → ~/warp-stanford/.agents/skills/research                             │
+│    → ~/warp-stanford/.agents/skills/research                             │
+│    → ~/warp-stanford/.agents/skills/research                             │
+│    → ~/warp-stanford/.agents/skills/research                             │
+│    → ~/warp-stanford/.agents/skills/research                             │
+│    → ~/warp-stanford/.agents/skills/research                             │
+│    → ~/warp-stanford/.agents/skills/research                             │
+│    → ~/warp-stanford/.agents/skills/research                             │
+│    → ~/warp-stanford/.agents/skills/research                             │
+│    → ~/warp-stanford/.agents/skills/research                             │
+│    → ~/warp-stanford/.agents/skills/research                             │
+│    → ~/warp-stanford/.agents/skills/research                             │
+│  ✓ resolve-merge-conflicts (copied)                                      │
+│    → ~/warp-stanford/.agents/skills/resolve-merge-conflicts              │
+│    → ~/warp-stanford/.agents/skills/resolve-merge-conflicts              │
+│    → ~/warp-stanford/.agents/skills/resolve-merge-conflicts              │
+│    → ~/warp-stanford/.agents/skills/resolve-merge-conflicts              │
+│    → ~/warp-stanford/.agents/skills/resolve-merge-conflicts              │
+│    → ~/warp-stanford/.agents/skills/resolve-merge-conflicts              │
+│    → ~/warp-stanford/.agents/skills/resolve-merge-conflicts              │
+│    → ~/warp-stanford/.agents/skills/resolve-merge-conflicts              │
+│    → ~/warp-stanford/.agents/skills/resolve-merge-conflicts              │
+│    → ~/warp-stanford/.agents/skills/resolve-merge-conflicts              │
+│    → ~/warp-stanford/.agents/skills/resolve-merge-conflicts              │
+│    → ~/warp-stanford/.agents/skills/resolve-merge-conflicts              │
+│    → ~/warp-stanford/.agents/skills/resolve-merge-conflicts              │
+│  ✓ respond-to-pr-comments-in-blocklist (copied)                          │
+│    → ~/warp-stanford/.agents/skills/respond-to-pr-comments-in-blocklist  │
+│    → ~/warp-stanford/.agents/skills/respond-to-pr-comments-in-blocklist  │
+│    → ~/warp-stanford/.agents/skills/respond-to-pr-comments-in-blocklist  │
+│    → ~/warp-stanford/.agents/skills/respond-to-pr-comments-in-blocklist  │
+│    → ~/warp-stanford/.agents/skills/respond-to-pr-comments-in-blocklist  │
+│    → ~/warp-stanford/.agents/skills/respond-to-pr-comments-in-blocklist  │
+│    → ~/warp-stanford/.agents/skills/respond-to-pr-comments-in-blocklist  │
+│    → ~/warp-stanford/.agents/skills/respond-to-pr-comments-in-blocklist  │
+│    → ~/warp-stanford/.agents/skills/respond-to-pr-comments-in-blocklist  │
+│    → ~/warp-stanford/.agents/skills/respond-to-pr-comments-in-blocklist  │
+│    → ~/warp-stanford/.agents/skills/respond-to-pr-comments-in-blocklist  │
+│    → ~/warp-stanford/.agents/skills/respond-to-pr-comments-in-blocklist  │
+│    → ~/warp-stanford/.agents/skills/respond-to-pr-comments-in-blocklist  │
+│  ✓ review-pr (copied)                                                    │
+│    → ~/warp-stanford/.agents/skills/review-pr                            │
+│    → ~/warp-stanford/.agents/skills/review-pr                            │
+│    → ~/warp-stanford/.agents/skills/review-pr                            │
+│    → ~/warp-stanford/.agents/skills/review-pr                            │
+│    → ~/warp-stanford/.agents/skills/review-pr                            │
+│    → ~/warp-stanford/.agents/skills/review-pr                            │
+│    → ~/warp-stanford/.agents/skills/review-pr                            │
+│    → ~/warp-stanford/.agents/skills/review-pr                            │
+│    → ~/warp-stanford/.agents/skills/review-pr                            │
+│    → ~/warp-stanford/.agents/skills/review-pr                            │
+│    → ~/warp-stanford/.agents/skills/review-pr                            │
+│    → ~/warp-stanford/.agents/skills/review-pr                            │
+│    → ~/warp-stanford/.agents/skills/review-pr                            │
+│  ✓ saga (copied)                                                         │
+│    → ~/warp-stanford/.agents/skills/saga                                 │
+│    → ~/warp-stanford/.agents/skills/saga                                 │
+│    → ~/warp-stanford/.agents/skills/saga                                 │
+│    → ~/warp-stanford/.agents/skills/saga                                 │
+│    → ~/warp-stanford/.agents/skills/saga                                 │
+│    → ~/warp-stanford/.agents/skills/saga                                 │
+│    → ~/warp-stanford/.agents/skills/saga                                 │
+│    → ~/warp-stanford/.agents/skills/saga                                 │
+│    → ~/warp-stanford/.agents/skills/saga                                 │
+│    → ~/warp-stanford/.agents/skills/saga                                 │
+│    → ~/warp-stanford/.agents/skills/saga                                 │
+│    → ~/warp-stanford/.agents/skills/saga                                 │
+│    → ~/warp-stanford/.agents/skills/saga                                 │
+│  ✓ scan-new-specs (copied)                                               │
+│    → ~/warp-stanford/.agents/skills/scan-new-specs                       │
+│    → ~/warp-stanford/.agents/skills/scan-new-specs                       │
+│    → ~/warp-stanford/.agents/skills/scan-new-specs                       │
+│    → ~/warp-stanford/.agents/skills/scan-new-specs                       │
+│    → ~/warp-stanford/.agents/skills/scan-new-specs                       │
+│    → ~/warp-stanford/.agents/skills/scan-new-specs                       │
+│    → ~/warp-stanford/.agents/skills/scan-new-specs                       │
+│    → ~/warp-stanford/.agents/skills/scan-new-specs                       │
+│    → ~/warp-stanford/.agents/skills/scan-new-specs                       │
+│    → ~/warp-stanford/.agents/skills/scan-new-specs                       │
+│    → ~/warp-stanford/.agents/skills/scan-new-specs                       │
+│    → ~/warp-stanford/.agents/skills/scan-new-specs                       │
+│    → ~/warp-stanford/.agents/skills/scan-new-specs                       │
+│  ✓ skill-doctor (copied)                                                 │
+│    → ~/warp-stanford/.agents/skills/skill-doctor                         │
+│    → ~/warp-stanford/.agents/skills/skill-doctor                         │
+│    → ~/warp-stanford/.agents/skills/skill-doctor                         │
+│    → ~/warp-stanford/.agents/skills/skill-doctor                         │
+│    → ~/warp-stanford/.agents/skills/skill-doctor                         │
+│    → ~/warp-stanford/.agents/skills/skill-doctor                         │
+│    → ~/warp-stanford/.agents/skills/skill-doctor                         │
+│    → ~/warp-stanford/.agents/skills/skill-doctor                         │
+│    → ~/warp-stanford/.agents/skills/skill-doctor                         │
+│    → ~/warp-stanford/.agents/skills/skill-doctor                         │
+│    → ~/warp-stanford/.agents/skills/skill-doctor                         │
+│    → ~/warp-stanford/.agents/skills/skill-doctor                         │
+│    → ~/warp-stanford/.agents/skills/skill-doctor                         │
+│  ✓ spec-driven-implementation (copied)                                   │
+│    → ~/warp-stanford/.agents/skills/spec-driven-implementation           │
+│    → ~/warp-stanford/.agents/skills/spec-driven-implementation           │
+│    → ~/warp-stanford/.agents/skills/spec-driven-implementation           │
+│    → ~/warp-stanford/.agents/skills/spec-driven-implementation           │
+│    → ~/warp-stanford/.agents/skills/spec-driven-implementation           │
+│    → ~/warp-stanford/.agents/skills/spec-driven-implementation           │
+│    → ~/warp-stanford/.agents/skills/spec-driven-implementation           │
+│    → ~/warp-stanford/.agents/skills/spec-driven-implementation           │
+│    → ~/warp-stanford/.agents/skills/spec-driven-implementation           │
+│    → ~/warp-stanford/.agents/skills/spec-driven-implementation           │
+│    → ~/warp-stanford/.agents/skills/spec-driven-implementation           │
+│    → ~/warp-stanford/.agents/skills/spec-driven-implementation           │
+│    → ~/warp-stanford/.agents/skills/spec-driven-implementation           │
+│  ✓ suggestion-box (copied)                                               │
+│    → ~/warp-stanford/.agents/skills/suggestion-box                       │
+│    → ~/warp-stanford/.agents/skills/suggestion-box                       │
+│    → ~/warp-stanford/.agents/skills/suggestion-box                       │
+│    → ~/warp-stanford/.agents/skills/suggestion-box                       │
+│    → ~/warp-stanford/.agents/skills/suggestion-box                       │
+│    → ~/warp-stanford/.agents/skills/suggestion-box                       │
+│    → ~/warp-stanford/.agents/skills/suggestion-box                       │
+│    → ~/warp-stanford/.agents/skills/suggestion-box                       │
+│    → ~/warp-stanford/.agents/skills/suggestion-box                       │
+│    → ~/warp-stanford/.agents/skills/suggestion-box                       │
+│    → ~/warp-stanford/.agents/skills/suggestion-box                       │
+│    → ~/warp-stanford/.agents/skills/suggestion-box                       │
+│    → ~/warp-stanford/.agents/skills/suggestion-box                       │
+│  ✓ update-skill (copied)                                                 │
+│    → ~/warp-stanford/.agents/skills/update-skill                         │
+│    → ~/warp-stanford/.agents/skills/update-skill                         │
+│    → ~/warp-stanford/.agents/skills/update-skill                         │
+│    → ~/warp-stanford/.agents/skills/update-skill                         │
+│    → ~/warp-stanford/.agents/skills/update-skill                         │
+│    → ~/warp-stanford/.agents/skills/update-skill                         │
+│    → ~/warp-stanford/.agents/skills/update-skill                         │
+│    → ~/warp-stanford/.agents/skills/update-skill                         │
+│    → ~/warp-stanford/.agents/skills/update-skill                         │
+│    → ~/warp-stanford/.agents/skills/update-skill                         │
+│    → ~/warp-stanford/.agents/skills/update-skill                         │
+│    → ~/warp-stanford/.agents/skills/update-skill                         │
+│    → ~/warp-stanford/.agents/skills/update-skill                         │
+│  ✓ validate-changes-match-specs (copied)                                 │
+│    → ~/warp-stanford/.agents/skills/validate-changes-match-specs         │
+│    → ~/warp-stanford/.agents/skills/validate-changes-match-specs         │
+│    → ~/warp-stanford/.agents/skills/validate-changes-match-specs         │
+│    → ~/warp-stanford/.agents/skills/validate-changes-match-specs         │
+│    → ~/warp-stanford/.agents/skills/validate-changes-match-specs         │
+│    → ~/warp-stanford/.agents/skills/validate-changes-match-specs         │
+│    → ~/warp-stanford/.agents/skills/validate-changes-match-specs         │
+│    → ~/warp-stanford/.agents/skills/validate-changes-match-specs         │
+│    → ~/warp-stanford/.agents/skills/validate-changes-match-specs         │
+│    → ~/warp-stanford/.agents/skills/validate-changes-match-specs         │
+│    → ~/warp-stanford/.agents/skills/validate-changes-match-specs         │
+│    → ~/warp-stanford/.agents/skills/validate-changes-match-specs         │
+│    → ~/warp-stanford/.agents/skills/validate-changes-match-specs         │
+│  ✓ write-feature-docs (copied)                                           │
+│    → ~/warp-stanford/.agents/skills/write-feature-docs                   │
+│    → ~/warp-stanford/.agents/skills/write-feature-docs                   │
+│    → ~/warp-stanford/.agents/skills/write-feature-docs                   │
+│    → ~/warp-stanford/.agents/skills/write-feature-docs                   │
+│    → ~/warp-stanford/.agents/skills/write-feature-docs                   │
+│    → ~/warp-stanford/.agents/skills/write-feature-docs                   │
+│    → ~/warp-stanford/.agents/skills/write-feature-docs                   │
+│    → ~/warp-stanford/.agents/skills/write-feature-docs                   │
+│    → ~/warp-stanford/.agents/skills/write-feature-docs                   │
+│    → ~/warp-stanford/.agents/skills/write-feature-docs                   │
+│    → ~/warp-stanford/.agents/skills/write-feature-docs                   │
+│    → ~/warp-stanford/.agents/skills/write-feature-docs                   │
+│    → ~/warp-stanford/.agents/skills/write-feature-docs                   │
+│  ✓ write-pr-description (copied)                                         │
+│    → ~/warp-stanford/.agents/skills/write-pr-description                 │
+│    → ~/warp-stanford/.agents/skills/write-pr-description                 │
+│    → ~/warp-stanford/.agents/skills/write-pr-description                 │
+│    → ~/warp-stanford/.agents/skills/write-pr-description                 │
+│    → ~/warp-stanford/.agents/skills/write-pr-description                 │
+│    → ~/warp-stanford/.agents/skills/write-pr-description                 │
+│    → ~/warp-stanford/.agents/skills/write-pr-description                 │
+│    → ~/warp-stanford/.agents/skills/write-pr-description                 │
+│    → ~/warp-stanford/.agents/skills/write-pr-description                 │
+│    → ~/warp-stanford/.agents/skills/write-pr-description                 │
+│    → ~/warp-stanford/.agents/skills/write-pr-description                 │
+│    → ~/warp-stanford/.agents/skills/write-pr-description                 │
+│    → ~/warp-stanford/.agents/skills/write-pr-description                 │
+│  ✓ write-product-spec (copied)                                           │
+│    → ~/warp-stanford/.agents/skills/write-product-spec                   │
+│    → ~/warp-stanford/.agents/skills/write-product-spec                   │
+│    → ~/warp-stanford/.agents/skills/write-product-spec                   │
+│    → ~/warp-stanford/.agents/skills/write-product-spec                   │
+│    → ~/warp-stanford/.agents/skills/write-product-spec                   │
+│    → ~/warp-stanford/.agents/skills/write-product-spec                   │
+│    → ~/warp-stanford/.agents/skills/write-product-spec                   │
+│    → ~/warp-stanford/.agents/skills/write-product-spec                   │
+│    → ~/warp-stanford/.agents/skills/write-product-spec                   │
+│    → ~/warp-stanford/.agents/skills/write-product-spec                   │
+│    → ~/warp-stanford/.agents/skills/write-product-spec                   │
+│    → ~/warp-stanford/.agents/skills/write-product-spec                   │
+│    → ~/warp-stanford/.agents/skills/write-product-spec                   │
+│  ✓ write-tech-spec (copied)                                              │
+│    → ~/warp-stanford/.agents/skills/write-tech-spec                      │
+│    → ~/warp-stanford/.agents/skills/write-tech-spec                      │
+│    → ~/warp-stanford/.agents/skills/write-tech-spec                      │
+│    → ~/warp-stanford/.agents/skills/write-tech-spec                      │
+│    → ~/warp-stanford/.agents/skills/write-tech-spec                      │
+│    → ~/warp-stanford/.agents/skills/write-tech-spec                      │
+│    → ~/warp-stanford/.agents/skills/write-tech-spec                      │
+│    → ~/warp-stanford/.agents/skills/write-tech-spec                      │
+│    → ~/warp-stanford/.agents/skills/write-tech-spec                      │
+│    → ~/warp-stanford/.agents/skills/write-tech-spec                      │
+│    → ~/warp-stanford/.agents/skills/write-tech-spec                      │
+│    → ~/warp-stanford/.agents/skills/write-tech-spec                      │
+│    → ~/warp-stanford/.agents/skills/write-tech-spec                      │
+│                                                                          │
+├──────────────────────────────────────────────────────────────────────────╯
+
+│
+└  Done!  Review skills before use; they run with full agent permissions.
+
+npm notice
+npm notice New major version of npm available! 11.19.0 -> 12.2.0
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.2.0
+npm notice To update run: npm install -g npm@12.2.0
+npm notice
+Common skills are installed in .agents/skills and match skills-lock.json.

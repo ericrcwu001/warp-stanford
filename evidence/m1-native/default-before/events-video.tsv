@@ -1,0 +1,36 @@
+t_video_s	kind	detail	hold_s
+1.465	start	capture running, empty input at prompt	
+1.468	hold	empty-prompt	2
+3.474	section	1 direct Ctrl-Y: input 'alpha beta', cursor at end	
+3.478	type	alpha beta	
+3.957	hold	typed-alpha-beta	2.5
+6.463	key	ctrl+y	
+6.537	hold	after-direct-ctrl-y	3
+9.546	reset	End, BackSpace x30	
+10.283	section	2 Ctrl-U probe: input 'kill-u-sentinel', cursor at end	
+10.290	type	kill-u-sentinel	
+11.056	hold	typed-kill-u	2.5
+13.571	key	ctrl+u	
+13.625	hold	after-ctrl-u	3
+16.631	key	ctrl+y	
+16.693	hold	after-ctrl-u-ctrl-y	3
+19.701	reset	End, BackSpace x30	
+20.424	section	3 Ctrl-K probe: input 'kill-k-sentinel', cursor moved to start with Home	
+20.428	type	kill-k-sentinel	
+21.145	key	Home	
+21.193	hold	typed-kill-k-cursor-start	2.5
+23.699	key	ctrl+k	
+23.751	hold	after-ctrl-k	3
+26.759	key	ctrl+y	
+26.820	hold	after-ctrl-k-ctrl-y	3
+29.826	reset	End, BackSpace x30	
+30.541	section	4 Ctrl-W probe: input 'first second', cursor at end	
+30.546	type	first second	
+31.144	hold	typed-first-second	2.5
+33.651	key	ctrl+w	
+33.709	hold	after-ctrl-w	3
+36.715	key	ctrl+y	
+36.769	hold	after-ctrl-w-ctrl-y	3
+39.778	reset	End, BackSpace x30	
+40.456	hold	final-reset	2
+42.463	stop	stopping capture	

@@ -1,0 +1,94 @@
+commit c1db7c276e82d214277480879b7c41201dfa5651
+Author: ericrcwu001 <ericrcwu2025@gmail.com>
+Date:   Sat Oct 17 09:18:28 2026 +0000
+
+    Add failing Ctrl-Y yank integration regression
+    
+    Adds test_ctrl_y_yanks_killed_input, which types a sentinel, kills it with
+    Ctrl-U and expects production-dispatched Ctrl-Y to restore it. On Linux the
+    editable Delete-all-left Ctrl-Y default shadows the fixed Yank binding, so
+    this test currently fails at the final input assertion.
+    
+    Co-authored-by: factory-droid[bot] <138933559+factory-droid[bot]@users.noreply.github.com>
+
+diff --git a/crates/integration/src/bin/integration.rs b/crates/integration/src/bin/integration.rs
+index 7ba64e5d1..f9c0dfcbd 100644
+--- a/crates/integration/src/bin/integration.rs
++++ b/crates/integration/src/bin/integration.rs
+@@ -443,6 +443,7 @@ fn register_tests() -> HashMap<&'static str, BoxedBuilderFn> {
+     register_test!(test_settings_agent_mcp_servers_renders_standalone_page);
+ 
+     register_test!(test_middle_click_paste);
++    register_test!(test_ctrl_y_yanks_killed_input);
+ 
+     register_test!(test_copy_selection_within_ai_block);
+     register_test!(test_selection_first_to_last_through_ai_simple);
+diff --git a/crates/integration/src/test/input.rs b/crates/integration/src/test/input.rs
+index 727ee1ee6..e53a084c2 100644
+--- a/crates/integration/src/test/input.rs
++++ b/crates/integration/src/test/input.rs
+@@ -12,7 +12,8 @@ use warp::integration_testing::terminal::util::{
+     ExpectedExitStatus, current_shell_starter_and_version,
+ };
+ use warp::integration_testing::terminal::{
+-    execute_command_for_single_terminal_in_tab, wait_until_bootstrapped_single_pane_for_tab,
++    assert_input_editor_contents, execute_command_for_single_terminal_in_tab,
++    wait_until_bootstrapped_single_pane_for_tab,
+ };
+ use warp::integration_testing::view_getters::{
+     single_input_view_for_tab, single_terminal_view_for_tab,
+@@ -223,6 +224,42 @@ pub fn test_latest_buffer_operations() -> Builder {
+         )
+ }
+ 
++pub fn test_ctrl_y_yanks_killed_input() -> Builder {
++    let sentinel = "echo ctrl-y-yank-sentinel";
++    new_builder()
++        .with_step(wait_until_bootstrapped_single_pane_for_tab(0))
++        .with_step(
++            new_step_with_default_assertions("Check the input starts empty").add_named_assertion(
++                "Input is empty after bootstrap",
++                assert_input_editor_contents(0, ""),
++            ),
++        )
++        .with_step(
++            new_step_with_default_assertions("Type the sentinel into the input")
++                .with_typed_characters(&[sentinel])
++                .add_named_assertion(
++                    "Input contains exactly the sentinel",
++                    assert_input_editor_contents(0, sentinel),
++                ),
++        )
++        .with_step(
++            new_step_with_default_assertions("Kill the input with ctrl-u")
++                .with_keystrokes(&["ctrl-u"])
++                .add_named_assertion(
++                    "Input is empty after ctrl-u",
++                    assert_input_editor_contents(0, ""),
++                ),
++        )
++        .with_step(
++            new_step_with_default_assertions("Yank the killed input with ctrl-y")
++                .with_keystrokes(&["ctrl-y"])
++                .add_named_assertion(
++                    "Input contains exactly the killed sentinel after ctrl-y",
++                    assert_input_editor_contents(0, sentinel),
++                ),
++        )
++}
++
+ pub fn test_middle_click_paste() -> Builder {
+     new_builder()
+         .with_step(wait_until_bootstrapped_single_pane_for_tab(0))
+diff --git a/crates/integration/tests/integration/ui_tests.rs b/crates/integration/tests/integration/ui_tests.rs
+index 2bca18bf4..424752118 100644
+--- a/crates/integration/tests/integration/ui_tests.rs
++++ b/crates/integration/tests/integration/ui_tests.rs
+@@ -340,6 +340,7 @@ integration_tests! {
+     // Middle-click-paste is only implemented for Linux right now.
+     #[cfg(any(target_os = "linux", target_os = "freebsd"))]
+     test_middle_click_paste,
++    test_ctrl_y_yanks_killed_input,
+     test_agent_mode_pane_minimum_size,
+ 
+     test_rule_creation,

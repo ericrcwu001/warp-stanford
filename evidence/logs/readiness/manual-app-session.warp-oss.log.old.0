@@ -1,0 +1,184 @@
+2026-10-17T02:17:03Z [INFO] [warp_terminal::local_tty::server] Spawning terminal server process...
+2026-10-17T02:17:03Z [INFO] [warp_terminal::local_tty::server::event_loop] Running terminal server...
+2026-10-17T02:17:03Z [WARN] [arboard::platform::linux] Tried to initialize the wayland data control protocol clipboard, but failed. Falling back to the X11 clipboard protocol. The error was: Unknown error while interacting with the clipboard: Couldn't connect to the Wayland compositor
+2026-10-17T02:17:03Z [INFO] [warpui::windowing::winit::event_loop] Running app with windowing system: X11
+2026-10-17T02:17:03Z [INFO] [warp::settings::init] Migrating public settings from native store to settings.toml
+2026-10-17T02:17:03Z [INFO] [warp::settings::init] Settings file migration complete — migrated 0 settings, 0 failed
+2026-10-17T02:17:04Z [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+2026-10-17T02:17:04Z [ERROR] [errors::report_error] Failed to acquire default Secret Service collection: unknown error: no secret service provider or dbus session found
+2026-10-17T02:17:04Z [INFO] [warp_server_auth::auth_state] Unable to read user from secure storage: SecureStorageError(NotFound)
+2026-10-17T02:17:04Z [INFO] [warp::persistence::sqlite] Connecting to SQLite database
+2026-10-17T02:17:04Z [WARN] [warp::persistence::sqlite] SQLite error 284 (Automatic indexing used - database might benefit from additional indexes): automatic index on object_permissions(subject_type)
+2026-10-17T02:17:04Z [INFO] [warp] Starting warp with channel state ChannelState { channel: Oss, additional_features: {DebugMode, RuntimeFeatureFlags}, config: ChannelConfig { app_id: AppId { qualifier: "dev", organization: "warp", application_name: "WarpOss" }, logfile_name: "warp-oss.log", server_config: WarpServerConfig { server_root_url: "https://app.warp.dev", rtc_server_url: "wss://rtc.app.warp.dev/graphql/v2", session_sharing_server_url: Some("wss://sessions.app.warp.dev"), firebase_auth_api_key: "[REDACTED]", iap_config: None }, oz_config: OzConfig { oz_root_url: "https://oz.warp.dev", workload_audience_url: None }, telemetry_config: None, autoupdate_config: None, crash_reporting_config: None, mcp_static_config: None } } and version None
+2026-10-17T02:17:04Z [INFO] [warpui_core::fonts] Computing available system fonts
+2026-10-17T02:17:04Z [INFO] [warp::app_services] Initializing app services
+2026-10-17T02:17:04Z [ERROR] [warp::app_services::linux] Failed to initialize org.freedesktop.Application D-Bus service: I/O error: No such file or directory (os error 2): No such file or directory (os error 2)
+2026-10-17T02:17:04Z [INFO] [warp::ai::mcp::templatable_manager::native] Converting 0 legacy MCP servers into templatable MCP servers
+2026-10-17T02:17:04Z [INFO] [warp::ai::execution_profiles::profiles] Initialized execution profile model with state: Unsynced, file_backed_profiles: true
+2026-10-17T02:17:04Z [INFO] [warpui_core::core::app] dispatching global action for root_view:open_from_restored
+2026-10-17T02:17:05Z [INFO] [warpui::windowing::winit::fonts::loader] Loaded 39 font families
+2026-10-17T02:17:07Z [INFO] [warp::ai::persisted_workspace] Cleaning up index metadata from SQLite
+2026-10-17T02:17:07Z [WARN] [warpui::windowing::winit::linux::zbus::desktop_settings] Encountered error while watching for desktop settings change events: I/O error: No such file or directory (os error 2)
+2026-10-17T02:17:07Z [INFO] [warp::ai::mcp::file_based_manager] Initial global file-based MCP scan complete: 0 auto-started server(s) to await before the first turn
+2026-10-17T02:17:07Z [INFO] [warpui::rendering::wgpu::resources] Enabled wgpu backends: Backends(VULKAN)
+2026-10-17T02:17:07Z [INFO] [warpui::rendering::wgpu::resources] Available wgpu adapters (in priority order):
+2026-10-17T02:17:07Z [INFO] [warpui::rendering::wgpu::resources] Cpu: llvmpipe (LLVM 20.1.2, 256 bits)
+	Backend: Vulkan
+	Driver: llvmpipe (Mesa 25.2.8-0ubuntu0.24.04.4 (LLVM 20.1.2))
+	Can present: true
+	Supported texture format: Some(Bgra8UnormSrgb)
+	Supported alpha mode: [PreMultiplied, Inherit]
+2026-10-17T02:17:07Z [INFO] [warpui::rendering::wgpu::resources] Verifying adapter "llvmpipe (LLVM 20.1.2, 256 bits)" is valid...
+2026-10-17T02:17:07Z [INFO] [warpui::rendering::wgpu::resources] Using Vulkan Cpu (llvmpipe (LLVM 20.1.2, 256 bits)) for rendering new window.
+2026-10-17T02:17:07Z [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+2026-10-17T02:17:07Z [INFO] [warpui_core::platform::app] window resized
+2026-10-17T02:17:07Z [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+2026-10-17T02:17:07Z [INFO] [warpui_core::platform::app] active window changed: Some(WindowId(0))
+2026-10-17T02:17:07Z [INFO] [warpui_core::core::app] dispatching global action for root_view:update_quake_mode_state
+2026-10-17T02:17:07Z [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+2026-10-17T02:17:28Z [INFO] [warpui_core::core::app] dispatching typed action: onboarding::slides::intro_slide::IntroSlideAction::GetStartedClicked
+2026-10-17T02:17:38Z [INFO] [warpui_core::core::app] dispatching typed action: onboarding::slides::customize_slide::CustomizeSlideAction::NextClicked
+2026-10-17T02:17:45Z [INFO] [warpui_core::core::app] dispatching typed action: onboarding::slides::theme_picker_slide::ThemePickerSlideAction::NextClicked
+2026-10-17T02:17:51Z [INFO] [warpui_core::core::app] dispatching typed action: warp::auth::login_slide::LoginSlideAction::ShowSkipDialog
+2026-10-17T02:18:04Z [INFO] [warpui_core::core::app] dispatching typed action: warp::auth::login_slide::LoginSlideAction::ConfirmSkip
+2026-10-17T02:18:04Z [INFO] [warp::terminal::local_tty::terminal_manager] Creating terminal model with 0 restored blocks
+2026-10-17T02:18:04Z [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+2026-10-17T02:18:04Z [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+2026-10-17T02:18:04Z [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+2026-10-17T02:18:04Z [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+2026-10-17T02:18:04Z [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+2026-10-17T02:18:04Z [WARN] [warpui_core::core::app] Action HandleFocusChange was dispatched, but no view handled it
+2026-10-17T02:18:04Z [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+2026-10-17T02:18:04Z [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+2026-10-17T02:18:04Z [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+2026-10-17T02:18:04Z [WARN] [warpui_core::core::app] Action HandleFocusChange was dispatched, but no view handled it
+2026-10-17T02:18:04Z [INFO] [warp::ai::persisted_workspace] Cleaning up index metadata from SQLite
+2026-10-17T02:18:04Z [WARN] [warp::terminal::view] Tried to update block filter query without active_filter_editor_block_index set
+2026-10-17T02:18:04Z [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+2026-10-17T02:18:04Z [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+2026-10-17T02:18:04Z [INFO] [warp::ai::persisted_workspace] Cleaning up index metadata from SQLite
+2026-10-17T02:18:04Z [INFO] [warp_terminal::local_tty::unix] Starting shell /bin/bash
+2026-10-17T02:18:04Z [INFO] [warp_isolation_platform] No isolation platform detected
+2026-10-17T02:18:04Z [INFO] [warp_terminal::local_tty::server::event_loop] Successfully spawned tty with pid: 36495
+2026-10-17T02:18:04Z [INFO] [warp_terminal::local_tty::unix] Successfully spawned child bash process with pid 36495
+2026-10-17T02:18:04Z [WARN] [warp::workspace::native_modal] No alert dialog was set for the native modal
+2026-10-17T02:18:04Z [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+2026-10-17T02:18:04Z [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+2026-10-17T02:18:04Z [INFO] [warp_terminal::model::ansi] Received InitShell hook
+2026-10-17T02:18:04Z [WARN] [warp::ai::blocklist::suggested_agent_mode_workflow_modal] SuggestedAgentModeWorkflowModal has not been initialized
+2026-10-17T02:18:04Z [WARN] [warp::terminal::share_block_modal] Tried to render share modal without a model
+2026-10-17T02:18:04Z [INFO] [warp_terminal::model::ansi] Received CommandFinished hook
+2026-10-17T02:18:04Z [INFO] [warp::terminal::model::terminal_model] Tried to exit the alternate screen, but it was already inactive
+2026-10-17T02:18:04Z [INFO] [warp::terminal::model::block] Block finished with new state DoneWithExecution
+2026-10-17T02:18:04Z [INFO] [warp::terminal::model::blocks] Incrementing stage from WarpInput to ScriptExecution
+2026-10-17T02:18:04Z [INFO] [warp_terminal::model::ansi] Received Precmd hook
+2026-10-17T02:18:04Z [INFO] [warp_terminal::model::ansi] Received Bootstrapped hook
+2026-10-17T02:18:04Z [INFO] [warp::terminal::model::early_output] Configured typeahead mode as ShellReported
+2026-10-17T02:18:04Z [INFO] [warp_terminal::model::ansi] Received CommandFinished hook
+2026-10-17T02:18:04Z [INFO] [warp::terminal::model::terminal_model] Tried to exit the alternate screen, but it was already inactive
+2026-10-17T02:18:04Z [INFO] [warp::terminal::model::block] Block finished with new state DoneWithExecution
+2026-10-17T02:18:04Z [INFO] [warp::terminal::model::blocks] Incrementing stage from Bootstrapped to PostBootstrapPrecmd
+2026-10-17T02:18:04Z [INFO] [warp_terminal::model::ansi] Received Precmd hook
+2026-10-17T02:18:04Z [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+2026-10-17T02:18:04Z [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+2026-10-17T02:18:04Z [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+2026-10-17T02:18:04Z [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+2026-10-17T02:18:04Z [INFO] [warp::terminal::model::session::command_executor] creating a local executor!
+2026-10-17T02:18:04Z [INFO] [warp::terminal::model::session] Parsed shell version string: Some([Number(5), Number(2), Number(21), Number(1), Text("release")])
+2026-10-17T02:18:04Z [INFO] [warp::terminal::model::session] Shell is bootstrapped with session_id SessionId(11124038074973726787)
+2026-10-17T02:18:04Z [INFO] [warp::terminal::model::session] No history file found for shell bash, starting with empty history
+2026-10-17T02:18:04Z [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+2026-10-17T02:18:04Z [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+2026-10-17T02:18:04Z [INFO] [warp::terminal::model::session::command_executor::local_command_executor] Sent SIGKILL to process group 36642
+2026-10-17T02:18:04Z [INFO] [warp::terminal::model::session::command_executor::local_command_executor] Sent SIGKILL to process group 36641
+2026-10-17T02:18:04Z [INFO] [warp::terminal::model::session::command_executor::local_command_executor] Sent SIGKILL to process group 36640
+2026-10-17T02:18:04Z [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+2026-10-17T02:18:04Z [WARN] [warp::settings::cloud_preferences_syncer] Unable to create cloud preferences due to unset personal drive
+2026-10-17T02:18:04Z [INFO] [warp::terminal::model::session::command_executor::local_command_executor] Sent SIGKILL to process group 36646
+2026-10-17T02:18:05Z [INFO] [warpui_core::core::app] notifying view observers and updating windows for timer id 640
+2026-10-17T02:18:05Z [INFO] [warpui_core::core::app] notifying view observers and updating windows for timer id 641
+2026-10-17T02:18:05Z [INFO] [warp_terminal::model::ansi] Received InputBuffer hook
+2026-10-17T02:18:05Z [WARN] [warp::settings::cloud_preferences_syncer] Unable to create cloud preferences due to unset personal drive
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("p"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("r"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("i"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("n"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("t"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("f"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput(" "))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("'"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("r"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("e"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("a"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("d"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("i"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("n"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("e"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("s"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("s"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("-"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("o"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("k"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("\\"))
+2026-10-17T02:18:19Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("n"))
+2026-10-17T02:18:20Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("'"))
+2026-10-17T02:18:20Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::Enter
+2026-10-17T02:18:20Z [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+2026-10-17T02:18:20Z [INFO] [warp_terminal::model::ansi] Received Preexec hook
+2026-10-17T02:18:20Z [INFO] [warp_terminal::model::ansi] Received CommandFinished hook
+2026-10-17T02:18:20Z [INFO] [warp::terminal::model::terminal_model] Tried to exit the alternate screen, but it was already inactive
+2026-10-17T02:18:20Z [INFO] [warp::terminal::model::block] Block finished with new state DoneWithExecution
+2026-10-17T02:18:20Z [INFO] [warp_terminal::model::ansi] Received Precmd hook
+2026-10-17T02:18:20Z [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+2026-10-17T02:18:20Z [INFO] [warp::terminal::model::session::command_executor::local_command_executor] Sent SIGKILL to process group 36740
+2026-10-17T02:18:20Z [WARN] [warp::terminal::model::session] failed to get git_branches_for_command_corrections
+2026-10-17T02:18:20Z [INFO] [warp_terminal::model::ansi] Received InputBuffer hook
+2026-10-17T02:18:20Z [WARN] [warp::settings::cloud_preferences_syncer] Unable to create cloud preferences due to unset personal drive
+2026-10-17T02:18:23Z [INFO] [warpui_core::core::app] dispatching typed action: warp::workspace::action::WorkspaceAction::SetTabShortcutModifierKey { key_code: ControlLeft, pressed: true }
+2026-10-17T02:18:23Z [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+2026-10-17T02:18:23Z [INFO] [warpui_core::core::app] dispatching typed action: warp::workspace::action::WorkspaceAction::ShowSettings
+2026-10-17T02:18:23Z [INFO] [warpui_core::core::view::context] enabling actions for window id 0
+2026-10-17T02:18:23Z [WARN] [warp::terminal::share_block_modal] Tried to render share modal without a model
+2026-10-17T02:18:23Z [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+2026-10-17T02:18:23Z [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+2026-10-17T02:18:23Z [INFO] [warpui_core::core::app] dispatching action for "root_view:maybe_stop_active_voice_input"
+2026-10-17T02:18:23Z [INFO] [warpui_core::core::app] dispatching typed action: warp::workspace::action::WorkspaceAction::SetTabShortcutModifierKey { key_code: ControlLeft, pressed: false }
+2026-10-17T02:18:23Z [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+2026-10-17T02:18:31Z [INFO] [warpui_core::core::app] dispatching typed action: warp::settings_view::SettingsAction::FocusSelf
+2026-10-17T02:18:31Z [INFO] [warpui_core::core::app] dispatching typed action: warp::settings_view::SettingsAction::SelectAndRefresh(Keybindings)
+2026-10-17T02:18:31Z [INFO] [warpui_core::core::view::context] enabling actions for window id 0
+2026-10-17T02:18:41Z [INFO] [warpui_core::core::app] dispatching typed action: warp::workspace::action::WorkspaceAction::FocusPane(PaneViewLocator { pane_group_id: EntityId(1789), pane_id: PaneId(IPaneId { pane_type: Terminal, pane_view_id: EntityId(2184) }) })
+2026-10-17T02:18:41Z [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+2026-10-17T02:18:44Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("p"))
+2026-10-17T02:18:44Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("r"))
+2026-10-17T02:18:44Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("i"))
+2026-10-17T02:18:44Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("n"))
+2026-10-17T02:18:44Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("t"))
+2026-10-17T02:18:44Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("f"))
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput(" "))
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("'"))
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("c"))
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("a"))
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("p"))
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("t"))
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("u"))
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("r"))
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("e"))
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("-"))
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("o"))
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("k"))
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("\\"))
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("n"))
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("'"))
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::Enter
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+2026-10-17T02:18:45Z [INFO] [warp_terminal::model::ansi] Received Preexec hook
+2026-10-17T02:18:45Z [INFO] [warp_terminal::model::ansi] Received CommandFinished hook
+2026-10-17T02:18:45Z [INFO] [warp::terminal::model::terminal_model] Tried to exit the alternate screen, but it was already inactive
+2026-10-17T02:18:45Z [INFO] [warp::terminal::model::block] Block finished with new state DoneWithExecution
+2026-10-17T02:18:45Z [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+2026-10-17T02:18:45Z [INFO] [warp_terminal::model::ansi] Received Precmd hook
+2026-10-17T02:18:45Z [INFO] [warp::terminal::model::session::command_executor::local_command_executor] Sent SIGKILL to process group 36894
+2026-10-17T02:18:45Z [WARN] [warp::terminal::model::session] failed to get git_branches_for_command_corrections
+2026-10-17T02:18:46Z [INFO] [warp_terminal::model::ansi] Received InputBuffer hook
+# PUBLISHED-COPY NOTE (2026-10-17): the Firebase client API key value on the "Starting warp with channel state" line was replaced with [REDACTED] at the student's request. No other line was changed; the unredacted original is kept only locally. This note was appended so all original line numbers are unchanged.

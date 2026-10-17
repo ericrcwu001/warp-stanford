@@ -1,0 +1,1087 @@
+COMMAND=. /home/factory-user/.cargo/env && CARGO_BUILD_JOBS=1 CARGO_PROFILE_DEV_DEBUG=0 cargo nextest run -p warp --lib --features gui --cargo-profile dev -E 'test(test_home_end_keybinding_resolution)' --test-threads 1
+START=2026-10-17T02:34:00Z
+   Compiling proc-macro2 v1.0.106
+   Compiling unicode-ident v1.0.12
+   Compiling quote v1.0.45
+   Compiling syn v2.0.117
+   Compiling serde_core v1.0.228
+   Compiling cfg-if v1.0.4
+   Compiling libc v0.2.186
+   Compiling shlex v1.3.0
+   Compiling jobserver v0.1.32
+   Compiling find-msvc-tools v0.1.9
+   Compiling cc v1.2.56
+   Compiling serde_derive v1.0.228
+   Compiling autocfg v1.1.0
+   Compiling memchr v2.7.6
+   Compiling serde v1.0.228
+   Compiling log v0.4.29
+   Compiling once_cell v1.21.3
+   Compiling version_check v0.9.5
+   Compiling smallvec v1.15.1
+   Compiling pin-project-lite v0.2.16
+   Compiling equivalent v1.0.1
+   Compiling regex-syntax v0.8.5
+   Compiling futures-core v0.3.31
+   Compiling either v1.9.0
+   Compiling libm v0.2.15
+   Compiling zeroize_derive v1.4.3
+   Compiling zeroize v1.8.2
+   Compiling scopeguard v1.2.0
+   Compiling itoa v1.0.18
+   Compiling num-traits v0.2.19
+   Compiling bitflags v2.13.0
+   Compiling bytes v1.11.1
+   Compiling pkg-config v0.3.32
+   Compiling parking_lot_core v0.9.12
+   Compiling aho-corasick v1.1.3
+   Compiling typenum v1.20.0
+   Compiling slab v0.4.9
+   Compiling getrandom v0.2.16
+   Compiling futures-io v0.3.31
+   Compiling lock_api v0.4.14
+   Compiling subtle v2.6.1
+   Compiling fnv v1.0.7
+   Compiling parking_lot v0.12.5
+   Compiling anyhow v1.0.79
+   Compiling rand_core v0.6.4
+   Compiling generic-array v0.14.7
+   Compiling futures-sink v0.3.31
+   Compiling allocator-api2 v0.2.16
+   Compiling signal-hook-registry v1.4.1
+   Compiling pin-utils v0.1.0
+   Compiling fastrand v2.3.0
+   Compiling foldhash v0.2.0
+   Compiling hashbrown v0.16.0
+   Compiling crypto-common v0.1.6
+   Compiling mio v1.1.1
+   Compiling futures-channel v0.3.31
+   Compiling tracing-core v0.1.36
+   Compiling tracing-attributes v0.1.31
+   Compiling futures-macro v0.3.31
+   Compiling futures-task v0.3.31
+   Compiling cpufeatures v0.2.9
+   Compiling indexmap v2.12.0
+   Compiling futures-util v0.3.31
+   Compiling tracing v0.1.44
+   Compiling socket2 v0.6.0
+   Compiling tokio-macros v2.6.1
+   Compiling ppv-lite86 v0.2.17
+   Compiling tokio v1.50.0
+   Compiling http v1.4.0
+   Compiling syn v1.0.109
+   Compiling const-oid v0.9.6
+   Compiling zmij v1.0.21
+   Compiling lazy_static v1.5.0
+   Compiling percent-encoding v2.3.1
+   Compiling ryu v1.0.23
+   Compiling cfg_aliases v0.2.1
+   Compiling rustix v1.1.2
+   Compiling regex-automata v0.4.9
+   Compiling itertools v0.14.0
+   Compiling crossbeam-utils v0.8.21
+   Compiling linux-raw-sys v0.11.0
+   Compiling block-buffer v0.10.4
+   Compiling ident_case v1.0.1
+   Compiling stable_deref_trait v1.2.0
+   Compiling digest v0.10.7
+   Compiling thiserror v2.0.17
+   Compiling thiserror-impl v2.0.17
+   Compiling parking v2.2.0
+   Compiling http-body v1.0.1
+   Compiling dunce v1.0.5
+   Compiling serde_json v1.0.150
+   Compiling synstructure v0.13.1
+   Compiling thiserror v1.0.63
+   Compiling tokio-util v0.7.18
+   Compiling thiserror-impl v1.0.63
+   Compiling atomic-waker v1.1.2
+   Compiling zerofrom-derive v0.1.5
+   Compiling static_assertions v1.1.0
+   Compiling zerofrom v0.1.5
+   Compiling yoke-derive v0.7.5
+   Compiling http-body-util v0.1.3
+   Compiling yoke v0.7.5
+   Compiling cmake v0.1.58
+   Compiling libloading v0.8.9
+   Compiling zerovec-derive v0.10.3
+   Compiling displaydoc v0.2.5
+   Compiling fs_extra v1.3.0
+   Compiling base64 v0.22.1
+   Compiling foldhash v0.1.5
+   Compiling aws-lc-sys v0.39.1
+   Compiling zerovec v0.10.4
+   Compiling form_urlencoded v1.2.1
+   Compiling getrandom v0.3.4
+   Compiling hashbrown v0.15.2
+   Compiling tinystr v0.7.6
+   Compiling proc-macro-error-attr v1.0.4
+   Compiling writeable v0.5.5
+   Compiling litemap v0.7.4
+   Compiling httparse v1.10.1
+   Compiling aws-lc-rs v1.16.2
+   Compiling icu_locid v1.5.0
+   Compiling proc-macro-error v1.0.4
+   Compiling icu_provider_macros v1.5.0
+   Compiling icu_provider v1.5.0
+   Compiling futures-lite v2.6.1
+   Compiling rustls-pki-types v1.12.0
+   Compiling heck v0.5.0
+   Compiling icu_locid_transform_data v1.5.0
+   Compiling untrusted v0.9.0
+   Compiling icu_locid_transform v1.5.0
+   Compiling icu_collections v1.5.0
+   Compiling simd-adler32 v0.3.7
+   Compiling rustls v0.23.39
+   Compiling tower-service v0.3.3
+   Compiling icu_properties_data v1.5.0
+   Compiling semver v1.0.20
+   Compiling icu_properties v1.5.1
+   Compiling rustls-webpki v0.103.13
+   Compiling icu_normalizer_data v1.5.0
+   Compiling utf8_iter v1.0.4
+   Compiling write16 v1.0.0
+   Compiling fixedbitset v0.5.7
+   Compiling utf16_iter v1.0.5
+   Compiling crc32fast v1.5.0
+   Compiling try-lock v0.2.4
+   Compiling want v0.3.1
+   Compiling icu_normalizer v1.5.0
+   Compiling h2 v0.4.15
+   Compiling concurrent-queue v2.5.0
+   Compiling num-integer v0.1.46
+   Compiling ahash v0.7.8
+   Compiling bytemuck_derive v1.10.2
+   Compiling adler2 v2.0.0
+   Compiling httpdate v1.0.3
+   Compiling hyper v1.8.1
+   Compiling miniz_oxide v0.8.8
+   Compiling bytemuck v1.24.0
+   Compiling rustc_version v0.4.0
+   Compiling idna_adapter v1.2.0
+   Compiling async-io v2.6.0
+   Compiling byteorder v1.5.0
+   Compiling ipnet v2.11.0
+   Compiling hyper-util v0.1.16
+   Compiling idna v1.0.3
+   Compiling dlib v0.5.2
+   Compiling sync_wrapper v1.0.1
+   Compiling async-task v4.7.1
+   Compiling tower-layer v0.3.3
+   Compiling hashbrown v0.12.3
+   Compiling rand_chacha v0.3.1
+   Compiling minimal-lexical v0.2.1
+   Compiling openssl-probe v0.1.6
+   Compiling rustls-native-certs v0.8.2
+   Compiling nom v7.1.3
+   Compiling rand v0.8.6
+   Compiling tower v0.5.2
+   Compiling url v2.5.4
+   Compiling flate2 v1.1.9
+   Compiling event-listener v5.4.0
+   Compiling tokio-rustls v0.26.4
+   Compiling regex v1.11.1
+   Compiling same-file v1.0.6
+   Compiling walkdir v2.4.0
+   Compiling event-listener-strategy v0.5.2
+   Compiling polling v3.11.0
+   Compiling ptr_meta_derive v0.1.4
+   Compiling wayland-sys v0.31.7
+   Compiling itertools v0.11.0
+   Compiling memoffset v0.9.0
+   Compiling bytecheck v0.6.12
+   Compiling beef v0.5.2
+   Compiling logos-codegen v0.14.1
+   Compiling ptr_meta v0.1.4
+   Compiling bytecheck_derive v0.6.12
+   Compiling unicase v2.7.0
+   Compiling rend v0.4.2
+   Compiling strsim v0.10.0
+   Compiling simdutf8 v0.1.5
+   Compiling arrayvec v0.7.6
+   Compiling siphasher v1.0.1
+   Compiling darling_core v0.20.8
+   Compiling logos-derive v0.14.1
+   Compiling hyper-rustls v0.27.7
+   Compiling heck v0.4.1
+   Compiling hex v0.4.3
+   Compiling ref-cast v1.0.23
+   Compiling mime v0.3.17
+   Compiling rkyv v0.7.46
+   Compiling sha1_smol v1.0.1
+   Compiling uuid v1.19.0
+   Compiling ouroboros_macro v0.18.0
+   Compiling logos v0.14.1
+   Compiling darling_macro v0.20.8
+   Compiling async-channel v2.3.1
+   Compiling rkyv_derive v0.7.46
+   Compiling num_cpus v1.16.0
+   Compiling ref-cast-impl v1.0.23
+   Compiling seahash v4.1.0
+   Compiling aliasable v0.1.3
+   Compiling utf-8 v0.7.6
+   Compiling winnow v0.7.12
+   Compiling lalrpop-util v0.20.2
+   Compiling strsim v0.11.1
+   Compiling cynic-parser v0.4.5
+   Compiling ouroboros v0.18.0
+   Compiling futures-executor v0.3.31
+   Compiling darling v0.20.8
+   Compiling counter v0.5.7
+   Compiling mime_guess v2.0.4
+   Compiling cynic-codegen v3.8.0
+   Compiling phf_shared v0.11.3
+   Compiling piper v0.2.1
+   Compiling wayland-backend v0.3.11
+   Compiling pin-project-internal v1.1.3
+   Compiling alloc-no-stdlib v2.0.4
+   Compiling alloc-stdlib v0.2.2
+   Compiling pin-project v1.1.3
+   Compiling blocking v1.6.2
+   Compiling memmap2 v0.9.7
+   Compiling encoding_rs v0.8.35
+   Compiling scoped-tls v1.0.1
+   Compiling downcast-rs v1.2.0
+   Compiling inventory v0.3.20
+   Compiling brotli-decompressor v4.0.2
+   Compiling serde_urlencoded v0.7.1
+   Compiling quick-xml v0.37.4
+   Compiling indexmap v1.9.3
+   Compiling crossbeam-epoch v0.9.15
+   Compiling rustversion v1.0.14
+   Compiling unicode-segmentation v1.11.0
+   Compiling wayland-client v0.31.11
+   Compiling iana-time-zone v0.1.64
+   Compiling chrono v0.4.40
+   Compiling wayland-scanner v0.31.7
+   Compiling brotli v7.0.0
+   Compiling phf_generator v0.11.3
+   Compiling futures v0.3.31
+   Compiling sha1 v0.10.6
+   Compiling option-ext v0.2.0
+   Compiling xmlparser v0.13.6
+   Compiling async-compression v0.4.22
+   Compiling rustls-platform-verifier v0.7.0
+   Compiling block-padding v0.3.3
+   Compiling core_maths v0.1.0
+   Compiling new_debug_unreachable v1.0.4
+   Compiling data-encoding v2.10.0
+   Compiling iri-string v0.7.8
+   Compiling tower-http v0.6.8
+   Compiling ttf-parser v0.25.1
+   Compiling inout v0.1.4
+   Compiling crossbeam-deque v0.8.3
+   Compiling string_cache_codegen v0.5.4
+   Compiling phf_codegen v0.11.3
+   Compiling cynic-proc-macros v3.8.0
+   Compiling async-lock v3.4.0
+   Compiling sha2 v0.10.9
+   Compiling float-cmp v0.9.0
+   Compiling fastrand v1.9.0
+   Compiling dyn-clone v1.0.20
+   Compiling base64 v0.23.1
+   Compiling linked-hash-map v0.5.6
+   Compiling waker-fn v1.1.1
+   Compiling rayon-core v1.12.1
+   Compiling futures-lite v1.13.0
+   Compiling yaml-rust v0.4.5 (https://github.com/warpdotdev/yaml-rust.git?rev=51684719d0102ca85ff4b21cec39877a0c669e19#51684719)
+   Compiling reqwest v0.13.5
+   Compiling strict-num v0.1.1
+   Compiling cynic v3.8.0
+   Compiling web_atoms v0.1.3
+   Compiling cipher v0.4.4
+   Compiling tungstenite v0.24.0
+   Compiling async-signal v0.2.13
+   Compiling hmac v0.12.1
+   Compiling ahash v0.8.11
+   Compiling mac v0.1.1
+   Compiling futures-timer v3.0.2
+   Compiling precomputed-hash v0.1.1
+   Compiling arrayref v0.3.9
+   Compiling string_cache v0.8.9
+   Compiling futf v0.1.5
+   Compiling async-process v2.5.0
+   Compiling wayland-protocols v0.32.9
+   Compiling convert_case v0.7.1
+   Compiling async-net v2.0.0
+   Compiling phf v0.11.3
+   Compiling nix v0.30.1
+   Compiling async-trait v0.1.89
+   Compiling derive-where v1.2.7
+   Compiling raw-window-handle v0.6.2
+   Compiling zerocopy v0.7.32
+   Compiling quote-use-macros v0.7.2
+   Compiling rayon v1.10.0
+   Compiling tendril v0.4.3
+   Compiling graphql-ws-client v0.11.1
+   Compiling async-tungstenite v0.28.2
+   Compiling yeslogic-fontconfig-sys v5.0.0
+   Compiling slotmap v1.0.6
+   Compiling typed-path v0.10.0
+   Compiling pathdiff v0.2.1
+   Compiling websocket v0.1.0 (/home/factory-user/warp-stanford/crates/websocket)
+   Compiling markup5ever v0.35.0
+   Compiling quote-use v0.7.2
+   Compiling wayland-protocols-wlr v0.3.9
+   Compiling roxmltree v0.18.1
+   Compiling proc-macro-utils v0.8.0
+   Compiling pathfinder_simd v0.5.4 (https://github.com/warpdotdev/pathfinder.git?rev=34128a129ca6aee168fbc5060a4f21b4f7e486a9#34128a12)
+   Compiling fdeflate v0.3.7
+   Compiling content_inspector v0.2.4
+   Compiling is_executable v1.0.1
+   Compiling interpolator v0.5.0
+   Compiling toml_datetime v0.6.11
+   Compiling tinyvec_macros v0.1.1
+   Compiling collection_literals v1.0.1
+   Compiling attribute-derive-macro v0.6.1
+   Compiling tinyvec v1.6.0
+   Compiling toml_edit v0.22.27
+   Compiling png v0.18.1
+   Compiling fontconfig-parser v0.5.3
+   Compiling warp_errors v0.0.0 (/home/factory-user/warp-stanford/crates/warp_errors)
+   Compiling hkdf v0.12.4
+   Compiling dirs-sys v0.5.0
+   Compiling async-broadcast v0.7.2
+   Compiling async-executor v1.13.1
+   Compiling petgraph v0.8.3
+   Compiling gethostname v1.1.0
+   Compiling freetype-sys v0.20.1
+   Compiling match_token v0.35.0
+   Compiling enumflags2_derive v0.7.12
+   Compiling enum-iterator-derive v1.2.1
+   Compiling serde_derive_internals v0.29.1
+   Compiling color_quant v1.1.0
+   Compiling quick-error v2.0.1
+   Compiling convert_case v0.4.0
+   Compiling unicode-bidi-mirroring v0.4.0
+   Compiling as-raw-xcb-connection v1.0.0
+   Compiling unicode-ccc v0.4.0
+   Compiling x11rb-protocol v0.13.2
+   Compiling weezl v0.1.12
+   Compiling byteorder-lite v0.1.0
+   Compiling zune-core v0.5.1
+   Compiling unicode-script v0.5.5
+   Compiling unicode-properties v0.1.3
+   Compiling rustybuzz v0.20.1
+   Compiling zune-jpeg v0.5.12
+   Compiling image-webp v0.2.4
+   Compiling gif v0.14.1
+   Compiling x11rb v0.13.2
+   Compiling schemars_derive v1.0.4
+   Compiling enum-iterator v1.4.1
+   Compiling html5ever v0.35.0
+   Compiling fontdb v0.23.0
+   Compiling proc-macro-crate v3.3.0
+   Compiling attribute-derive v0.6.1
+   Compiling xml5ever v0.35.0
+   Compiling tiny-skia-path v0.12.0
+   Compiling zvariant_utils v3.2.0
+   Compiling kurbo v0.13.0
+   Compiling nom v8.0.0
+   Compiling dirs-sys-next v0.1.2
+   Compiling cstr v0.2.11
+   Compiling unicode-bidi v0.3.15
+   Compiling pxfm v0.1.28
+   Compiling heapless v0.8.0
+   Compiling moxcms v0.7.11
+   Compiling dirs-next v2.0.0
+   Compiling tree_magic_mini v3.2.2
+   Compiling svgtypes v0.16.1
+   Compiling zvariant_derive v5.6.0
+   Compiling markup5ever_rcdom v0.35.0+unofficial
+   Compiling get-size-derive v0.1.3
+   Compiling schemars v1.0.4
+   Compiling dirs v6.0.0
+   Compiling command v0.1.0 (/home/factory-user/warp-stanford/crates/command)
+   Compiling serde_yaml v0.8.26
+   Compiling hashbrown v0.14.1
+   Compiling aes v0.8.4
+   Compiling hash32 v0.3.1
+   Compiling tempfile v3.23.0
+   Compiling simplecss v0.2.1
+   Compiling roxmltree v0.21.1
+   Compiling os_pipe v1.2.3
+   Compiling xmlwriter v0.1.0
+   Compiling endi v1.1.0
+   Compiling pico-args v0.5.0
+   Compiling imagesize v0.14.0
+   Compiling data-url v0.3.1
+   Compiling font-kit v0.12.0 (https://github.com/warpdotdev/font-kit?rev=a04b225ecb639bb850f21d05212cfdc7465000f3#a04b225e)
+   Compiling unicode-vo v0.1.0
+   Compiling usvg v0.47.0
+   Compiling wl-clipboard-rs v0.9.3
+   Compiling dashmap v6.1.0
+   Compiling markdown_parser v0.1.0 (/home/factory-user/warp-stanford/crates/markdown_parser)
+   Compiling freetype v0.7.2
+   Compiling get-size v0.1.4
+   Compiling image v0.25.9
+   Compiling tiny-skia v0.12.0
+   Compiling pathfinder_geometry v0.5.1
+   Compiling settings_value_derive v0.0.0 (/home/factory-user/warp-stanford/crates/settings_value_derive)
+   Compiling async-fs v2.1.2
+   Compiling cfb v0.7.3
+   Compiling rgb v0.8.50
+   Compiling warpui_core v0.1.0 (/home/factory-user/warp-stanford/crates/warpui_core)
+   Compiling instant v0.1.12
+   Compiling similar v2.7.0
+   Compiling rangemap v1.4.0
+   Compiling float-ord v0.3.2
+   Compiling rustc-hash v2.1.1
+   Compiling settings_value v0.1.0 (/home/factory-user/warp-stanford/crates/settings_value)
+   Compiling resvg v0.47.0
+   Compiling infer v0.19.0
+   Compiling arboard v3.6.1
+   Compiling string-offset v0.0.0 (/home/factory-user/warp-stanford/crates/string-offset)
+   Compiling rstar v0.12.2
+   Compiling warp_util v0.1.0 (/home/factory-user/warp-stanford/crates/warp_util)
+   Compiling pathfinder_color v0.5.0
+   Compiling derive_more v0.99.17
+   Compiling enumflags2 v0.7.12
+   Compiling sum_tree v0.1.0 (/home/factory-user/warp-stanford/crates/sum_tree)
+   Compiling ctrlc v3.4.7
+   Compiling strum_macros v0.27.1
+   Compiling titlecase v1.1.0
+   Compiling derivative v2.2.0
+   Compiling trait-set v0.3.0
+   Compiling ordered-float v3.9.2
+   Compiling vec1 v1.10.1
+   Compiling num-derive v0.4.2
+   Compiling strum v0.27.1
+   Compiling bounded-vec-deque v0.1.1
+   Compiling zvariant v5.6.0
+   Compiling num-bigint v0.4.6
+   Compiling num-complex v0.4.6
+   Compiling tree-sitter-language v0.1.2
+   Compiling zbus_names v4.2.0
+   Compiling rand_core v0.9.3
+   Compiling serde_repr v0.1.20
+   Compiling zbus_macros v5.9.0
+   Compiling prost-derive v0.14.3
+   Compiling ordered-stream v0.2.0
+   Compiling winnow v1.0.0
+   Compiling toml_parser v1.1.0+spec-1.1.0
+   Compiling zbus v5.9.0
+   Compiling rand_chacha v0.9.0
+   Compiling darling_core v0.23.0
+   Compiling prettyplease v0.2.37
+   Compiling darling_macro v0.23.0
+   Compiling rand v0.9.4
+   Compiling num-rational v0.4.2
+   Compiling num-iter v0.1.45
+   Compiling num v0.4.3
+   Compiling darling v0.23.0
+   Compiling serde_with_macros v3.21.0
+   Compiling ring v0.17.14
+   Compiling serde_with v3.21.0
+   Compiling cbc v0.1.2
+   Compiling itertools v0.10.5
+   Compiling toml_writer v1.1.0+spec-1.1.0
+   Compiling toml_datetime v1.1.0+spec-1.1.0
+   Compiling toml_edit v0.25.6+spec-1.1.0
+   Compiling secret-service v5.0.0
+   Compiling version-compare v0.1.1
+   Compiling warpui_extras v0.0.0 (/home/factory-user/warp-stanford/crates/warpui_extras)
+   Compiling warp_features v0.0.0 (/home/factory-user/warp-stanford/crates/warp_features)
+   Compiling getset v0.1.2
+   Compiling assert-json-diff v2.0.2
+   Compiling warp_core v0.0.0 (/home/factory-user/warp-stanford/crates/warp_core)
+   Compiling concat-idents v1.1.5
+   Compiling difflib v0.4.0
+   Compiling colored v3.0.0
+   Compiling mockito v1.7.1
+   Compiling command-corrections v0.0.0 (https://github.com/warpdotdev/command-corrections.git?rev=eae08c8c51d9bc9741fcb17eef2c21f696aebbeb#eae08c8c)
+   Compiling settings v0.0.0 (/home/factory-user/warp-stanford/crates/settings)
+   Compiling shellexpand v3.1.1
+   Compiling directories v6.0.0
+   Compiling sysinfo v0.37.0
+   Compiling line-ending v1.5.1
+   Compiling prost v0.14.3
+   Compiling bstr v1.9.0
+   Compiling prost-types v0.14.3
+   Compiling multimap v0.10.1
+   Compiling prost-build v0.14.3
+   Compiling powerfmt v0.2.0
+   Compiling deranged v0.5.5
+   Compiling num-conv v0.2.0
+   Compiling time-core v0.1.8
+   Compiling time v0.3.47
+   Compiling globset v0.4.18
+   Compiling vcpkg v0.2.15
+   Compiling thread_local v1.1.7
+   Compiling darling_core v0.21.3
+   Compiling darling_macro v0.21.3
+   Compiling half v2.6.0
+   Compiling darling v0.21.3
+   Compiling serde_path_to_error v0.1.16
+   Compiling opentelemetry v0.32.0
+   Compiling async-compat v0.2.5
+   Compiling prost-reflect-derive v0.16.0
+   Compiling vsimd v0.8.0
+   Compiling urlencoding v2.1.3
+   Compiling base64ct v1.8.0
+   Compiling outref v0.5.2
+   Compiling pem-rfc7468 v0.7.0
+   Compiling toml_datetime v0.7.3
+   Compiling serde_spanned v1.0.3
+   Compiling anstyle v1.0.13
+   Compiling der v0.7.10
+   Compiling libsqlite3-sys v0.33.0
+   Compiling matchers v0.2.0
+   Compiling sharded-slab v0.1.7
+   Compiling tracing-log v0.2.0
+   Compiling universal-hash v0.5.1
+   Compiling http v0.2.12
+   Compiling downcast-rs v2.0.2
+   Compiling nu-ansi-term v0.50.3
+   Compiling bitflags v1.3.2
+   Compiling base16ct v0.2.0
+   Compiling utf8parse v0.2.2
+   Compiling opaque-debug v0.3.1
+   Compiling anstyle-parse v0.2.3
+   Compiling tracing-subscriber v0.3.23
+   Compiling http-body v0.4.6
+   Compiling spki v0.7.3
+   Compiling base64-simd v0.8.0
+   Compiling prost-reflect v0.16.3
+   Compiling tink-proto v0.3.0 (https://github.com/warpdotdev/tink-rust?rev=54b9ac9af93b0c08b446a7bc0582836c9403a71b#54b9ac9a)
+   Compiling prevent_sleep v0.0.0 (/home/factory-user/warp-stanford/crates/prevent_sleep)
+   Compiling aead v0.5.2
+   Compiling bytes-utils v0.1.4
+   Compiling memoffset v0.7.1
+   Compiling arborium-javascript v2.13.0
+   Compiling diesel_derives v2.3.5
+   Compiling typed-arena v2.0.2
+   Compiling utf8-width v0.1.7
+   Compiling anstyle-query v1.1.5
+   Compiling is_terminal_polyfill v1.70.2
+   Compiling self_cell v1.2.1
+   Compiling colorchoice v1.0.0
+   Compiling anstream v0.6.21
+   Compiling jaq-core v3.0.0
+   Compiling aws-smithy-types v1.4.7
+   Compiling prost-reflect-build v0.16.0
+   Compiling pkcs8 v0.10.2
+   Compiling toml v0.9.6
+   Compiling oauth2 v5.0.0
+   Compiling dsl_auto_type v0.2.0
+   Compiling ctr v0.9.2
+   Compiling eventsource-stream v0.2.3
+   Compiling dbl v0.3.2
+   Compiling ff v0.13.1
+   Compiling filetime v0.2.25
+   Compiling arborium-css v2.13.0
+   Compiling async-stream-impl v0.3.5
+   Compiling diesel_table_macro_syntax v0.3.0
+   Compiling unicode-width v0.1.14
+   Compiling clap_lex v0.7.5
+   Compiling jiff v0.2.24
+   Compiling regex-bites v0.1.6
+   Compiling rustc-hash v1.1.0
+   Compiling jaq-std v3.0.0
+   Compiling clap_builder v4.5.48
+   Compiling async-stream v0.3.5
+   Compiling group v0.13.0
+   Compiling cmac v0.7.2
+   Compiling aha-reqwest-eventsource v0.1.0
+   Compiling migrations_internals v2.3.0
+   Compiling sec1 v0.7.3
+   Compiling warp_multi_agent_api v0.0.0 (https://github.com/warpdotdev/warp-proto-apis.git?rev=00cdd6726f28fb6b32a6712f0ca3264dbd0956a1#00cdd672)
+   Compiling tracing-opentelemetry v0.33.0
+   Compiling polyval v0.6.2
+   Compiling clap_derive v4.5.47
+   Compiling hashlink v0.10.0
+   Compiling sha-1 v0.10.1
+   Compiling crypto-bigint v0.5.5
+   Compiling zstd-sys v2.0.15+zstd.1.5.7
+   Compiling inotify-sys v0.1.5
+   Compiling signal-hook v0.3.18
+   Compiling arborium-tree-sitter v2.13.0
+   Compiling ciborium-io v0.2.2
+   Compiling arraydeque v0.5.1
+   Compiling hifijson v0.5.0
+   Compiling humantime v2.1.0
+   Compiling jaq-json v2.0.0
+   Compiling saphyr-parser v0.0.6
+   Compiling ciborium-ll v0.2.2
+   Compiling inotify v0.11.0
+   Compiling elliptic-curve v0.13.8
+   Compiling tink-core v0.3.0 (https://github.com/warpdotdev/tink-rust?rev=54b9ac9af93b0c08b446a7bc0582836c9403a71b#54b9ac9a)
+   Compiling clap v4.5.48
+   Compiling http_client v0.0.0 (/home/factory-user/warp-stanford/crates/http_client)
+   Compiling diesel v2.3.10
+   Compiling nix v0.26.4
+   Compiling migrations_macros v2.3.0
+   Compiling warp_graphql_schema v0.0.0 (/home/factory-user/warp-stanford/crates/warp_graphql_schema)
+   Compiling aws-smithy-async v1.2.14
+   Compiling toml-span v0.7.1
+   Compiling arborium-c v2.13.0
+   Compiling arborium-html v2.13.0
+   Compiling aws-smithy-runtime-api-macros v1.0.0
+   Compiling persistence v0.0.0 (/home/factory-user/warp-stanford/crates/persistence)
+   Compiling notify-types v2.0.0 (https://github.com/warpdotdev/notify?rev=91b719849bc04ef251bcb2cc61076b099204e970#91b71984)
+   Compiling rust_decimal v1.35.0
+   Compiling notify v8.0.0 (https://github.com/warpdotdev/notify?rev=91b719849bc04ef251bcb2cc61076b099204e970#91b71984)
+   Compiling aws-smithy-runtime-api v1.12.0
+   Compiling jaq-fmts v0.1.0
+   Compiling diesel_migrations v2.3.1
+   Compiling ghash v0.5.1
+   Compiling poly1305 v0.8.0
+   Compiling rust-embed-utils v8.7.2
+   Compiling rust-embed-utils v7.8.1
+   Compiling rfc6979 v0.4.0
+   Compiling chacha20 v0.9.1
+   Compiling warp_graphql v0.1.0 (/home/factory-user/warp-stanford/crates/graphql)
+   Compiling ai_types v0.1.0 (/home/factory-user/warp-stanford/crates/ai_types)
+   Compiling color-print-proc-macro v0.3.7
+   Compiling curve25519-dalek v4.1.3
+   Compiling signature v2.2.0
+   Compiling warp_cli v0.0.0 (/home/factory-user/warp-stanford/crates/warp_cli)
+   Compiling arborium-scss v2.13.0
+   Compiling arborium-typescript v2.13.0
+   Compiling arborium-yaml v2.13.0
+   Compiling arborium-toml v2.13.0
+   Compiling file-id v0.2.2 (https://github.com/warpdotdev/notify?rev=91b719849bc04ef251bcb2cc61076b099204e970#91b71984)
+   Compiling ordered_hashmap v0.0.3
+   Compiling rustix v0.38.44
+   Compiling unicode-width v0.2.1
+   Compiling zstd-safe v7.2.4
+   Compiling codesnake v0.3.0
+   Compiling jaq-all v0.1.0
+   Compiling graphlib_rust v0.0.2
+   Compiling notify-debouncer-full v0.5.0 (https://github.com/warpdotdev/notify?rev=91b719849bc04ef251bcb2cc61076b099204e970#91b71984)
+   Compiling ecdsa v0.16.9
+   Compiling color-print v0.3.7
+   Compiling chacha20poly1305 v0.10.1
+   Compiling rust-embed-impl v6.8.1
+   Compiling rust-embed-impl v8.7.2
+   Compiling aes-gcm v0.10.3
+   Compiling clap_complete v4.5.58
+   Compiling tink-prf v0.3.0
+   Compiling primeorder v0.13.6
+   Compiling html-escape v0.2.13
+   Compiling fuzzy-matcher v0.3.7
+   Compiling ignore v0.4.24
+   Compiling warp_isolation_platform v0.1.0 (/home/factory-user/warp-stanford/crates/isolation_platform)
+   Compiling local_control v0.0.0 (/home/factory-user/warp-stanford/crates/local_control)
+   Compiling repo_metadata v0.1.0 (/home/factory-user/warp-stanford/crates/repo_metadata)
+   Compiling hybrid-array v0.4.11
+   Compiling arborium-swift v2.13.0
+   Compiling arborium-scala v2.13.0
+   Compiling arborium-tsx v2.13.0
+   Compiling arborium-jq v2.13.0
+   Compiling arborium-php v2.13.0
+   Compiling arborium-starlark v2.13.0
+   Compiling arborium-lua v2.13.0
+   Compiling arborium-python v2.13.0
+   Compiling arborium-ruby v2.13.0
+   Compiling arborium-nix v2.13.0
+   Compiling arborium-xml v2.13.0
+   Compiling arborium-java v2.13.0
+   Compiling arborium-powershell v2.13.0
+   Compiling arborium-elixir v2.13.0
+   Compiling arborium-objc v2.13.0
+   Compiling arborium-c-sharp v2.13.0
+   Compiling arborium-markdown v2.13.0
+   Compiling arborium-hcl v2.13.0
+   Compiling arborium-vue v2.13.0
+   Compiling arborium-rust v2.13.0
+   Compiling arborium-sql v2.13.0
+   Compiling arborium-go v2.13.0
+   Compiling arborium-kotlin v2.13.0
+   Compiling arborium-cpp v2.13.0
+   Compiling arborium-dockerfile v2.13.0
+   Compiling arborium-json v2.13.0
+   Compiling arborium-bash v2.13.0
+   Compiling curve25519-dalek-derive v0.1.1
+   Compiling syn v3.0.6
+   Compiling smol_str v0.2.2
+   Compiling streaming-iterator v0.1.9
+   Compiling unsafe-libyaml v0.2.11
+   Compiling linux-raw-sys v0.4.15
+   Compiling unicode-linebreak v0.1.5
+   Compiling arborium v2.13.0
+   Compiling serde_yaml v0.9.34+deprecated
+   Compiling darling_core v0.24.1
+   Compiling rust-embed v8.7.2
+   Compiling rust-embed v6.8.1
+   Compiling warp-completion-metadata v0.0.0 (https://github.com/warpdotdev/command-signatures.git?rev=48fd7aa5b7b4d99f5db57d1c5a25c47c05567fcf#48fd7aa5)
+   Compiling p256 v0.13.2
+   Compiling tink-mac v0.3.0
+   Compiling byte-unit v5.2.0
+   Compiling watcher v0.1.0 (/home/factory-user/warp-stanford/crates/watcher)
+   Compiling dagre_rust v0.0.5 (https://github.com/warpdotdev/mermaid-to-svg.git?rev=8d3f789c2eb49335d7bf247a06bb649f59b6d4ed#8d3f789c)
+   Compiling signal-hook-mio v0.2.5
+   Compiling aes-gcm-siv v0.11.1
+   Compiling aes-siv v0.7.0
+   Compiling nix v0.31.2
+   Compiling hashbrown v0.17.1
+   Compiling bincode v1.3.3
+   Compiling unicode-general-category v1.1.0
+   Compiling urlocator v0.1.4
+   Compiling arborium-theme v2.13.0
+   Compiling memo-map v0.3.2
+   Compiling cmov v0.5.4
+   Compiling unindent v0.2.4
+   Compiling vim v0.1.0 (/home/factory-user/warp-stanford/crates/vim)
+   Compiling ctutils v0.4.2
+   Compiling arborium-highlight v2.13.0
+   Compiling naga-types v30.0.0
+   Compiling tink-daead v0.3.0
+   Compiling tink-aead v0.3.0
+   Compiling mermaid_to_svg v0.1.0 (https://github.com/warpdotdev/mermaid-to-svg.git?rev=8d3f789c2eb49335d7bf247a06bb649f59b6d4ed#8d3f789c)
+   Compiling session-sharing-protocol v0.0.0 (https://github.com/warpdotdev/session-sharing-protocol.git?rev=f86afe16e65a56ecb9c062c961fcd91167192e9f#f86afe16)
+   Compiling zstd v0.13.3
+   Compiling warp-command-signatures v0.0.0 (https://github.com/warpdotdev/command-signatures.git?rev=48fd7aa5b7b4d99f5db57d1c5a25c47c05567fcf#48fd7aa5)
+   Compiling x25519-dalek v2.0.1
+   Compiling darling_macro v0.24.1
+   Compiling crypto-common v0.2.1
+   Compiling block-buffer v0.12.0
+   Compiling fuzzy_match v0.1.0 (/home/factory-user/warp-stanford/crates/fuzzy_match)
+   Compiling asset_cache v0.0.0 (/home/factory-user/warp-stanford/crates/asset_cache)
+   Compiling ipynb_parser v0.1.0 (/home/factory-user/warp-stanford/crates/ipynb_parser)
+   Compiling imara-diff v0.2.0
+   Compiling naga v30.0.0
+   Compiling derive-new v0.5.9
+   Compiling ordered-float v5.3.0
+   Compiling async-recursion v1.1.1
+   Compiling bit-vec v0.9.1
+   Compiling glob v0.3.1
+   Compiling const-oid v0.10.2
+   Compiling ash v0.38.0+1.3.281
+   Compiling digest v0.11.3
+   Compiling clang-sys v1.8.1
+   Compiling bit-set v0.10.0
+   Compiling warp_completer v0.1.0 (/home/factory-user/warp-stanford/crates/warp_completer)
+   Compiling warp_editor v0.1.0 (/home/factory-user/warp-stanford/crates/editor)
+   Compiling darling v0.24.1
+   Compiling hpke v0.13.0
+   Compiling tink-hybrid v0.3.0 (https://github.com/warpdotdev/tink-rust?rev=54b9ac9af93b0c08b446a7bc0582836c9403a71b#54b9ac9a)
+   Compiling codespan-reporting v0.13.1
+   Compiling regex_dfas v0.0.0 (/home/factory-user/warp-stanford/crates/regex_dfas)
+   Compiling computer_use v0.0.0 (/home/factory-user/warp-stanford/crates/computer_use)
+   Compiling spirv v0.4.0+sdk-1.4.341.0
+   Compiling vte_generate_state_changes v0.1.1 (https://github.com/warpdotdev/vte.git?rev=4b399c87b63ba88f45709edaa6383fc519f6c900#4b399c87)
+   Compiling litrs v1.0.0
+   Compiling utf8parse v0.2.1 (https://github.com/warpdotdev/vte.git?rev=4b399c87b63ba88f45709edaa6383fc519f6c900#4b399c87)
+   Compiling khronos-egl v6.0.0
+   Compiling rmcp v3.5.0
+   Compiling bimap v0.6.3
+   Compiling vte v0.13.0 (https://github.com/warpdotdev/vte.git?rev=4b399c87b63ba88f45709edaa6383fc519f6c900#4b399c87)
+   Compiling document-features v0.2.12
+   Compiling secret_redaction v0.0.0 (/home/factory-user/warp-stanford/crates/secret_redaction)
+   Compiling process-wrap v10.0.1
+   Compiling warp_managed_secrets v0.1.0 (/home/factory-user/warp-stanford/crates/managed_secrets)
+   Compiling languages v0.0.0 (/home/factory-user/warp-stanford/crates/languages)
+   Compiling rmcp-macros v3.5.0
+   Compiling wgpu-types v30.0.0
+   Compiling channel_versions v0.1.0 (/home/factory-user/warp-stanford/crates/channel_versions)
+   Compiling warp_assets v0.0.0 (/home/factory-user/warp-stanford/crates/warp_assets)
+   Compiling aws-smithy-http v0.63.6
+   Compiling aws-credential-types v1.2.14
+   Compiling ashpd v0.11.1
+   Compiling lasso v0.7.3
+   Compiling aws-types v1.3.15
+   Compiling warp-workflows-types v0.1.0 (https://github.com/warpdotdev/workflows?rev=793a98ddda6ef19682aed66364faebd2829f0e01#793a98dd)
+   Compiling uneval v0.2.3 (https://github.com/warpdotdev/uneval?rev=df4d9fad372aedc447e6f93ca0f930fabaf9dd1a#df4d9fad)
+   Compiling sse-stream v0.2.6
+   Compiling wgpu-hal v30.0.0
+   Compiling tokio-stream v0.1.17
+   Compiling ai v0.1.0 (/home/factory-user/warp-stanford/crates/ai)
+   Compiling bzip2-sys v0.1.13+1.0.8
+   Compiling lzma-sys v0.1.20
+   Compiling bitflags-serde-legacy v0.1.1
+   Compiling memmap v0.7.0
+   Compiling cvt v0.1.2
+   Compiling termcolor v1.4.1
+   Compiling xkeysym v0.2.1
+   Compiling crunchy v0.2.2
+   Compiling cpufeatures v0.3.0
+   Compiling presser v0.3.1
+   Compiling pastey v0.2.1
+   Compiling gpu-allocator v0.28.0
+   Compiling sha2 v0.11.0
+   Compiling warp_terminal v0.0.0 (/home/factory-user/warp-stanford/crates/warp_terminal)
+   Compiling warp-workflows v0.1.0 (https://github.com/warpdotdev/workflows?rev=793a98ddda6ef19682aed66364faebd2829f0e01#793a98dd)
+   Compiling warp_server_auth v0.1.0 (/home/factory-user/warp-stanford/crates/warp_server_auth)
+   Compiling wgpu-naga-bridge v30.0.0
+   Compiling syntax_tree v0.1.0 (/home/factory-user/warp-stanford/crates/syntax_tree)
+   Compiling hmac v0.13.0
+   Compiling calloop v0.13.0
+   Compiling aws-smithy-http-client v1.1.12
+   Compiling aws-smithy-observability v0.2.6
+   Compiling xcursor v0.3.4
+   Compiling font-types v0.7.3
+   Compiling priority-queue v2.5.0
+   Compiling glow v0.17.0
+   Compiling profiling v1.0.11
+   Compiling line-span v0.1.5
+   Compiling crc-catalog v2.4.0
+   Compiling renderdoc-sys v1.1.0
+   Compiling cursor-icon v1.1.0
+   Compiling smithay-client-toolkit v0.19.2
+   Compiling bindgen v0.70.1
+   Compiling wayland-csd-frame v0.3.0
+   Compiling crc v3.4.0
+   Compiling read-fonts v0.22.7
+   Compiling wayland-cursor v0.31.8
+   Compiling aws-smithy-runtime v1.11.1
+   Compiling calloop-wayland-source v0.3.0
+   Compiling aws-sigv4 v1.4.3
+   Compiling cloud_objects v0.1.0 (/home/factory-user/warp-stanford/crates/cloud_objects)
+   Compiling tiny-skia-path v0.11.4
+   Compiling owned_ttf_parser v0.25.0
+   Compiling cexpr v0.6.0
+   Compiling crossbeam-channel v0.5.8
+   Compiling ownedbytes v0.9.0
+   Compiling wgpu-core v30.0.0
+   Compiling x11-dl v2.21.0
+   Compiling itertools v0.13.0
+   Compiling predicates-core v1.0.6
+   Compiling ab_glyph_rasterizer v0.1.8
+   Compiling bumpalo v3.19.1
+   Compiling typeid v1.0.3
+   Compiling mockall_derive v0.13.1
+   Compiling object v0.37.3
+   Compiling zip v2.4.2
+   Compiling zopfli v0.8.3
+   Compiling ab_glyph v0.2.29
+   Compiling tantivy-common v0.11.0
+   Compiling tiny-skia v0.11.4
+   Compiling bitpacking v0.9.3
+   Compiling xz2 v0.1.7
+   Compiling bzip2 v0.5.2
+   Compiling aws-runtime v1.7.3
+   Compiling cloud_object_persistence v0.1.0 (/home/factory-user/warp-stanford/crates/cloud_object_persistence)
+   Compiling skrifa v0.22.3
+   Compiling lzma-rs v0.3.0
+   Compiling wgpu-core-deps-windows-linux-android v30.0.0
+   Compiling aws-smithy-json v0.62.5
+   Compiling libz-sys v1.1.25
+   Compiling pbkdf2 v0.12.2
+   Compiling serde_regex v1.1.0
+   Compiling winit v0.30.13 (https://github.com/warpdotdev/winit.git?rev=14db95a686387211d57cf2afd1d908b2d82a20fe#14db95a6)
+   Compiling wgpu v30.0.0
+   Compiling alsa-sys v0.4.0
+   Compiling rustfft v6.2.0
+   Compiling is-docker v0.2.0
+   Compiling grep-matcher v0.1.8
+   Compiling yazi v0.1.6
+   Compiling erased-serde v0.4.10
+   Compiling fontconfig v0.8.0
+   Compiling termtree v0.4.1
+   Compiling temp-dir v0.1.11
+   Compiling utf8-ranges v1.0.5
+   Compiling constant_time_eq v0.3.1
+   Compiling gimli v0.32.3
+   Compiling deflate64 v0.1.10
+   Compiling handlebars v0.0.0 (/home/factory-user/warp-stanford/crates/handlebars)
+   Compiling regex-lite v0.1.6
+   Compiling home v0.5.12
+   Compiling zeno v0.2.3
+   Compiling strength_reduce v0.2.4
+   Compiling transpose v0.2.3
+   Compiling swash v0.1.19
+   Compiling which v4.4.2
+   Compiling cloud_object_models v0.1.0 (/home/factory-user/warp-stanford/crates/cloud_object_models)
+   Compiling addr2line v0.25.1
+   Compiling tantivy-fst v0.5.0
+   Compiling gettext-sys v0.21.3
+   Compiling predicates-tree v1.0.9
+   Compiling is-wsl v0.4.0
+   Compiling sctk-adwaita v0.10.1
+   Compiling tantivy-bitpacker v0.10.0
+   Compiling warpui v0.0.0 (/home/factory-user/warp-stanford/crates/warpui)
+   Compiling predicates v3.1.3
+   Compiling xkbcommon-dl v0.4.2
+   Compiling derive_more-impl v2.0.1
+   Compiling wayland-protocols-plasma v0.3.9
+   Compiling axum-core v0.5.2
+   Compiling keyboard-types v0.7.0
+   Compiling encoding_rs_io v0.1.7
+   Compiling versions v5.0.1
+   Compiling primal-check v0.3.4
+   Compiling toml v0.5.11
+   Compiling onig_sys v69.9.1
+   Compiling rust-stemmers v1.2.0
+   Compiling is-terminal v0.4.17
+   Compiling rustc-demangle v0.1.27
+   Compiling typetag v0.2.21
+   Compiling downcast v0.11.0
+   Compiling dpi v0.1.1 (https://github.com/warpdotdev/winit.git?rev=14db95a686387211d57cf2afd1d908b2d82a20fe#14db95a6)
+   Compiling fragile v2.0.0
+   Compiling murmurhash32 v0.3.1
+   Compiling sys-locale v0.3.2
+   Compiling matchit v0.8.4
+   Compiling raw-window-handle v0.5.2
+   Compiling ascii v1.1.0
+   Compiling native-dialog v0.7.0
+   Compiling axum v0.8.4
+   Compiling cosmic-text v0.12.0 (https://github.com/warpdotdev/cosmic-text.git?rev=a7c7b71497542758e08f77390b8efce543b3181f#a7c7b714)
+   Compiling tantivy-stacker v0.7.0
+   Compiling mockall v0.13.1
+   Compiling backtrace v0.3.76
+   Compiling env_logger v0.10.2
+   Compiling find-crate v0.6.3
+   Compiling grep-searcher v0.1.16
+   Compiling global-hotkey v0.7.0
+   Compiling derive_more v2.0.1
+   Compiling tantivy-sstable v0.7.0
+   Compiling open v5.3.3
+   Compiling bon-macros v3.7.1
+   Compiling remote_server v0.1.0 (/home/factory-user/warp-stanford/crates/remote_server)
+   Compiling notify-rust v4.11.7
+   Compiling interprocess v1.2.1
+   Compiling xattr v1.5.1
+   Compiling node_runtime v0.1.0 (/home/factory-user/warp-stanford/crates/node_runtime)
+   Compiling libgit2-sys v0.18.3+1.9.2
+   Compiling typetag-impl v0.2.21
+   Compiling borrow-or-share v0.2.4
+   Compiling fastdivide v0.4.2
+   Compiling palette v0.6.1
+   Compiling cpal v0.18.2
+   Compiling takecell v0.1.1
+   Compiling tini v1.3.0
+   Compiling bit-vec v0.8.0
+   Compiling safemem v0.3.3
+   Compiling paste v1.0.14
+   Compiling line-wrap v0.1.1
+   Compiling bit-set v0.8.0
+   Compiling tantivy-columnar v0.7.0
+   Compiling fluent-uri v0.4.1
+   Compiling tar v0.4.46
+   Compiling bon v3.7.1
+   Compiling alsa v0.11.0
+   Compiling crossterm v0.29.0
+   Compiling grep-printer v0.3.1
+   Compiling realfft v3.4.0
+   Compiling palette_derive v0.6.1
+   Compiling log-panics v2.1.0
+   Compiling cloud_object_client v0.1.0 (/home/factory-user/warp-stanford/crates/cloud_object_client)
+   Compiling grep-regex v0.1.14
+   Compiling grep-cli v0.1.12
+   Compiling tantivy-query-grammar v0.26.0
+   Compiling aws-smithy-query v0.60.15
+   Compiling fluent-uri v0.1.4
+   Compiling opentelemetry_sdk v0.32.1
+   Compiling simple_logger v0.1.0 (/home/factory-user/warp-stanford/crates/simple_logger)
+   Compiling aws-smithy-xml v0.60.15
+   Compiling locale_config v0.3.0
+   Compiling fs4 v0.13.1
+   Compiling lru v0.16.3
+   Compiling lsp v0.1.0 (/home/factory-user/warp-stanford/crates/lsp)
+   Compiling firebase v0.1.0 (/home/factory-user/warp-stanford/crates/firebase)
+   Compiling spinning v0.1.0
+   Compiling approx v0.5.1
+   Compiling measure_time v0.9.0
+   Compiling tantivy-tokenizer-api v0.7.0
+   Compiling sketches-ddsketch v0.4.0
+   Compiling serde_spanned v0.6.9
+   Compiling quick-xml v0.30.0
+   Compiling dirs-sys v0.3.7
+   Compiling dasp_sample v0.11.0
+   Compiling arc-swap v1.7.1
+   Compiling lz4_flex v0.13.0
+   Compiling htmlescape v0.3.1
+   Compiling base64 v0.21.7
+   Compiling datasketches v0.2.0
+   Compiling to_method v1.1.0
+   Compiling census v0.4.2
+   Compiling psl-types v2.0.11
+   Compiling oneshot v0.1.13
+   Compiling intmap v0.7.1
+   Compiling levenshtein_automata v0.2.1
+   Compiling toml_write v0.1.2
+   Compiling tantivy v0.26.0
+   Compiling psl v2.1.4
+   Compiling plist v1.5.1
+   Compiling dirs v3.0.2
+   Compiling warp_server_client v0.1.0 (/home/factory-user/warp-stanford/crates/warp_server_client)
+   Compiling gettext-rs v0.7.0
+   Compiling aws-sdk-sts v1.103.0
+   Compiling opentelemetry-proto v0.32.0
+   Compiling lsp-types v0.97.0
+   Compiling grep v0.4.1
+   Compiling warp_logging v0.0.0 (/home/factory-user/warp-stanford/crates/warp_logging)
+   Compiling onig v6.5.1
+   Compiling rubato v0.16.1
+   Compiling referencing v0.45.1
+   Compiling fancy-regex v0.17.0
+   Compiling warp v0.1.0 (/home/factory-user/warp-stanford/app)
+   Compiling axum-extra v0.10.1
+   Compiling natural_language_detection v0.1.0 (/home/factory-user/warp-stanford/crates/natural_language_detection)
+   Compiling aws-sdk-sso v1.98.0
+   Compiling aws-sdk-signin v1.9.0
+   Compiling aws-sdk-ssooidc v1.100.0
+   Compiling uuid-simd v0.8.0
+   Compiling opentelemetry-http v0.32.0
+   Compiling ui_components v0.0.0 (/home/factory-user/warp-stanford/crates/ui_components)
+   Compiling fraction v0.15.3
+   Compiling jsonrpc v0.1.0 (/home/factory-user/warp-stanford/crates/jsonrpc)
+   Compiling serial_test_derive v0.8.0
+   Compiling tracing-futures v0.2.5
+   Compiling email_address v0.2.9
+   Compiling csv-core v0.1.11
+   Compiling bytecount v0.6.9
+   Compiling hound v3.5.1
+   Compiling twox-hash v2.1.2
+   Compiling num-cmp v0.1.0
+   Compiling xdg v2.5.2
+   Compiling freedesktop-desktop-entry v0.5.0
+   Compiling jsonschema v0.45.1
+   Compiling lz4_flex v0.11.6
+   Compiling voice_input v0.0.0 (/home/factory-user/warp-stanford/crates/voice_input)
+   Compiling csv v1.3.1
+   Compiling warp_multi_agent_client v0.1.0 (/home/factory-user/warp-stanford/crates/warp_multi_agent_client)
+   Compiling serial_test v0.8.0
+   Compiling onboarding v0.1.0 (/home/factory-user/warp-stanford/crates/onboarding)
+   Compiling opentelemetry-otlp v0.32.0
+   Compiling aws-config v1.8.16
+   Compiling input_classifier v0.0.0 (/home/factory-user/warp-stanford/crates/input_classifier)
+   Compiling app-installation-detection v0.1.0 (/home/factory-user/warp-stanford/crates/app-installation-detection)
+   Compiling warp_search_core v0.1.0 (/home/factory-user/warp-stanford/crates/warp_search_core)
+   Compiling warp_files v0.1.0 (/home/factory-user/warp-stanford/crates/warp_files)
+   Compiling syntect v5.2.0
+   Compiling git2 v0.20.4
+   Compiling warp_ripgrep v0.1.0 (/home/factory-user/warp-stanford/crates/warp_ripgrep)
+   Compiling kmeans_colors v0.5.0
+   Compiling addr v0.15.6
+   Compiling ipc v0.1.0 (/home/factory-user/warp-stanford/crates/ipc)
+   Compiling toml v0.8.23
+   Compiling mcp v0.1.0 (/home/factory-user/warp-stanford/crates/mcp)
+   Compiling comfy-table v7.2.1
+   Compiling inquire v0.9.1
+   Compiling asset_macro v0.1.0 (/home/factory-user/warp-stanford/crates/asset_macro)
+   Compiling http_server v0.0.0 (/home/factory-user/warp-stanford/crates/http_server)
+   Compiling tabwriter v1.4.1
+   Compiling signal-hook-tokio v0.3.1
+   Compiling build_cache v0.1.0 (/home/factory-user/warp-stanford/crates/build_cache)
+   Compiling field_mask v0.0.0 (/home/factory-user/warp-stanford/crates/field_mask)
+   Compiling difflib v0.4.0 (https://github.com/warpdotdev/difflib.git?rev=114177e7d8e1f8017baca397f943e11644b14d63#114177e7)
+   Compiling warp_channel_config v0.0.0 (/home/factory-user/warp-stanford/crates/warp_channel_config)
+   Compiling virtual-fs v0.1.0 (/home/factory-user/warp-stanford/crates/virtual_fs)
+   Compiling warp_harness_usage v0.0.0 (/home/factory-user/warp-stanford/crates/warp_harness_usage)
+   Compiling iso8601-duration v0.2.0
+   Compiling serde-bytes-repr v0.3.0
+   Compiling validator v0.19.0
+   Compiling variant_count v1.1.0
+   Compiling ctor v0.1.26
+   Compiling counter v0.6.0
+   Compiling os_info v3.7.0
+   Compiling email_address v0.2.3 (https://github.com/warpdotdev/rust-email_address?branch=main#b3e5205b)
+   Compiling serde_bytes v0.11.19
+   Compiling embed_plist v1.2.2
+   Compiling enclose v1.1.8
+   Compiling deltae v0.3.2
+   Compiling qrcode v0.14.1
+   Compiling alphanumeric-sort v1.5.7
+   Compiling unindent v0.1.11
+   Compiling siphasher v0.3.11
+   Compiling thousands v0.2.0
+   Compiling shell-words v1.1.0
+error: could not compile `warp` (lib test)
+
+Caused by:
+  process didn't exit successfully: `/home/factory-user/.rustup/toolchains/1.92.0-x86_64-unknown-linux-gnu/bin/rustc --crate-name warp --edition=2024 app/src/lib.rs --error-format=json --json=diagnostic-rendered-ansi,artifacts,future-incompat --emit=dep-info,link -C embed-bitcode=no --test --cfg 'feature="account_first_onboarding"' --cfg 'feature="active_conversation_requires_interaction"' --cfg 'feature="agent_cli_launch_modal"' --cfg 'feature="agent_decides_command_execution"' --cfg 'feature="agent_harness"' --cfg 'feature="agent_management_details_view"' --cfg 'feature="agent_management_view"' --cfg 'feature="agent_mode"' --cfg 'feature="agent_mode_computer_use"' --cfg 'feature="agent_mode_pre_plan_xml"' --cfg 'feature="agent_mode_primary_xml"' --cfg 'feature="agent_onboarding"' --cfg 'feature="agent_shared_sessions"' --cfg 'feature="agent_tips"' --cfg 'feature="agent_toolbar_editor"' --cfg 'feature="agent_view"' --cfg 'feature="agent_view_block_context"' --cfg 'feature="agent_view_conversation_list_view"' --cfg 'feature="ai_context_menu"' --cfg 'feature="ai_context_menu_code"' --cfg 'feature="ai_resume_button"' --cfg 'feature="ai_rules"' --cfg 'feature="allow_ignoring_input_suggestions"' --cfg 'feature="allow_opening_file_links_using_editor_env"' --cfg 'feature="am_workflows"' --cfg 'feature="ambient_agents_command_line"' --cfg 'feature="ambient_agents_image_upload"' --cfg 'feature="ambient_agents_rtc"' --cfg 'feature="api_key_management"' --cfg 'feature="artifact_command"' --cfg 'feature="ask_user_question"' --cfg 'feature="async_find"' --cfg 'feature="at_menu_outside_of_ai_mode"' --cfg 'feature="auto_open_code_review_pane"' --cfg 'feature="autoupdate_ui_revamp"' --cfg 'feature="avatar_in_tab_bar"' --cfg 'feature="background_computer_use"' --cfg 'feature="billing_and_usage_page_v2"' --cfg 'feature="blocklist_markdown_images"' --cfg 'feature="blocklist_markdown_table_rendering"' --cfg 'feature="bundled_skills"' --cfg 'feature="chatgpt_subscription"' --cfg 'feature="classic_completions"' --cfg 'feature="clear_autosuggestion_on_escape"' --cfg 'feature="cli_agent_rich_input"' --cfg 'feature="cloud_agent_runners"' --cfg 'feature="cloud_agent_shell_respawn"' --cfg 'feature="cloud_conversations"' --cfg 'feature="cloud_environments"' --cfg 'feature="cloud_mode"' --cfg 'feature="cloud_mode_from_local_session"' --cfg 'feature="cloud_mode_image_context"' --cfg 'feature="cloud_mode_input_v2"' --cfg 'feature="cloud_mode_setup_v2"' --cfg 'feature="cloud_runners"' --cfg 'feature="code_find_replace"' --cfg 'feature="code_launch_modal"' --cfg 'feature="code_review_find"' --cfg 'feature="code_review_save_changes"' --cfg 'feature="codex_notifications"' --cfg 'feature="codex_plugin"' --cfg 'feature="command_correction_key"' --cfg 'feature="command_palette_file_search"' --cfg 'feature="configurable_toolbar"' --cfg 'feature="context_window_usage_breakdown"' --cfg 'feature="context_window_usage_v2"' --cfg 'feature="conversation_api"' --cfg 'feature="conversation_artifacts"' --cfg 'feature="conversations_as_context"' --cfg 'feature="create_environment_slash_command"' --cfg 'feature="create_project_flow"' --cfg 'feature="ctrl_c_cancels_third_party_harness"' --cfg 'feature="custom_model_routers"' --cfg 'feature="default"' --cfg 'feature="default_waterfall_mode"' --cfg 'feature="diff_set_as_context"' --cfg 'feature="directory_tab_colors"' --cfg 'feature="discard_per_file_and_all_changes"' --cfg 'feature="drive_objects_as_context"' --cfg 'feature="dynamic_workflow_enums"' --cfg 'feature="expand_edit_to_pane"' --cfg 'feature="external_agent_mode_context"' --cfg 'feature="factory_mcp"' --cfg 'feature="fallback_model_load_output_messaging"' --cfg 'feature="fast_forward_autoexecute_button"' --cfg 'feature="figma_detection"' --cfg 'feature="file_backed_execution_profiles"' --cfg 'feature="file_based_mcp"' --cfg 'feature="file_retrieval_tools"' --cfg 'feature="file_tree"' --cfg 'feature="force_classic_completions"' --cfg 'feature="fork_from_command"' --cfg 'feature="full_screen_zen_mode"' --cfg 'feature="full_source_code_embedding"' --cfg 'feature="gemini_enterprise"' --cfg 'feature="get_started_tab"' --cfg 'feature="git_credential_refresh"' --cfg 'feature="git_operations_in_code_review"' --cfg 'feature="github_pr_prompt_chip"' --cfg 'feature="global_ai_analytics_collection"' --cfg 'feature="global_search"' --cfg 'feature="grep_tool"' --cfg 'feature="grouped_tabs"' --cfg 'feature="gui"' --cfg 'feature="handoff_cloud_cloud"' --cfg 'feature="handoff_local_cloud"' --cfg 'feature="history_search_ranking_v2"' --cfg 'feature="hoa_code_review"' --cfg 'feature="hoa_notifications"' --cfg 'feature="hoa_onboarding_flow"' --cfg 'feature="hoa_remote_control"' --cfg 'feature="image_as_context"' --cfg 'feature="ime_marked_text"' --cfg 'feature="incremental_auto_reload"' --cfg 'feature="inline_code_review"' --cfg 'feature="inline_history_menu"' --cfg 'feature="inline_menu_headers"' --cfg 'feature="inline_model_selector"' --cfg 'feature="inline_profile_selector"' --cfg 'feature="inline_repo_menu"' --cfg 'feature="inline_slash_commands"' --cfg 'feature="integration_command"' --cfg 'feature="interactive_conversation_management_view"' --cfg 'feature="kitty_images"' --cfg 'feature="kitty_keyboard_protocol"' --cfg 'feature="ligatures"' --cfg 'feature="linked_code_blocks"' --cfg 'feature="list_skills"' --cfg 'feature="loginless_conversion"' --cfg 'feature="markdown_mermaid"' --cfg 'feature="markdown_tables"' --cfg 'feature="mcp_grouped_server_context"' --cfg 'feature="mcp_oauth"' --cfg 'feature="mcp_server"' --cfg 'feature="minimalist_ui"' --cfg 'feature="multi_profile"' --cfg 'feature="named_agents"' --cfg 'feature="native_shell_completions"' --cfg 'feature="new_tab_styling"' --cfg 'feature="open_code_notifications"' --cfg 'feature="open_warp_launch_modal"' --cfg 'feature="orchestration_launch_modal"' --cfg 'feature="osc_hyperlinks"' --cfg 'feature="oz_changelog_updates"' --cfg 'feature="oz_handoff"' --cfg 'feature="oz_identity_federation"' --cfg 'feature="oz_launch_modal"' --cfg 'feature="oz_platform_skills"' --cfg 'feature="pending_user_query_indicator"' --cfg 'feature="pinned_tabs"' --cfg 'feature="pluggable_notifications"' --cfg 'feature="pr_comments_skill"' --cfg 'feature="pr_comments_v2"' --cfg 'feature="profiles_design_revamp"' --cfg 'feature="queue_slash_command"' --cfg 'feature="queued_prompts_v2"' --cfg 'feature="read_image_files"' --cfg 'feature="rect_selection"' --cfg 'feature="reload_stale_conversation_files"' --cfg 'feature="remote_code_review"' --cfg 'feature="remote_codebase_indexing"' --cfg 'feature="render_agent_mode_output_markdown"' --cfg 'feature="render_continuous_block_selections_with_single_border"' --cfg 'feature="restore_prompt_on_inline_model_selector_search"' --cfg 'feature="revert_diff_hunk"' --cfg 'feature="revert_to_checkpoints"' --cfg 'feature="rewind_slash_command"' --cfg 'feature="richtext_multiselect"' --cfg 'feature="scheduled_ambient_agents"' --cfg 'feature="search_codebase_ui"' --cfg 'feature="selection_as_context"' --cfg 'feature="session_sharing_acls"' --cfg 'feature="settings_file"' --cfg 'feature="shared_block_title_generation"' --cfg 'feature="shared_session_long_running_commands"' --cfg 'feature="shared_with_me"' --cfg 'feature="shell_selector"' --cfg 'feature="shell_widget_handoff"' --cfg 'feature="skill_arguments"' --cfg 'feature="skip_firebase_anonymous_user"' --cfg 'feature="solo_user_byok"' --cfg 'feature="suggested_rules"' --cfg 'feature="summarization_cancellation_confirmation"' --cfg 'feature="summarize_conversation_command"' --cfg 'feature="supergrok"' --cfg 'feature="sync_ambient_plans"' --cfg 'feature="tab_close_button_on_left"' --cfg 'feature="tab_configs"' --cfg 'feature="tabbed_editor_view"' --cfg 'feature="team_api_keys"' --cfg 'feature="terminal_lifecycle_recovery"' --cfg 'feature="transfer_control_tool"' --cfg 'feature="trim_trailing_blank_lines"' --cfg 'feature="ui_zoom"' --cfg 'feature="undo_closed_panes"' --cfg 'feature="usage_based_pricing"' --cfg 'feature="v4a_file_diffs"' --cfg 'feature="validate_autosuggestions"' --cfg 'feature="vertical_tabs"' --cfg 'feature="vertical_tabs_summary_mode"' --cfg 'feature="viewing_shared_sessions"' --cfg 'feature="vim_code_editor"' --cfg 'feature="voice_input"' --cfg 'feature="warp_managed_secrets"' --cfg 'feature="warp_packs"' --cfg 'feature="warpify_footer"' --cfg 'feature="web_fetch_ui"' --cfg 'feature="web_search_ui"' --cfg 'feature="well_known_mcp_ids"' --cfg 'feature="workflow_aliases"' --check-cfg 'cfg(docsrs,test)' --check-cfg 'cfg(feature, values("account_first_onboarding", "active_conversation_requires_interaction", "agent_cli_launch_modal", "agent_decides_command_execution", "agent_harness", "agent_management_details_view", "agent_management_view", "agent_mode", "agent_mode_computer_use", "agent_mode_debug", "agent_mode_evals", "agent_mode_pre_plan_xml", "agent_mode_primary_xml", "agent_onboarding", "agent_shared_sessions", "agent_tips", "agent_toolbar_editor", "agent_view", "agent_view_block_context", "agent_view_conversation_list_view", "agent_view_prompt_chip", "ai_context_menu", "ai_context_menu_code", "ai_context_menu_commands", "ai_resume_button", "ai_rules", "alacritty_settings_import", "allow_ignoring_input_suggestions", "allow_opening_file_links_using_editor_env", "am_workflows", "ambient_agents_command_line", "ambient_agents_image_upload", "ambient_agents_rtc", "api_key_management", "artifact_command", "ask_user_question", "async_find", "at_menu_outside_of_ai_mode", "auto_open_code_review_pane", "autoupdate", "autoupdate_ui_revamp", "avatar_in_tab_bar", "background_computer_use", "billing_and_usage_page_v2", "blocklist_markdown_images", "blocklist_markdown_table_rendering", "bundled_skills", "changelog", "chatgpt_subscription", "classic_completions", "clear_autosuggestion_on_escape", "cli_agent_rich_input", "cloud_agent_runners", "cloud_agent_shell_respawn", "cloud_conversations", "cloud_environments", "cloud_mode", "cloud_mode_from_local_session", "cloud_mode_image_context", "cloud_mode_input_v2", "cloud_mode_setup_v2", "cloud_runners", "cocoa_sentry", "code_find_replace", "code_launch_modal", "code_mode_chip", "code_review_find", "code_review_save_changes", "codebase_index_persistence", "codebase_index_speedbump", "codex_notifications", "codex_plugin", "command_correction_key", "command_palette_file_search", "configurable_toolbar", "context_line_review_comments", "context_window_usage_breakdown", "context_window_usage_v2", "conversation_api", "conversation_artifacts", "conversations_as_context", "crash_reporting", "create_environment_slash_command", "create_project_flow", "creating_shared_sessions", "cross_repo_context", "ctrl_c_cancels_third_party_harness", "custom_model_routers", "cycle_next_command_suggestion", "default", "default_adeberry_theme", "default_waterfall_mode", "dhat_heap_profiling", "diff_set_as_context", "directory_tab_colors", "discard_per_file_and_all_changes", "drag_tabs_to_windows", "drive_objects_as_context", "dynamic_workflow_enums", "editable_markdown_mermaid", "embedded_code_review_comments", "expand_edit_to_pane", "extern_plist", "external_agent_mode_context", "factory_deferred_repositories", "factory_mcp", "fallback_model_load_output_messaging", "fast_dev", "fast_forward_autoexecute_button", "figma_detection", "file_and_diff_set_comments", "file_backed_execution_profiles", "file_based_mcp", "file_retrieval_tools", "file_tree", "force_classic_completions", "fork_from_command", "full_screen_zen_mode", "full_source_code_embedding", "gemini_enterprise", "get_started_tab", "git_credential_refresh", "git_operations_in_code_review", "github_pr_prompt_chip", "global_ai_analytics_banner", "global_ai_analytics_collection", "global_search", "gpt_configurable_context_window", "grep_tool", "grouped_tabs", "gui", "handoff_cloud_cloud", "handoff_local_cloud", "heap_usage_tracking", "history_search_ranking_v2", "hoa_code_review", "hoa_notifications", "hoa_onboarding_flow", "hoa_remote_control", "image_as_context", "ime_marked_text", "in_band_generators_ssh", "incremental_auto_reload", "inline_code_review", "inline_history_menu", "inline_menu_headers", "inline_model_selector", "inline_profile_selector", "inline_repo_menu", "inline_slash_commands", "integration_command", "integration_tests", "interactive_conversation_management_view", "iterm_images", "jemalloc", "jemalloc_auto_heap_profiling", "jemalloc_pprof", "jemalloc_with_profiling", "jupyter_notebook_rendering", "kitty_images", "kitty_keyboard_protocol", "ligatures", "linked_code_blocks", "list_skills", "local_claude_codex_child_harnesses", "local_computer_use", "local_fs", "local_tty", "log_expensive_frames_in_sentry", "loginless_conversion", "lsp_as_a_tool", "markdown_mermaid", "markdown_tables", "mcp_debugging_ids", "mcp_grouped_server_context", "mcp_oauth", "mcp_server", "minimalist_ui", "msys2_shells", "multi_profile", "multi_workspace", "named_agents", "native_shell_completions", "new_tab_styling", "nld_classifier_v1", "nld_classifier_v2", "nld_classifier_v3", "nld_heuristic_v1", "nld_heuristic_v2", "nld_prompt_history_match", "open_code_notifications", "open_warp_launch_modal", "orchestration_launch_modal", "osc_hyperlinks", "oz_changelog_updates", "oz_handoff", "oz_identity_federation", "oz_launch_modal", "oz_platform_skills", "partial_next_command_suggestions", "pending_user_query_indicator", "pinned_tabs", "pluggable_notifications", "pprof_cpu_profiling", "pr_comments_skill", "pr_comments_v2", "predict_am_queries", "preview_channel", "profiles_design_revamp", "projects", "prompt_cache_expiry_warning", "prompt_suggestions_via_maa", "queue_slash_command", "queued_prompts_v2", "read_image_files", "record_app_active_events", "recording_mode", "rect_selection", "release_bundle", "reload_stale_conversation_files", "remote_code_review", "remote_codebase_indexing", "remote_tty", "render_agent_mode_output_markdown", "render_continuous_block_selections_with_single_border", "resize_fix", "restore_prompt_on_inline_model_selector_search", "retry_truncated_code_responses", "revert_diff_hunk", "revert_to_checkpoints", "rewind_slash_command", "richtext_multiselect", "run_generators_with_cmd_exe", "runtime_feature_flags", "scheduled_ambient_agents", "search_codebase_ui", "selectable_prompt", "selection_as_context", "send_telemetry_to_file", "sequential_storage", "session_sharing_acls", "settings_file", "shared_block_title_generation", "shared_session_long_running_commands", "shared_with_me", "shell_selector", "shell_widget_handoff", "simulate_github_unauthed", "skill_arguments", "skip_firebase_anonymous_user", "skip_login", "solo_user_byok", "ssh_drag_and_drop", "standalone", "stored_screenshots", "suggested_agent_mode_workflows", "suggested_rules", "summarization_cancellation_confirmation", "summarization_via_message_replacement", "summarize_conversation_command", "supergrok", "sync_ambient_plans", "tab_close_button_on_left", "tab_configs", "tabbed_editor_view", "team_api_keys", "terminal_lifecycle_recovery", "test-util", "traces", "transfer_control_tool", "trim_trailing_blank_lines", "tui", "ui_zoom", "undo_closed_panes", "usage_based_pricing", "use_tantivy_search", "v4a_file_diffs", "validate_autosuggestions", "vertical_tabs", "vertical_tabs_summary_mode", "viewing_shared_sessions", "vim_code_editor", "voice_input", "warp_control_cli", "warp_managed_secrets", "warp_packs", "warpify_footer", "warping_model_name", "web_fetch_ui", "web_search_ui", "well_known_mcp_ids", "wgpu", "workflow_aliases"))' -C metadata=c8683726ce0e5993 -C extra-filename=-548c92327b512cda --out-dir /home/factory-user/warp-stanford/target/debug/deps -C incremental=/home/factory-user/warp-stanford/target/debug/incremental -C strip=debuginfo -L dependency=/home/factory-user/warp-stanford/target/debug/deps --extern addr=/home/factory-user/warp-stanford/target/debug/deps/libaddr-f5c004443faa9391.rlib --extern reqwest_eventsource=/home/factory-user/warp-stanford/target/debug/deps/libaha_reqwest_eventsource-9e92f5a5f6f222b5.rlib --extern aho_corasick=/home/factory-user/warp-stanford/target/debug/deps/libaho_corasick-e92bdf558ba86a2b.rlib --extern ai=/home/factory-user/warp-stanford/target/debug/deps/libai-bf541b04d18cf36c.rlib --extern ai_types=/home/factory-user/warp-stanford/target/debug/deps/libai_types-dd5edbb6659a6afe.rlib --extern alphanumeric_sort=/home/factory-user/warp-stanford/target/debug/deps/libalphanumeric_sort-56efa0c5c1265a0e.rlib --extern anyhow=/home/factory-user/warp-stanford/target/debug/deps/libanyhow-e6b1a839be2d2267.rlib --extern app_installation_detection=/home/factory-user/warp-stanford/target/debug/deps/libapp_installation_detection-66dc86425d822997.rlib --extern arrayvec=/home/factory-user/warp-stanford/target/debug/deps/libarrayvec-39008bf3af8809b1.rlib --extern asset_cache=/home/factory-user/warp-stanford/target/debug/deps/libasset_cache-5ade58e301c38dda.rlib --extern asset_macro=/home/factory-user/warp-stanford/target/debug/deps/libasset_macro-ab49666092cb7148.so --extern async_broadcast=/home/factory-user/warp-stanford/target/debug/deps/libasync_broadcast-20b44a4b5f4f1eca.rlib --extern async_channel=/home/factory-user/warp-stanford/target/debug/deps/libasync_channel-e5451191569a5607.rlib --extern async_compat=/home/factory-user/warp-stanford/target/debug/deps/libasync_compat-aaac004b9fc1c28e.rlib --extern async_executor=/home/factory-user/warp-stanford/target/debug/deps/libasync_executor-41cdbefb10991bd9.rlib --extern async_fs=/home/factory-user/warp-stanford/target/debug/deps/libasync_fs-51345db253316e59.rlib --extern async_io=/home/factory-user/warp-stanford/target/debug/deps/libasync_io-c7568aad4a2a674c.rlib --extern async_process=/home/factory-user/warp-stanford/target/debug/deps/libasync_process-17665cf03b1bae24.rlib --extern async_recursion=/home/factory-user/warp-stanford/target/debug/deps/libasync_recursion-b0276bea5929b893.so --extern async_stream=/home/factory-user/warp-stanford/target/debug/deps/libasync_stream-135b7dc7515be81d.rlib --extern async_trait=/home/factory-user/warp-stanford/target/debug/deps/libasync_trait-ed645b16e9a6b7cf.so --extern aws_config=/home/factory-user/warp-stanford/target/debug/deps/libaws_config-3e6afe5fe9f38576.rlib --extern aws_credential_types=/home/factory-user/warp-stanford/target/debug/deps/libaws_credential_types-6a25cdba2456fbf6.rlib --extern aws_sdk_sts=/home/factory-user/warp-stanford/target/debug/deps/libaws_sdk_sts-f2add8856e2300c6.rlib --extern aws_types=/home/factory-user/warp-stanford/target/debug/deps/libaws_types-146bf727cf28e7d4.rlib --extern axum=/home/factory-user/warp-stanford/target/debug/deps/libaxum-e8d50cac6579b253.rlib --extern base64=/home/factory-user/warp-stanford/target/debug/deps/libbase64-f8deff8c83003cc7.rlib --extern bimap=/home/factory-user/warp-stanford/target/debug/deps/libbimap-d3b0415381d654cf.rlib --extern bincode=/home/factory-user/warp-stanford/target/debug/deps/libbincode-669177328e2124d7.rlib --extern bitflags=/home/factory-user/warp-stanford/target/debug/deps/libbitflags-db880453e834b0a2.rlib --extern bitflags_serde_legacy=/home/factory-user/warp-stanford/target/debug/deps/libbitflags_serde_legacy-75ccab4cf45d10d1.rlib --extern blocking=/home/factory-user/warp-stanford/target/debug/deps/libblocking-40c8a2fefd16a55a.rlib --extern bounded_vec_deque=/home/factory-user/warp-stanford/target/debug/deps/libbounded_vec_deque-4fc00f38340ca570.rlib --extern build_cache=/home/factory-user/warp-stanford/target/debug/deps/libbuild_cache-bcca0d29ae62f705.rlib --extern byte_unit=/home/factory-user/warp-stanford/target/debug/deps/libbyte_unit-b2657fe1b2dab6e7.rlib --extern bytecount=/home/factory-user/warp-stanford/target/debug/deps/libbytecount-9ee391ac48e15c31.rlib --extern bytes=/home/factory-user/warp-stanford/target/debug/deps/libbytes-3cb095b525c0b243.rlib --extern cfg_if=/home/factory-user/warp-stanford/target/debug/deps/libcfg_if-6875bf75a9e57cba.rlib --extern channel_versions=/home/factory-user/warp-stanford/target/debug/deps/libchannel_versions-6f75a6df82838f2e.rlib --extern chrono=/home/factory-user/warp-stanford/target/debug/deps/libchrono-578ebf0b49bfd0e6.rlib --extern clap=/home/factory-user/warp-stanford/target/debug/deps/libclap-e85a20fefa62c9d2.rlib --extern cloud_object_client=/home/factory-user/warp-stanford/target/debug/deps/libcloud_object_client-f388da3b603b847e.rlib --extern cloud_object_models=/home/factory-user/warp-stanford/target/debug/deps/libcloud_object_models-6d36e4221a8b7045.rlib --extern cloud_object_persistence=/home/factory-user/warp-stanford/target/debug/deps/libcloud_object_persistence-5fc80891697cc821.rlib --extern cloud_objects=/home/factory-user/warp-stanford/target/debug/deps/libcloud_objects-40f9b83f646fe1fb.rlib --extern comfy_table=/home/factory-user/warp-stanford/target/debug/deps/libcomfy_table-7ed123c48ae59261.rlib --extern command=/home/factory-user/warp-stanford/target/debug/deps/libcommand-302c47ddd52fa6ce.rlib --extern command_corrections=/home/factory-user/warp-stanford/target/debug/deps/libcommand_corrections-45cd0a55d09def61.rlib --extern computer_use=/home/factory-user/warp-stanford/target/debug/deps/libcomputer_use-88e7fd806889f51b.rlib --extern concat_idents=/home/factory-user/warp-stanford/target/debug/deps/libconcat_idents-016942cddcc6d9bd.so --extern content_inspector=/home/factory-user/warp-stanford/target/debug/deps/libcontent_inspector-211d0356b96a76aa.rlib --extern counter=/home/factory-user/warp-stanford/target/debug/deps/libcounter-b298501fe0e04f6b.rlib --extern crc=/home/factory-user/warp-stanford/target/debug/deps/libcrc-47337d824dabad6e.rlib --extern csv=/home/factory-user/warp-stanford/target/debug/deps/libcsv-1aa4cb25c4b818ef.rlib --extern ctor=/home/factory-user/warp-stanford/target/debug/deps/libctor-6614d9e991edf520.so --extern cynic=/home/factory-user/warp-stanford/target/debug/deps/libcynic-144034a639fb1a50.rlib --extern dashmap=/home/factory-user/warp-stanford/target/debug/deps/libdashmap-273c076bf3e30ab3.rlib --extern deltae=/home/factory-user/warp-stanford/target/debug/deps/libdeltae-87b9d9cbefde2ef2.rlib --extern derivative=/home/factory-user/warp-stanford/target/debug/deps/libderivative-534874ec1742a275.so --extern diesel=/home/factory-user/warp-stanford/target/debug/deps/libdiesel-97be79e582949e25.rlib --extern diesel_migrations=/home/factory-user/warp-stanford/target/debug/deps/libdiesel_migrations-62b3273038c5cd3e.rlib --extern difflib=/home/factory-user/warp-stanford/target/debug/deps/libdifflib-db34658f40916868.rlib --extern directories=/home/factory-user/warp-stanford/target/debug/deps/libdirectories-1b7ae9f9b39b5d94.rlib --extern dirs=/home/factory-user/warp-stanford/target/debug/deps/libdirs-210e49b30c438544.rlib --extern dunce=/home/factory-user/warp-stanford/target/debug/deps/libdunce-83757c943b9bd7f4.rlib --extern email_address=/home/factory-user/warp-stanford/target/debug/deps/libemail_address-b9aecaf6cf698f91.rlib --extern embed_plist=/home/factory-user/warp-stanford/target/debug/deps/libembed_plist-02b2bccabae09fbc.rlib --extern enclose=/home/factory-user/warp-stanford/target/debug/deps/libenclose-c98ed83a0cbbe4eb.rlib --extern enum_iterator=/home/factory-user/warp-stanford/target/debug/deps/libenum_iterator-98355c653f501030.rlib --extern env_logger=/home/factory-user/warp-stanford/target/debug/deps/libenv_logger-4f5402487e866b62.rlib --extern event_listener=/home/factory-user/warp-stanford/target/debug/deps/libevent_listener-90b9053fe47f2cdb.rlib --extern field_mask=/home/factory-user/warp-stanford/target/debug/deps/libfield_mask-c75d1c2fc8bcfda3.rlib --extern firebase=/home/factory-user/warp-stanford/target/debug/deps/libfirebase-6788e15138a4cacb.rlib --extern float_cmp=/home/factory-user/warp-stanford/target/debug/deps/libfloat_cmp-467811a087184f4b.rlib --extern freedesktop_desktop_entry=/home/factory-user/warp-stanford/target/debug/deps/libfreedesktop_desktop_entry-f305c926e9e2d83e.rlib --extern futures=/home/factory-user/warp-stanford/target/debug/deps/libfutures-7ea5ab412f54422c.rlib --extern futures_lite=/home/factory-user/warp-stanford/target/debug/deps/libfutures_lite-dbff8aee707b67a8.rlib --extern futures_util=/home/factory-user/warp-stanford/target/debug/deps/libfutures_util-36f714f46f130790.rlib --extern fuzzy_match=/home/factory-user/warp-stanford/target/debug/deps/libfuzzy_match-4873e2113b649e76.rlib --extern getset=/home/factory-user/warp-stanford/target/debug/deps/libgetset-037627c6d7889cf5.so --extern git2=/home/factory-user/warp-stanford/target/debug/deps/libgit2-cada3d1ca05dc1b9.rlib --extern handlebars=/home/factory-user/warp-stanford/target/debug/deps/libhandlebars-fcca9d443a9a6b3e.rlib --extern hashbrown=/home/factory-user/warp-stanford/target/debug/deps/libhashbrown-d092181582b4261a.rlib --extern hex=/home/factory-user/warp-stanford/target/debug/deps/libhex-9de8b0f68c9a0942.rlib --extern http=/home/factory-user/warp-stanford/target/debug/deps/libhttp-cb8196c59aab2325.rlib --extern http_client=/home/factory-user/warp-stanford/target/debug/deps/libhttp_client-bd82d0a7ab580d21.rlib --extern http_server=/home/factory-user/warp-stanford/target/debug/deps/libhttp_server-633343d57c25a533.rlib --extern hyper=/home/factory-user/warp-stanford/target/debug/deps/libhyper-72e314d6a06b4d3a.rlib --extern image=/home/factory-user/warp-stanford/target/debug/deps/libimage-cca4db705fb26b9a.rlib --extern indexmap=/home/factory-user/warp-stanford/target/debug/deps/libindexmap-c01ed4e94ffaad71.rlib --extern infer=/home/factory-user/warp-stanford/target/debug/deps/libinfer-77e34ef1b56f920d.rlib --extern input_classifier=/home/factory-user/warp-stanford/target/debug/deps/libinput_classifier-508bc797036ccd34.rlib --extern inquire=/home/factory-user/warp-stanford/target/debug/deps/libinquire-8bae9a99cccba35a.rlib --extern instant=/home/factory-user/warp-stanford/target/debug/deps/libinstant-11f67e5c08f731d5.rlib --extern inventory=/home/factory-user/warp-stanford/target/debug/deps/libinventory-3bed87713e1f9909.rlib --extern ipc=/home/factory-user/warp-stanford/target/debug/deps/libipc-ce77b0afd894c5d1.rlib --extern is_executable=/home/factory-user/warp-stanford/target/debug/deps/libis_executable-215b557d10a9ff5e.rlib --extern iso8601_duration=/home/factory-user/warp-stanford/target/debug/deps/libiso8601_duration-f17d3a5ab076e393.rlib --extern itertools=/home/factory-user/warp-stanford/target/debug/deps/libitertools-48a3248dbdf9f12e.rlib --extern jaq_all=/home/factory-user/warp-stanford/target/debug/deps/libjaq_all-953bd70f2b4e8996.rlib --extern jaq_json=/home/factory-user/warp-stanford/target/debug/deps/libjaq_json-bebe9226e17c8aa8.rlib --extern jsonschema=/home/factory-user/warp-stanford/target/debug/deps/libjsonschema-38629e890a5e4a88.rlib --extern kmeans_colors=/home/factory-user/warp-stanford/target/debug/deps/libkmeans_colors-77ae632ec5487cee.rlib --extern languages=/home/factory-user/warp-stanford/target/debug/deps/liblanguages-b9f91076c211f771.rlib --extern lasso=/home/factory-user/warp-stanford/target/debug/deps/liblasso-e23822492fac8483.rlib --extern lazy_static=/home/factory-user/warp-stanford/target/debug/deps/liblazy_static-dd8bebdcd9921602.rlib --extern libc=/home/factory-user/warp-stanford/target/debug/deps/liblibc-71836722fd993bdb.rlib --extern libsqlite3_sys=/home/factory-user/warp-stanford/target/debug/deps/liblibsqlite3_sys-19a1ec572492a92e.rlib --extern line_ending=/home/factory-user/warp-stanford/target/debug/deps/libline_ending-a8b430becb7e22c8.rlib --extern local_control=/home/factory-user/warp-stanford/target/debug/deps/liblocal_control-66f3323ffa312483.rlib --extern log=/home/factory-user/warp-stanford/target/debug/deps/liblog-da1cbff0804f5fc3.rlib --extern log_panics=/home/factory-user/warp-stanford/target/debug/deps/liblog_panics-221b19f4377ffbdd.rlib --extern lsp=/home/factory-user/warp-stanford/target/debug/deps/liblsp-823f8789a0e735c6.rlib --extern lsp_types=/home/factory-user/warp-stanford/target/debug/deps/liblsp_types-dd7e5f0b2bbe9c73.rlib --extern lz4_flex=/home/factory-user/warp-stanford/target/debug/deps/liblz4_flex-db4bc329d34c1c1f.rlib --extern markdown_parser=/home/factory-user/warp-stanford/target/debug/deps/libmarkdown_parser-2d6f74614b8e6047.rlib --extern mcp=/home/factory-user/warp-stanford/target/debug/deps/libmcp-7bda1e811c8d6058.rlib --extern memchr=/home/factory-user/warp-stanford/target/debug/deps/libmemchr-22d855d959fb62b5.rlib --extern memo_map=/home/factory-user/warp-stanford/target/debug/deps/libmemo_map-1283c2a4be4dde41.rlib --extern mermaid_to_svg=/home/factory-user/warp-stanford/target/debug/deps/libmermaid_to_svg-7f4301fb8d9b5411.rlib --extern mime_guess=/home/factory-user/warp-stanford/target/debug/deps/libmime_guess-5ab5cda703d6dd7c.rlib --extern mio=/home/factory-user/warp-stanford/target/debug/deps/libmio-bd95f9dabe76b16b.rlib --extern mockall=/home/factory-user/warp-stanford/target/debug/deps/libmockall-d9baf57358a43b5f.rlib --extern mockito=/home/factory-user/warp-stanford/target/debug/deps/libmockito-9c6d7fd6cc0b6ef2.rlib --extern natural_language_detection=/home/factory-user/warp-stanford/target/debug/deps/libnatural_language_detection-4bdda0a9a6f2054c.rlib --extern nix=/home/factory-user/warp-stanford/target/debug/deps/libnix-42d49f30694d116c.rlib --extern notify_debouncer_full=/home/factory-user/warp-stanford/target/debug/deps/libnotify_debouncer_full-25cd45a3a7720436.rlib --extern num_traits=/home/factory-user/warp-stanford/target/debug/deps/libnum_traits-1a5bb42ed957c70b.rlib --extern num_cpus=/home/factory-user/warp-stanford/target/debug/deps/libnum_cpus-d2340ba444916915.rlib --extern oauth2=/home/factory-user/warp-stanford/target/debug/deps/liboauth2-32878c27ba56da7a.rlib --extern onboarding=/home/factory-user/warp-stanford/target/debug/deps/libonboarding-d331e0a6e756c208.rlib --extern once_cell=/home/factory-user/warp-stanford/target/debug/deps/libonce_cell-9d1046a9e2cbd312.rlib --extern opentelemetry=/home/factory-user/warp-stanford/target/debug/deps/libopentelemetry-f6912cfa95a3d56c.rlib --extern opentelemetry_http=/home/factory-user/warp-stanford/target/debug/deps/libopentelemetry_http-aa52ee42f4804542.rlib --extern opentelemetry_otlp=/home/factory-user/warp-stanford/target/debug/deps/libopentelemetry_otlp-2cd67572bec34495.rlib --extern opentelemetry_sdk=/home/factory-user/warp-stanford/target/debug/deps/libopentelemetry_sdk-a5ef91ac23b3b28e.rlib --extern ordered_float=/home/factory-user/warp-stanford/target/debug/deps/libordered_float-54bf90956f09a765.rlib --extern os_info=/home/factory-user/warp-stanford/target/debug/deps/libos_info-afdd9f3d592cbdca.rlib --extern palette=/home/factory-user/warp-stanford/target/debug/deps/libpalette-c8ab858ae270db31.rlib --extern parking_lot=/home/factory-user/warp-stanford/target/debug/deps/libparking_lot-47bf941b142c448e.rlib --extern pathfinder_color=/home/factory-user/warp-stanford/target/debug/deps/libpathfinder_color-e6dd361d198e0d2a.rlib --extern pathfinder_geometry=/home/factory-user/warp-stanford/target/debug/deps/libpathfinder_geometry-3412ce2ae975ecc6.rlib --extern persistence=/home/factory-user/warp-stanford/target/debug/deps/libpersistence-730e40ede62d743e.rlib --extern pin_project=/home/factory-user/warp-stanford/target/debug/deps/libpin_project-a258629db33b2355.rlib --extern plist=/home/factory-user/warp-stanford/target/debug/deps/libplist-babe8ee6bb50304e.rlib --extern prost=/home/factory-user/warp-stanford/target/debug/deps/libprost-91494d57dadec206.rlib --extern prost_types=/home/factory-user/warp-stanford/target/debug/deps/libprost_types-5fa792edf59605e5.rlib --extern qrcode=/home/factory-user/warp-stanford/target/debug/deps/libqrcode-a260470d7a2426d4.rlib --extern rand=/home/factory-user/warp-stanford/target/debug/deps/librand-5c28a90e858ce184.rlib --extern rangemap=/home/factory-user/warp-stanford/target/debug/deps/librangemap-dcd67f3b6b87af52.rlib --extern rayon=/home/factory-user/warp-stanford/target/debug/deps/librayon-b257aa2027bb18e6.rlib --extern regex=/home/factory-user/warp-stanford/target/debug/deps/libregex-9ff9b188cdc3907a.rlib --extern regex_automata=/home/factory-user/warp-stanford/target/debug/deps/libregex_automata-4128f86fa2201ad3.rlib --extern remote_server=/home/factory-user/warp-stanford/target/debug/deps/libremote_server-b76e466d3edae304.rlib --extern repo_metadata=/home/factory-user/warp-stanford/target/debug/deps/librepo_metadata-20669e4b28456857.rlib --extern reqwest=/home/factory-user/warp-stanford/target/debug/deps/libreqwest-6c4991828a2c2be6.rlib --extern rmcp=/home/factory-user/warp-stanford/target/debug/deps/librmcp-a93627d94926aa5f.rlib --extern rust_embed=/home/factory-user/warp-stanford/target/debug/deps/librust_embed-8d31faf615090e3d.rlib --extern rustc_hash=/home/factory-user/warp-stanford/target/debug/deps/librustc_hash-25aba3402374f8a1.rlib --extern rustls=/home/factory-user/warp-stanford/target/debug/deps/librustls-f202803319938525.rlib --extern schemars=/home/factory-user/warp-stanford/target/debug/deps/libschemars-6a5a32636409fe49.rlib --extern secret_redaction=/home/factory-user/warp-stanford/target/debug/deps/libsecret_redaction-f61fe97bbbcbad8c.rlib --extern serde=/home/factory-user/warp-stanford/target/debug/deps/libserde-20e21a90a19e1d2d.rlib --extern serde_bytes_repr=/home/factory-user/warp-stanford/target/debug/deps/libserde_bytes_repr-448b1199539772bd.rlib --extern serde_bytes=/home/factory-user/warp-stanford/target/debug/deps/libserde_bytes-b3dcffe13aee45d8.rlib --extern serde_json=/home/factory-user/warp-stanford/target/debug/deps/libserde_json-5e5abe6c42a17121.rlib --extern serde_regex=/home/factory-user/warp-stanford/target/debug/deps/libserde_regex-8360f83157eb2339.rlib --extern serde_urlencoded=/home/factory-user/warp-stanford/target/debug/deps/libserde_urlencoded-ee7a48ee47fcfbed.rlib --extern serde_with=/home/factory-user/warp-stanford/target/debug/deps/libserde_with-a0c429bb3e3b6900.rlib --extern serde_yaml=/home/factory-user/warp-stanford/target/debug/deps/libserde_yaml-a942ac91f7b0e1bc.rlib --extern serial_test=/home/factory-user/warp-stanford/target/debug/deps/libserial_test-3744e2ec6f6cba52.rlib --extern session_sharing_protocol=/home/factory-user/warp-stanford/target/debug/deps/libsession_sharing_protocol-b5031cc16d634777.rlib --extern settings=/home/factory-user/warp-stanford/target/debug/deps/libsettings-f092f375f0e5d9d2.rlib --extern settings_value=/home/factory-user/warp-stanford/target/debug/deps/libsettings_value-a6d029d7d4281b5a.rlib --extern sha2=/home/factory-user/warp-stanford/target/debug/deps/libsha2-a575a1d55080c3f4.rlib --extern shell_words=/home/factory-user/warp-stanford/target/debug/deps/libshell_words-e8e5a9db1bbf3cff.rlib --extern shellexpand=/home/factory-user/warp-stanford/target/debug/deps/libshellexpand-af3a746cd4b5d0f5.rlib --extern shlex=/home/factory-user/warp-stanford/target/debug/deps/libshlex-43a94d0b372f60d6.rlib --extern signal_hook=/home/factory-user/warp-stanford/target/debug/deps/libsignal_hook-c46fa2e57e25da75.rlib --extern signal_hook_tokio=/home/factory-user/warp-stanford/target/debug/deps/libsignal_hook_tokio-ee5caf189d5699bd.rlib --extern similar=/home/factory-user/warp-stanford/target/debug/deps/libsimilar-3f61962b8e7a4b53.rlib --extern simple_logger=/home/factory-user/warp-stanford/target/debug/deps/libsimple_logger-3e7b584d50c69ee2.rlib --extern siphasher=/home/factory-user/warp-stanford/target/debug/deps/libsiphasher-c469dc9dcb06eed6.rlib --extern smallvec=/home/factory-user/warp-stanford/target/debug/deps/libsmallvec-36ed54d815ea8a2f.rlib --extern smol_str=/home/factory-user/warp-stanford/target/debug/deps/libsmol_str-b926c9ba71a2c3aa.rlib --extern static_assertions=/home/factory-user/warp-stanford/target/debug/deps/libstatic_assertions-2541a7bdc4ff53b7.rlib --extern string_offset=/home/factory-user/warp-stanford/target/debug/deps/libstring_offset-e261cb326cb95651.rlib --extern strum=/home/factory-user/warp-stanford/target/debug/deps/libstrum-264f58fd3e08709c.rlib --extern strum_macros=/home/factory-user/warp-stanford/target/debug/deps/libstrum_macros-d96c55f16008f4d7.so --extern sum_tree=/home/factory-user/warp-stanford/target/debug/deps/libsum_tree-0cb6231b83ff68f7.rlib --extern syntax_tree=/home/factory-user/warp-stanford/target/debug/deps/libsyntax_tree-5aeaee3c2ea06765.rlib --extern syntect=/home/factory-user/warp-stanford/target/debug/deps/libsyntect-9b96a01c96f43ffb.rlib --extern sysinfo=/home/factory-user/warp-stanford/target/debug/deps/libsysinfo-eebf9c2831527a05.rlib --extern tabwriter=/home/factory-user/warp-stanford/target/debug/deps/libtabwriter-33e556607a396fa8.rlib --extern tempfile=/home/factory-user/warp-stanford/target/debug/deps/libtempfile-8c11770eb5dd6ae3.rlib --extern thiserror=/home/factory-user/warp-stanford/target/debug/deps/libthiserror-3108967e2c03bd68.rlib --extern thousands=/home/factory-user/warp-stanford/target/debug/deps/libthousands-4eef809f5b1b4460.rlib --extern tokio=/home/factory-user/warp-stanford/target/debug/deps/libtokio-b0d57d09bf7020a7.rlib --extern tokio_util=/home/factory-user/warp-stanford/target/debug/deps/libtokio_util-5c99e3749153be37.rlib --extern toml=/home/factory-user/warp-stanford/target/debug/deps/libtoml-18cb9a93b39e3b1b.rlib --extern toml_edit=/home/factory-user/warp-stanford/target/debug/deps/libtoml_edit-f12a101311789852.rlib --extern tracing=/home/factory-user/warp-stanford/target/debug/deps/libtracing-fae0610ecd4aa3ce.rlib --extern tracing_futures=/home/factory-user/warp-stanford/target/debug/deps/libtracing_futures-15beae266bee993a.rlib --extern tracing_opentelemetry=/home/factory-user/warp-stanford/target/debug/deps/libtracing_opentelemetry-89821010b7467f14.rlib --extern tracing_subscriber=/home/factory-user/warp-stanford/target/debug/deps/libtracing_subscriber-03b8628c0d981a4e.rlib --extern typed_path=/home/factory-user/warp-stanford/target/debug/deps/libtyped_path-4ca7537cc9f5b24d.rlib --extern ui_components=/home/factory-user/warp-stanford/target/debug/deps/libui_components-a86a6bb8f82c9743.rlib --extern unicase=/home/factory-user/warp-stanford/target/debug/deps/libunicase-71a02fa27120d19b.rlib --extern unicode_general_category=/home/factory-user/warp-stanford/target/debug/deps/libunicode_general_category-a9ae6eeb120eacd7.rlib --extern unicode_width=/home/factory-user/warp-stanford/target/debug/deps/libunicode_width-9e8a1a64f3125d39.rlib --extern unindent=/home/factory-user/warp-stanford/target/debug/deps/libunindent-127f6a992b83d91a.rlib --extern url=/home/factory-user/warp-stanford/target/debug/deps/liburl-eb4ec1fe1f63baeb.rlib --extern urlencoding=/home/factory-user/warp-stanford/target/debug/deps/liburlencoding-5ba0812f238a956b.rlib --extern urlocator=/home/factory-user/warp-stanford/target/debug/deps/liburlocator-5a8546650963ddd9.rlib --extern uuid=/home/factory-user/warp-stanford/target/debug/deps/libuuid-000049d195e838d8.rlib --extern validator=/home/factory-user/warp-stanford/target/debug/deps/libvalidator-01c209a8f19182eb.rlib --extern variant_count=/home/factory-user/warp-stanford/target/debug/deps/libvariant_count-592d0fe9fc0d89c2.so --extern vec1=/home/factory-user/warp-stanford/target/debug/deps/libvec1-4006061f8a41fa4c.rlib --extern version_compare=/home/factory-user/warp-stanford/target/debug/deps/libversion_compare-8e1697beb613d95c.rlib --extern vim=/home/factory-user/warp-stanford/target/debug/deps/libvim-69a0982b273d6d94.rlib --extern virtual_fs=/home/factory-user/warp-stanford/target/debug/deps/libvirtual_fs-97d03a8a888eb819.rlib --extern voice_input=/home/factory-user/warp-stanford/target/debug/deps/libvoice_input-fdc7b0110374374e.rlib --extern vte=/home/factory-user/warp-stanford/target/debug/deps/libvte-4e0fb77c10324523.rlib --extern walkdir=/home/factory-user/warp-stanford/target/debug/deps/libwalkdir-4e87aa27f1acc12a.rlib --extern warp_command_signatures=/home/factory-user/warp-stanford/target/debug/deps/libwarp_command_signatures-f371660d0b279662.rlib --extern warp_workflows=/home/factory-user/warp-stanford/target/debug/deps/libwarp_workflows-9dc83acf426acbb0.rlib --extern warp_assets=/home/factory-user/warp-stanford/target/debug/deps/libwarp_assets-dd66c45c544972f8.rlib --extern warp_channel_config=/home/factory-user/warp-stanford/target/debug/deps/libwarp_channel_config-b27a995cef46765b.rlib --extern warp_cli=/home/factory-user/warp-stanford/target/debug/deps/libwarp_cli-261c278af3423572.rlib --extern warp_completer=/home/factory-user/warp-stanford/target/debug/deps/libwarp_completer-bf093f5096254170.rlib --extern warp_core=/home/factory-user/warp-stanford/target/debug/deps/libwarp_core-f297d341cb56fc67.rlib --extern warp_editor=/home/factory-user/warp-stanford/target/debug/deps/libwarp_editor-20dc64c4e99101b6.rlib --extern warp_errors=/home/factory-user/warp-stanford/target/debug/deps/libwarp_errors-00ed4c73d591a0b0.rlib --extern warp_files=/home/factory-user/warp-stanford/target/debug/deps/libwarp_files-732158512cd1580b.rlib --extern warp_graphql=/home/factory-user/warp-stanford/target/debug/deps/libwarp_graphql-4f4cacb89752aff0.rlib --extern warp_harness_usage=/home/factory-user/warp-stanford/target/debug/deps/libwarp_harness_usage-bf29bbc0e923271f.rlib --extern warp_isolation_platform=/home/factory-user/warp-stanford/target/debug/deps/libwarp_isolation_platform-5660898c3cc04726.rlib --extern warp_logging=/home/factory-user/warp-stanford/target/debug/deps/libwarp_logging-99e64c585c6f84df.rlib --extern warp_managed_secrets=/home/factory-user/warp-stanford/target/debug/deps/libwarp_managed_secrets-94df45e99fbc04c9.rlib --extern warp_multi_agent_api=/home/factory-user/warp-stanford/target/debug/deps/libwarp_multi_agent_api-be2355a0234da497.rlib --extern warp_multi_agent_client=/home/factory-user/warp-stanford/target/debug/deps/libwarp_multi_agent_client-47f4eb33b333dd4e.rlib --extern warp_ripgrep=/home/factory-user/warp-stanford/target/debug/deps/libwarp_ripgrep-007ff097e841543c.rlib --extern warp_search_core=/home/factory-user/warp-stanford/target/debug/deps/libwarp_search_core-b550ba2470504c5a.rlib --extern warp_server_auth=/home/factory-user/warp-stanford/target/debug/deps/libwarp_server_auth-70ae4829e87bfa3a.rlib --extern warp_server_client=/home/factory-user/warp-stanford/target/debug/deps/libwarp_server_client-2c9b0dfacf9e59f0.rlib --extern warp_terminal=/home/factory-user/warp-stanford/target/debug/deps/libwarp_terminal-47b77ff999489a8a.rlib --extern warp_util=/home/factory-user/warp-stanford/target/debug/deps/libwarp_util-30a01fc61117cf9e.rlib --extern warpui=/home/factory-user/warp-stanford/target/debug/deps/libwarpui-c55bb2f720a2905c.rlib --extern warpui_core=/home/factory-user/warp-stanford/target/debug/deps/libwarpui_core-e748c096451daaf9.rlib --extern warpui_extras=/home/factory-user/warp-stanford/target/debug/deps/libwarpui_extras-2b27f845b40cc6c8.rlib --extern watcher=/home/factory-user/warp-stanford/target/debug/deps/libwatcher-ccc212c32ee3a1d2.rlib --extern websocket=/home/factory-user/warp-stanford/target/debug/deps/libwebsocket-7b13a451c351e01e.rlib --extern wgpu=/home/factory-user/warp-stanford/target/debug/deps/libwgpu-e21a99f69e7d738c.rlib --extern winit=/home/factory-user/warp-stanford/target/debug/deps/libwinit-47123abae81e4d0b.rlib --extern x11rb=/home/factory-user/warp-stanford/target/debug/deps/libx11rb-b09f3e237641b00d.rlib --extern zbus=/home/factory-user/warp-stanford/target/debug/deps/libzbus-36a720d50af3868a.rlib -C symbol-mangling-version=v0 -L native=/home/factory-user/warp-stanford/target/debug/build/aws-lc-sys-67482c7f81454f97/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-bash-405f0ec370f5ec7f/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-c-f6bb11effc0a3172/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-c-sharp-e588f0e0dc734dad/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-cpp-2afcc263c9da6833/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-css-671ba4caa69adae0/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-dockerfile-13518c87ca40642c/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-elixir-52c4d6840b0fbed6/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-go-528ed9a64075c70f/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-hcl-a6336980a1d6bbc6/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-tree-sitter-b7814227e2f9bc75/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-html-8c4ac8a9e53d154a/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-javascript-9c67ba6a6d49502d/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-java-214b2f94067220e2/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-jq-c169ce39445c53b4/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-json-01b1c4a090f06d10/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-kotlin-1df0df6c603211d2/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-lua-49623882a29a9bdc/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-markdown-5f5f8a1147defd71/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-toml-70b00db338c0f8ba/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-yaml-f7f3a47cee025902/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-nix-e3e74bed7a7bbfe1/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-objc-eaea9475c46e8aad/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-php-fc495d95ce649791/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-powershell-add135c67a772465/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-python-b4dc02ea91c3f22a/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-ruby-9debc7a612f9563a/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-rust-87be3d7595bf26bf/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-scala-1269ff4472596177/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-sql-6ca469d808cbc575/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-starlark-0f66086821e57c4e/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-swift-7109f0a9e1da04f7/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-tsx-25da959dc8fbcc7c/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-typescript-86a71bfc4069660c/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-vue-5fe3c0f49bff6db3/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-scss-54ce5b0f65b44aa8/out -L native=/home/factory-user/warp-stanford/target/debug/build/arborium-xml-5d8e66bf1fd7f1ed/out -L native=/home/factory-user/warp-stanford/target/debug/build/ring-bfd9a616dedfec6d/out -L native=/home/factory-user/warp-stanford/target/debug/build/libsqlite3-sys-8c1abb4dca66c429/out -L native=/home/factory-user/warp-stanford/target/debug/build/signal-hook-6f4c54d70b2fb8c3/out -L native=/home/factory-user/warp-stanford/target/debug/build/libgit2-sys-9c0dab8c8a2a17f3/out/build -L native=/home/factory-user/warp-stanford/target/debug/build/bzip2-sys-356ed4c4e4dd85dd/out/lib -L native=/home/factory-user/warp-stanford/target/debug/build/lzma-sys-a862d95111e81217/out -L native=/home/factory-user/warp-stanford/target/debug/build/zstd-sys-6614b639198036cb/out -L native=/home/factory-user/warp-stanford/target/debug/build/onig_sys-f12d8272e388f582/out -L native=/usr/lib/x86_64-linux-gnu -L native=/usr/lib/x86_64-linux-gnu --cfg linux_or_windows --cfg enable_crash_recovery --cfg 'feature="local_fs"' --cfg 'feature="local_tty"' --cfg 'feature="iterm_images"' --cfg 'feature="agent_mode_debug"' --check-cfg 'cfg(linux_or_windows)' --check-cfg 'cfg(enable_crash_recovery)'` (signal: 9, SIGKILL: kill)
+error: command `/home/factory-user/.rustup/toolchains/1.92.0-x86_64-unknown-linux-gnu/bin/cargo '--color=auto' test --no-run --message-format json-render-diagnostics --package warp --lib --features gui --profile dev` exited with code 101
+
+FALLBACK_EXIT=101 ELAPSED_SECONDS=1638.85 DISK_GUARD_STOP=False

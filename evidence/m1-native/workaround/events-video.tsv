@@ -1,0 +1,27 @@
+t_video_s	kind	detail	hold_s
+1.478	start	capture running, empty input at prompt	
+1.483	hold	empty-prompt	2
+3.491	section	W1 open Settings > Keyboard shortcuts and clear Delete All Left	
+3.495	key	ctrl+comma	
+3.533	hold	settings-open	2
+5.574	click	keyboard-shortcuts at 334,348	
+5.695	hold	keyboard-shortcuts-page	2
+7.715	click	search-box at 1300,181	
+7.846	type	Delete all left	
+8.568	hold	delete-all-left-ctrl-y	2.5
+11.080	click	delete-all-left-row at 1031,244	
+11.238	hold	binding-editor-open	2
+13.247	click	clear-button at 1259,310	
+13.361	hold	delete-all-left-cleared	3
+16.368	section	W2 back to prompt: input 'kill-u-sentinel', cursor at end	
+16.372	click	session-tab at 80,97	
+17.493	click	input at 800,966	
+18.105	type	kill-u-sentinel	
+18.834	hold	typed-kill-u	2.5
+21.341	key	ctrl+u	
+21.398	hold	after-ctrl-u	3
+24.410	key	ctrl+y	
+24.471	hold	after-ctrl-u-ctrl-y	3
+27.478	reset	End, BackSpace x30	
+28.190	hold	final-reset	2
+30.197	stop	stopping capture	

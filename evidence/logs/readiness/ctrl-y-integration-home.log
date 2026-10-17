@@ -1,0 +1,118 @@
+Running integration test: test_home_key_should_not_appear_in_input
+Setting env var ORIGINAL_HOME to /tmp/ctrl-y-integration-home.RFf6QS for test
+Setting env var HOME to /home/factory-user/warp-stanford/target/debug/build/integration-00220792400bd191/out/tmp/test_home_key_should_not_appear_in_input for test
+Setting env var WARP_TEST_DISABLE_KEYBINDING_SAVE to true for test
+Initializing preferences file at "/home/factory-user/warp-stanford/target/debug/build/integration-00220792400bd191/out/tmp/test_home_key_should_not_appear_in_input/.config/warp-terminal-integration/user_preferences.json"
+06:41:16.074 [0m[34m[INFO][0m [0m[2m[warp_terminal::local_tty::server] [0mSpawning terminal server process...
+06:41:16.102 [0m[34m[INFO][0m [0m[2m[warp_terminal::local_tty::server::event_loop] [0mRunning terminal server...
+06:41:16.204 [0m[34m[INFO][0m [0m[2m[warpui::windowing::winit::event_loop] [0mRunning app with windowing system: X11
+06:41:16.382 [0m[34m[INFO][0m [0m[2m[warp::settings::init] [0mMigrating public settings from native store to settings.toml
+06:41:16.383 [0m[34m[INFO][0m [0m[2m[warp::settings::init] [0mSettings file migration complete — migrated 0 settings, 0 failed
+06:41:17.028 [0m[34m[INFO][0m [0m[2m[warpui::windowing::winit::delegate] [0mUnable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+06:41:17.149 [0m[34m[INFO][0m [0m[2m[warp::persistence::sqlite] [0mConnecting to SQLite database
+06:41:17.305 [0m[33m[WARN][0m [0m[2m[warp::persistence::sqlite] [0mSQLite error 284 (Automatic indexing used - database might benefit from additional indexes): automatic index on object_permissions(subject_type)
+06:41:17.538 [0m[1m[31m[ERROR][0m [0m[2m[errors::report_error] [0mFailed to deserialize API keys: EOF while parsing a value at line 1 column 0
+06:41:17.538 [0m[1m[31m[ERROR][0m [0m[2m[errors::report_error] [0mFailed to deserialize custom endpoint keys: EOF while parsing a value at line 1 column 0
+06:41:17.538 [0m[1m[31m[ERROR][0m [0m[2m[errors::report_error] [0mFailed to deserialize Grok tokens: EOF while parsing a value at line 1 column 0
+06:41:17.551 [0m[34m[INFO][0m [0m[2m[warp] [0mStarting warp with channel state ChannelState { channel: Integration, additional_features: {}, config: ChannelConfig { app_id: AppId { qualifier: "dev", organization: "warp", application_name: "WarpIntegration" }, logfile_name: "warp_integration.log", server_config: WarpServerConfig { server_root_url: "http://192.0.2.0:9", rtc_server_url: "ws://192.0.2.0:9/graphql/v2", session_sharing_server_url: None, firebase_auth_api_key: "", iap_config: None }, oz_config: OzConfig { oz_root_url: "http://192.0.2.0:9", workload_audience_url: None }, telemetry_config: None, autoupdate_config: None, crash_reporting_config: None, mcp_static_config: None } } and version None
+06:41:17.617 [0m[34m[INFO][0m [0m[2m[warp::app_services] [0mInitializing app services
+06:41:17.726 [0m[1m[31m[ERROR][0m [0m[2m[warp::app_services::linux] [0mFailed to initialize org.freedesktop.Application D-Bus service: I/O error: No such file or directory (os error 2): No such file or directory (os error 2)
+06:41:17.728 [0m[34m[INFO][0m [0m[2m[warp::ai::mcp::templatable_manager::native] [0mConverting 0 legacy MCP servers into templatable MCP servers
+06:41:17.930 [0m[34m[INFO][0m [0m[2m[warp::auth::auth_manager] [0mAttempted to refresh a user with no login token, skipping
+06:41:17.933 [0m[34m[INFO][0m [0m[2m[warp::ai::execution_profiles::profiles] [0mInitialized execution profile model with state: Unsynced, file_backed_profiles: true
+06:41:17.935 [0m[34m[INFO][0m [0m[2m[warpui_core::core::app] [0mdispatching global action for root_view:open_from_restored
+06:41:18.134 [0m[34m[INFO][0m [0m[2m[warp::terminal::local_tty::terminal_manager] [0mCreating terminal model with 0 restored blocks
+06:41:18.141 [0m[33m[WARN][0m [0m[2m[warp::context_chips::current_prompt] [0mGenerator for GitDiffStats: could not prepare execution context
+06:41:18.141 [0m[33m[WARN][0m [0m[2m[warp::context_chips::current_prompt] [0mGenerator for KubernetesContext: could not prepare execution context
+06:41:18.162 [0m[34m[INFO][0m [0m[2m[warp::ai::persisted_workspace] [0mCleaning up index metadata from SQLite
+06:41:18.169 [0m[34m[INFO][0m [0m[2m[warpui_core::core::app] [0mdispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+06:41:18.169 [0m[33m[WARN][0m [0m[2m[warpui_core::core::app] [0mAction HandleFocusChange was dispatched, but no view handled it
+06:41:18.172 [0m[34m[INFO][0m [0m[2m[warpui_core::core::app] [0mdispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+06:41:18.172 [0m[33m[WARN][0m [0m[2m[warpui_core::core::app] [0mAction HandleFocusChange was dispatched, but no view handled it
+06:41:18.176 [0m[33m[WARN][0m [0m[2m[warp::terminal::view] [0mTried to update block filter query without active_filter_editor_block_index set
+06:41:18.179 [0m[33m[WARN][0m [0m[2m[warp::context_chips::current_prompt] [0mGenerator for GitDiffStats: could not prepare execution context
+06:41:18.179 [0m[33m[WARN][0m [0m[2m[warp::context_chips::current_prompt] [0mGenerator for KubernetesContext: could not prepare execution context
+06:41:18.210 [0m[33m[WARN][0m [0m[2m[warp::ai::blocklist::suggested_agent_mode_workflow_modal] [0mSuggestedAgentModeWorkflowModal has not been initialized
+06:41:18.214 [0m[33m[WARN][0m [0m[2m[warp::terminal::share_block_modal] [0mTried to render share modal without a model
+06:41:18.238 [0m[33m[WARN][0m [0m[2m[warp::workspace::native_modal] [0mNo alert dialog was set for the native modal
+06:41:18.239 [0m[34m[INFO][0m [0m[2m[warpui::windowing::winit::delegate] [0mUnable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+06:41:18.241 [0m[34m[INFO][0m [0m[2m[warpui::windowing::winit::delegate] [0mUnable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+06:41:18.258 [0m[33m[WARN][0m [0m[2m[warpui::windowing::winit::linux::zbus::desktop_settings] [0mEncountered error while watching for desktop settings change events: I/O error: No such file or directory (os error 2)
+06:41:18.270 [0m[34m[INFO][0m [0m[2m[warp::ai::mcp::file_based_manager] [0mInitial global file-based MCP scan complete: 0 auto-started server(s) to await before the first turn
+06:41:18.632 [0m[34m[INFO][0m [0m[2m[warpui::rendering::wgpu::resources] [0mEnabled wgpu backends: Backends(VULKAN)
+06:41:18.633 [0m[34m[INFO][0m [0m[2m[warpui::rendering::wgpu::resources] [0mAvailable wgpu adapters (in priority order):
+06:41:18.634 [0m[34m[INFO][0m [0m[2m[warpui::rendering::wgpu::resources] [0mCpu: llvmpipe (LLVM 20.1.2, 256 bits)
+	Backend: Vulkan
+	Driver: llvmpipe (Mesa 25.2.8-0ubuntu0.24.04.4 (LLVM 20.1.2))
+	Can present: true
+	Supported texture format: Some(Bgra8UnormSrgb)
+	Supported alpha mode: [PreMultiplied, Inherit]
+06:41:18.634 [0m[34m[INFO][0m [0m[2m[warpui::rendering::wgpu::resources] [0mVerifying adapter "llvmpipe (LLVM 20.1.2, 256 bits)" is valid...
+06:41:18.861 [0m[34m[INFO][0m [0m[2m[warpui::rendering::wgpu::resources] [0mUsing Vulkan Cpu (llvmpipe (LLVM 20.1.2, 256 bits)) for rendering new window.
+06:41:19.255 [0m[34m[INFO][0m [0m[2m[warp_terminal::local_tty::unix] [0mStarting shell /usr/bin/zsh
+06:41:19.258 [0m[34m[INFO][0m [0m[2m[warp_terminal::local_tty::server::event_loop] [0mSuccessfully spawned tty with pid: 103804
+06:41:19.258 [0m[34m[INFO][0m [0m[2m[warp_terminal::local_tty::unix] [0mSuccessfully spawned child zsh process with pid 103804
+06:41:19.259 [0m[34m[INFO][0m [0m[2m[warpui_core::integration::driver] [0mSpawning integration test with 2 steps
+06:41:19.259 [0m[34m[INFO][0m [0m[2m[warpui_core::integration::driver] [0mTest artifacts directory: /tmp/warp_integration_test_artifacts/test_home_key_should_not_appear_in_input/2026-10-17T06-41-19
+06:41:19.259 [0m[34m[INFO][0m [0m[2m[warpui_core::integration::driver] [0mRunning test step 'Wait for bootstrapping' on window id WindowId(0)
+06:41:19.259 [0m[34m[INFO][0m [0m[2m[warpui_core::integration::step] [0mRunning test step 'Wait for bootstrapping' at frame 5 with 0 events
+06:41:19.281 [0m[34m[INFO][0m [0m[2m[warpui_core::integration::step] [0mentering assertion loop for 'no pending model events'
+06:41:19.282 [0m[34m[INFO][0m [0m[2m[warp::integration_testing::step] [0mevents pending false
+06:41:19.342 [0m[34m[INFO][0m [0m[2m[warp_terminal::model::ansi] [0mReceived InitShell hook
+06:41:19.782 [0m[34m[INFO][0m [0m[2m[warpui_core::core::app] [0mdispatching global action for workspace:save_app
+06:41:19.786 [0m[34m[INFO][0m [0m[2m[warpui_core::platform::app] [0mwindow resized
+06:41:19.786 [0m[34m[INFO][0m [0m[2m[warpui_core::core::app] [0mdispatching global action for workspace:save_app
+06:41:19.813 [0m[34m[INFO][0m [0m[2m[warpui_core::integration::step] [0mentering assertion loop for 'no block executing'
+06:41:19.814 [0m[34m[INFO][0m [0m[2m[warpui_core::platform::app] [0mactive window changed: Some(WindowId(0))
+06:41:19.824 [0m[34m[INFO][0m [0m[2m[warpui_core::core::app] [0mdispatching global action for root_view:update_quake_mode_state
+06:41:19.824 [0m[34m[INFO][0m [0m[2m[warpui_core::core::app] [0mdispatching global action for workspace:save_app
+06:41:19.870 [0m[34m[INFO][0m [0m[2m[warp_terminal::model::ansi] [0mReceived CommandFinished hook
+06:41:19.870 [0m[34m[INFO][0m [0m[2m[warp::terminal::model::terminal_model] [0mTried to exit the alternate screen, but it was already inactive
+06:41:19.877 [0m[34m[INFO][0m [0m[2m[warp::terminal::model::block] [0mBlock finished with new state DoneWithExecution
+06:41:19.879 [0m[34m[INFO][0m [0m[2m[warp::terminal::model::blocks] [0mIncrementing stage from WarpInput to ScriptExecution
+06:41:19.880 [0m[34m[INFO][0m [0m[2m[warp_terminal::model::ansi] [0mReceived Precmd hook
+06:41:19.923 [0m[34m[INFO][0m [0m[2m[warpui_core::core::app] [0mdispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+06:41:19.942 [0m[34m[INFO][0m [0m[2m[warpui_core::core::app] [0mdispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+06:41:20.043 [0m[34m[INFO][0m [0m[2m[warp_terminal::model::ansi] [0mReceived Bootstrapped hook
+06:41:20.044 [0m[34m[INFO][0m [0m[2m[warp::terminal::model::early_output] [0mConfigured typeahead mode as ShellReported
+06:41:20.046 [0m[34m[INFO][0m [0m[2m[warp_terminal::model::ansi] [0mReceived CommandFinished hook
+06:41:20.047 [0m[34m[INFO][0m [0m[2m[warp::terminal::model::terminal_model] [0mTried to exit the alternate screen, but it was already inactive
+06:41:20.047 [0m[34m[INFO][0m [0m[2m[warp::terminal::model::block] [0mBlock finished with new state DoneWithExecution
+06:41:20.047 [0m[34m[INFO][0m [0m[2m[warp::terminal::model::blocks] [0mIncrementing stage from Bootstrapped to PostBootstrapPrecmd
+06:41:20.073 [0m[34m[INFO][0m [0m[2m[warp_terminal::model::ansi] [0mReceived Precmd hook
+06:41:20.194 [0m[34m[INFO][0m [0m[2m[warp::terminal::model::session::command_executor] [0mcreating a local executor!
+06:41:20.194 [0m[34m[INFO][0m [0m[2m[warp::terminal::model::session] [0mParsed shell version string: Some([Number(5), Number(9)])
+06:41:20.194 [0m[34m[INFO][0m [0m[2m[warp::terminal::model::session] [0mShell is bootstrapped with session_id SessionId(14167961167848448773)
+06:41:20.195 [0m[34m[INFO][0m [0m[2m[warp::terminal::model::session] [0mNo history file found for shell zsh, starting with empty history
+06:41:20.197 [0m[34m[INFO][0m [0m[2m[warpui_core::core::app] [0mdispatching global action for workspace:save_app
+06:41:20.225 [0m[34m[INFO][0m [0m[2m[warpui_core::core::app] [0mdispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+06:41:20.246 [0m[34m[INFO][0m [0m[2m[warpui_core::core::app] [0mdispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+06:41:20.325 [0m[34m[INFO][0m [0m[2m[warpui_core::integration::step] [0mentering assertion loop for 'waiting for bootstrapping'
+06:41:20.325 [0m[34m[INFO][0m [0m[2m[warpui_core::integration::driver] [0mTest step 'Wait for bootstrapping' succeeded.
+06:41:20.325 [0m[34m[INFO][0m [0m[2m[warpui_core::integration::driver] [0mRunning test step 'Press home key and verify it doesn't show up in input' on window id WindowId(0)
+06:41:20.325 [0m[34m[INFO][0m [0m[2m[warpui_core::integration::step] [0mRunning test step 'Press home key and verify it doesn't show up in input' at frame 39 with 1 events
+06:41:20.325 [0m[34m[INFO][0m [0m[2m[warpui_core::integration::step] [0mDispatching event KeyDown { keystroke: Keystroke { ctrl: false, alt: false, shift: false, cmd: false, meta: false, key: "home" }, chars: "home", details: KeyEventDetails { left_alt: false, right_alt: false, key_without_modifiers: None }, is_composing: false }
+06:41:20.326 [0m[34m[INFO][0m [0m[2m[warpui_core::core::app] [0mdispatching typed action: warp::editor::view::EditorAction::MoveToVisualLineStart
+06:41:20.365 [0m[34m[INFO][0m [0m[2m[warpui_core::core::app] [0mnotifying view observers and updating windows for timer id 0
+06:41:20.375 [0m[34m[INFO][0m [0m[2m[warp_terminal::model::ansi] [0mReceived InputBuffer hook
+06:41:20.375 [0m[34m[INFO][0m [0m[2m[warp::terminal::model::early_output] [0mIgnoring empty input buffer
+06:41:20.376 [0m[34m[INFO][0m [0m[2m[warpui_core::core::app] [0mnotifying view observers and updating windows for timer id 1
+06:41:20.444 [0m[34m[INFO][0m [0m[2m[warpui_core::integration::step] [0mentering assertion loop for 'no pending model events'
+06:41:20.444 [0m[34m[INFO][0m [0m[2m[warp::integration_testing::step] [0mevents pending false
+06:41:20.509 [0m[34m[INFO][0m [0m[2m[warpui_core::integration::step] [0mentering assertion loop for 'no block executing'
+06:41:20.558 [0m[34m[INFO][0m [0m[2m[warpui_core::integration::step] [0mentering assertion loop for 'unnamed'
+06:41:20.559 [0m[34m[INFO][0m [0m[2m[warpui_core::integration::driver] [0mTest step 'Press home key and verify it doesn't show up in input' succeeded.
+06:41:20.759 [0m[34m[INFO][0m [0m[2m[warpui_core::integration::action_log] [0mActionLog: wrote 17 entries to /tmp/warp_integration_test_artifacts/test_home_key_should_not_appear_in_input/2026-10-17T06-41-19/recording.log
+Clearing env var ORIGINAL_HOME
+Clearing env var WARP_TEST_DISABLE_KEYBINDING_SAVE
+Clearing env var HOME
+06:41:20.761 [0m[34m[INFO][0m [0m[2m[warpui_core::platform::app] [0mapplication will terminate
+06:41:20.775 [0m[34m[INFO][0m [0m[2m[warp::persistence::sqlite] [0mShutting down SQLite writer thread
+06:41:20.775 [0m[33m[WARN][0m [0m[2m[warp::persistence::sqlite] [0mSQLite error 28 (Warnings from sqlite3_log()): file unlinked while open: /home/factory-user/warp-stanford/target/debug/build/integration-00220792400bd191/out/tmp/test_home_key_should_not_appear_in_input/.local/state/warp-terminal-integration/warp.sqlite
+06:41:20.776 [0m[34m[INFO][0m [0m[2m[warp::persistence] [0mShut down SQLite writer in 1.217623ms
+06:41:20.776 [0m[34m[INFO][0m [0m[2m[warp::server::telemetry] [0mWriting queued events to disk because telemetry is enabled.
+06:41:20.776 [0m[1m[31m[ERROR][0m [0m[2m[errors::report_error] [0mFailed to write telemetry events to disk: No such file or directory (os error 2)
+06:41:20.776 [0m[34m[INFO][0m [0m[2m[lsp::manager] [0mTerminating all LSP servers for 0 workspaces
+06:41:20.776 [0m[34m[INFO][0m [0m[2m[warp_terminal::local_tty::spawner] [0mTearing down terminal server...
+06:41:20.780 [0m[34m[INFO][0m [0m[2m[warp_terminal::local_tty::server::protocol] [0mReceived empty message; assuming the connection has been closed.
+06:41:20.780 [0m[34m[INFO][0m [0m[2m[warp::app_services] [0mTearing down app services...

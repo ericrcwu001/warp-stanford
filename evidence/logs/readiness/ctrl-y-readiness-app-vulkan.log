@@ -1,0 +1,6 @@
+Cannot access ssh://git@github.com/warpdotdev/warp-channel-config.git (no SSH access?). Skipping install.
+Skipping internal channel config installation (no repo access).
+Running cargo run --bin warp-oss --features "gui" 
+    Finished `dev` profile [unoptimized + debuginfo] target(s) in 2.48s
+     Running `target/debug/warp-oss`
+Terminated
