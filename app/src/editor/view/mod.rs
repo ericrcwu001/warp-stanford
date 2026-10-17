@@ -265,11 +265,6 @@ pub fn init(ctx: &mut AppContext) {
             id!("EditorView") & !id!("IMEOpen"),
         ),
         FixedBinding::new(
-            "ctrl-y",
-            EditorAction::Yank,
-            id!("EditorView") & !id!("IMEOpen"),
-        ),
-        FixedBinding::new(
             "shift-tab",
             EditorAction::ShiftTab,
             id!("EditorView") & !id!("IMEOpen"),
@@ -820,17 +815,22 @@ pub fn init(ctx: &mut AppContext) {
         .with_context_predicate(id!("EditorView") & !id!("IMEOpen"))
         // VSCode only binds a default binding on Mac, see https://github.com/microsoft/vscode/blob/ceda6cc4856841f1550a60327a3eaf3a1d0c306a/src/vs/editor/contrib/linesOperations/browser/linesOperations.ts#L657.
         .with_mac_key_binding("cmd-delete"),
+        // Registered before `delete_all_left` so that a user's saved custom `ctrl-y` binding for
+        // `delete_all_left` (its former Linux/Windows default) still takes precedence over Yank.
+        EditableBinding::new(
+            "editor_view:yank",
+            "Yank (last killed text)",
+            EditorAction::Yank,
+        )
+        .with_context_predicate(id!("EditorView") & !id!("IMEOpen"))
+        .with_key_binding("ctrl-y"),
         EditableBinding::new(
             "editor_view:delete_all_left",
             "Delete all left",
             EditorAction::DeleteAllLeft,
         )
         .with_context_predicate(id!("EditorView") & !id!("IMEOpen"))
-        // Intellij uses `ctrl-Y` to delete a line on Windows/Linux whereas VSCode uses
-        // `ctrl-shift-k`. We use the former because `ctrl-shift-k` would interfere with the binding
-        // to clear all blocks within the blocklist.
-        .with_mac_key_binding("cmd-backspace")
-        .with_linux_or_windows_key_binding("ctrl-y"),
+        .with_mac_key_binding("cmd-backspace"),
         EditableBinding::new(
             "editor_view:insert_newline",
             "Insert newline",
