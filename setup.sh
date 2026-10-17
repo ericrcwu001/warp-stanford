@@ -60,8 +60,6 @@ grep -q '.cargo/env' "$HOME/.bashrc" || echo '. "$HOME/.cargo/env"' >> "$HOME/.b
   --repo-root "$PWD" --project --if-needed --non-interactive </dev/null || \
   echo "common-skills install failed; mission will retry at runtime"
 
-# Warm the build cache so sessions don't start with a ~30 min cold compile.
-# If the Environment build times out, delete everything below this line and let M0 build instead.
+# Download crates only. Compiling Warp's `app` crate here gets OOM-killed on Factory's builder,
+# so the mission compiles on the Droid Computer with reduced memory settings (see mission.md M0).
 cargo fetch
-cargo build --bin warp-oss --features gui
-cargo nextest run -p warpui_core --no-run

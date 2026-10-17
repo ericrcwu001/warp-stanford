@@ -76,6 +76,14 @@ SHELL=/usr/bin/zsh ./script/run > /tmp/warp-run.log 2>&1 &
 ## Milestones
 
 ### M0: Environment baseline
+- The Environment build only downloads crates; nothing is compiled yet. Compiling Warp's `app` crate was
+  OOM-killed (SIGKILL) on Factory's builder, so before the first build on this machine:
+  - check memory (`free -g`, `nproc`); if under 16 GB, add swap:
+    `sudo fallocate -l 16G /swapfile && sudo chmod 600 /swapfile && sudo mkswap /swapfile && sudo swapon /swapfile`
+  - `export CARGO_BUILD_JOBS=2 CARGO_PROFILE_DEV_DEBUG=line-tables-only` (put both in `~/.bashrc`).
+  - If rustc is still killed, retry with `CARGO_BUILD_JOBS=1` and `CARGO_PROFILE_DEV_DEBUG=0`, and report it.
+- Install Warp's shared agent skills (the Environment skipped them):
+  `./script/resolve_common_skills install_common_skills -- --repo-root "$PWD" --project --if-needed --non-interactive`
 - `git fetch stanford master && git checkout -b fix/11743-ctrl-y-yank stanford/master`; record the base SHA.
 - Build `warp-oss`, launch it under Xvfb, finish logged-out onboarding, save
   `evidence/00-baseline.png`. Record OS, kernel, Rust version, renderer backend that worked.
