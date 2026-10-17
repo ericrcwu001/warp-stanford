@@ -1,0 +1,13 @@
+01-empty-prompt	2.123
+02-typed-alpha-beta	4.868
+03-after-direct-ctrl-y	7.657
+04-typed-kill-u	11.844
+05-after-ctrl-u	14.652
+06-after-ctrl-u-ctrl-y	17.701
+07-typed-kill-k-cursor-start	21.957
+08-after-ctrl-k	24.768
+09-after-ctrl-k-ctrl-y	27.833
+10-typed-first-second	31.891
+11-after-ctrl-w	34.695
+12-after-ctrl-w-ctrl-y	37.755
+13-final-reset	41.024

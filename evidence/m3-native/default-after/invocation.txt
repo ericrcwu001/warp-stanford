@@ -1,0 +1,3 @@
+launcher_command=services.yaml commands.launch_manual (managed background job pid 195960)
+demo_command=/home/factory-user/warp-stanford/evidence/demo.sh default 02-after /home/factory-user/warp-stanford/evidence/m3-native/default-after/launcher-output.txt 195960 /home/factory-user/warp-stanford/evidence/m3-native/default-after
+demo_exit=0 (taken from the exit= line printed immediately after demo.sh returned)

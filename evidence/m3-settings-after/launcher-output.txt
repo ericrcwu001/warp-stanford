@@ -1,0 +1,2 @@
+HOME=/tmp/warp-11743-manual-home.GY8ECt
+XDG_RUNTIME_DIR=/tmp/warp-11743-manual-runtime.IcHudc

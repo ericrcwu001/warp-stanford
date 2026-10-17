@@ -1,0 +1,52 @@
+started=2026-10-17T21:59:24+00:00 app_pid=197204 app_home=/tmp/warp-11743-manual-home.GY8ECt
+repo_head=56f3560e9befd95235f9490a18d67956f1b72ac7 branch=fix/11743-ctrl-y-yank
+product_diff_vs_base (excluding crates/integration):
+   app/src/code/editor/view/actions.rs |  6 +-----
+   app/src/editor/view/mod.rs          | 20 ++++++++++----------
+   app/src/notebooks/editor/view.rs    |  6 +-----
+   3 files changed, 12 insertions(+), 20 deletions(-)
+  (end)
+binary=/home/factory-user/warp-stanford/target/debug/warp-oss mtime=2026-10-17 21:56:51.735889331 +0000 sha256=b845a05c06644948abed30872c99a772c907ca9cdbe0222a30a513bcddc17c3a
+app_env:
+  SHELL=/usr/bin/zsh
+  HOME=/tmp/warp-11743-manual-home.GY8ECt
+  WARP_SHELL_PATH=/usr/bin/zsh
+  DISPLAY=:99
+  XDG_RUNTIME_DIR=/tmp/warp-11743-manual-runtime.IcHudc
+  WGPU_BACKEND=vulkan
+home_contents_before_onboarding:
+  .
+  ./.cache
+  ./.cache/mesa_shader_cache
+  ./.cache/mesa_shader_cache/0d
+  ./.cache/mesa_shader_cache/1f
+  ./.cache/mesa_shader_cache/29
+  ./.cache/mesa_shader_cache/46
+  ./.cache/mesa_shader_cache/5b
+  ./.cache/mesa_shader_cache/61
+  ./.cache/mesa_shader_cache/71
+  ./.cache/mesa_shader_cache/8a
+  ./.cache/mesa_shader_cache/8f
+  ./.cache/mesa_shader_cache/96
+  ./.cache/mesa_shader_cache/9c
+  ./.cache/mesa_shader_cache/9f
+  ./.cache/mesa_shader_cache/a1
+  ./.cache/mesa_shader_cache/a7
+  ./.cache/mesa_shader_cache/b1
+  ./.cache/mesa_shader_cache/b6
+  ./.cache/mesa_shader_cache/e2
+  ./.cache/mesa_shader_cache/e9
+  ./.cache/mesa_shader_cache/index
+  ./.cache/mesa_shader_cache/marker
+  ./.config
+  ./.config/warp-oss
+  ./.config/warp-oss/user_preferences.json
+  ./.local
+  ./.local/share
+  ./.local/share/warp-oss
+  ./.local/state
+  ./.local/state/warp-oss
+keybindings_yaml=absent
+keybindings_yaml_after=absent
+app_exited_after_close_s=1
+done 2026-10-17T22:00:10+00:00

@@ -17,6 +17,11 @@ This directory stays untracked on `fix/11743-ctrl-y-yank`. It is to be published
 | `research/RESEARCH.md` | Read-only prior-work search: 16 GitHub searches (both repos × `ctrl-y`/`yank`/`delete all left`/`11743` × issues/PRs), item and review reads, WebSearch queries, findings and coverage limits |
 | `research/raw/` | Raw JSON from every GitHub search (`*.json`, empty `*.err`) and from issue/PR/comment/review/timeline reads (`items/`) |
 | `PROPOSAL.md` | Options A/B/C compared on behavior, files, estimated diff, muscle memory, saved bindings and testability, with a recommendation (historical: B). **Student selected Option A on 2026-10-17; see the decision update in that file** |
+| `m2-settings-before/` | Settings > Keyboard shortcuts on the unchanged product before any Option A edit: `Yank` search finds no Yank row; Delete All Left is bound to Ctrl-Y. Script, launch record and README |
+| `02-after.mp4` | Option A build, fresh logged-out HOME, actual Zsh 5.9, Vulkan: unchanged `demo.sh default` replay. Ctrl-Y no longer deletes; after Ctrl-U, Ctrl-K and Ctrl-W, Ctrl-Y restores exactly the killed text. 30 fps, H.264, no audio |
+| `m3-native/OBSERVATIONS.md` | Fixed-build identity (HEAD, binary hash, three-file product diff, shell, backend), timing comparison with M1, literal per-step results paired with M1 |
+| `m3-native/default-after/` | Per-run launch/identity record, event timelines, ffprobe output, inspected key frames for `02-after.mp4` |
+| `m3-settings-after/` | Settings on the Option A build: editable "Yank (Last Killed Text)" with default Ctrl-Y, Delete All Left with no Linux shortcut, `ctrl y` search lists only Yank, Yank binding editor (Clear/Default/Cancel/Save). Script, launch record and README |
 | `readiness-screenshots/` | Other readiness screenshots. `ctrl-y-integration-readiness.png` shows the synthetic test-user fixture and is not logged-out proof |
 
 M1 status (historical, at the M1 checkpoint): trace, research and proposal are written. The fix direction is not chosen. The next step is the student's decision on `PROPOSAL.md`.
@@ -26,3 +31,7 @@ M1 status (historical, at the M1 checkpoint): trace, research and proposal are w
 After the M1 checkpoint the student replied "Also, do option A" and "Yes, redact and publish the evidence". Option A is selected. The proposal's original recommendation of B is kept unchanged in `PROPOSAL.md` as history. At the time of this publication no product code has been changed; the fix branch still holds only the test-only regression commit. Option A work starts only after the M1 validation run.
 
 The first publication attempt was stopped by a secret scanner on the two readiness logs named above. The student approved replacing only that key value with `[REDACTED]` in the published copies, which is what this branch contains.
+
+## M3 update (2026-10-17)
+
+Option A is implemented on `fix/11743-ctrl-y-yank` (`02b29a0de`, tests `56f3560e9`). `02-after.mp4` replays `demo.sh default` unchanged (same SHA-256 as the M1 copy) on a normal `warp-oss` built from `56f3560e9`, in a fresh logged-out HOME. See `m3-native/OBSERVATIONS.md` and `m3-settings-after/README.md`. These are logged-out manual Linux runs, kept separate from the automated integration tests, which use a synthetic signed-in test user. Native Windows, macOS, Wayland and real GPU were not run.
