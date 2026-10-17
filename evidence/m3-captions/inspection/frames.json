@@ -1,0 +1,1172 @@
+[
+ {
+  "clip": "before",
+  "cue": 1,
+  "name": "empty-prompt",
+  "position": "start",
+  "t_s": 0.04,
+  "cue_start": 0.0,
+  "cue_end": 3.478,
+  "caption": "Empty input at the prompt"
+ },
+ {
+  "clip": "before",
+  "cue": 2,
+  "name": "typed-alpha-beta",
+  "position": "start",
+  "t_s": 3.518,
+  "cue_start": 3.478,
+  "cue_end": 6.5,
+  "caption": "Type 'alpha beta' (cursor at end)"
+ },
+ {
+  "clip": "before",
+  "cue": 3,
+  "name": "after-direct-ctrl-y",
+  "position": "start",
+  "t_s": 6.54,
+  "cue_start": 6.5,
+  "cue_end": 9.546,
+  "caption": "Ctrl-Y: all text left of the cursor is deleted"
+ },
+ {
+  "clip": "before",
+  "cue": 4,
+  "name": "typed-kill-u",
+  "position": "start",
+  "t_s": 9.586,
+  "cue_start": 9.546,
+  "cue_end": 13.633,
+  "caption": "Clear input, type 'kill-u-sentinel' (cursor at end)"
+ },
+ {
+  "clip": "before",
+  "cue": 5,
+  "name": "after-ctrl-u",
+  "position": "start",
+  "t_s": 13.673,
+  "cue_start": 13.633,
+  "cue_end": 16.631,
+  "caption": "Ctrl-U: the text is removed"
+ },
+ {
+  "clip": "before",
+  "cue": 6,
+  "name": "after-ctrl-u-ctrl-y",
+  "position": "start",
+  "t_s": 16.671,
+  "cue_start": 16.631,
+  "cue_end": 19.701,
+  "caption": "Ctrl-Y: input stays empty, 'kill-u-sentinel' is not restored"
+ },
+ {
+  "clip": "before",
+  "cue": 7,
+  "name": "typed-kill-k-cursor-start",
+  "position": "start",
+  "t_s": 19.741,
+  "cue_start": 19.701,
+  "cue_end": 23.8,
+  "caption": "Clear input, type 'kill-k-sentinel', Home moves the cursor to the start"
+ },
+ {
+  "clip": "before",
+  "cue": 8,
+  "name": "after-ctrl-k",
+  "position": "start",
+  "t_s": 23.84,
+  "cue_start": 23.8,
+  "cue_end": 26.759,
+  "caption": "Ctrl-K: the text is removed"
+ },
+ {
+  "clip": "before",
+  "cue": 9,
+  "name": "after-ctrl-k-ctrl-y",
+  "position": "start",
+  "t_s": 26.799,
+  "cue_start": 26.759,
+  "cue_end": 29.826,
+  "caption": "Ctrl-Y: input stays empty, 'kill-k-sentinel' is not restored"
+ },
+ {
+  "clip": "before",
+  "cue": 10,
+  "name": "typed-first-second",
+  "position": "start",
+  "t_s": 29.866,
+  "cue_start": 29.826,
+  "cue_end": 33.7,
+  "caption": "Clear input, type 'first second' (cursor at end)"
+ },
+ {
+  "clip": "before",
+  "cue": 11,
+  "name": "after-ctrl-w",
+  "position": "start",
+  "t_s": 33.74,
+  "cue_start": 33.7,
+  "cue_end": 36.8,
+  "caption": "Ctrl-W: the word 'second' is removed"
+ },
+ {
+  "clip": "before",
+  "cue": 12,
+  "name": "after-ctrl-w-ctrl-y",
+  "position": "start",
+  "t_s": 36.84,
+  "cue_start": 36.8,
+  "cue_end": 39.778,
+  "caption": "Ctrl-Y: 'first ' is deleted too, 'second' is not restored"
+ },
+ {
+  "clip": "before",
+  "cue": 13,
+  "name": "final-reset",
+  "position": "start",
+  "t_s": 39.818,
+  "cue_start": 39.778,
+  "cue_end": 42.467,
+  "caption": "Clear input: end of the demo"
+ },
+ {
+  "clip": "before",
+  "cue": 1,
+  "name": "empty-prompt",
+  "position": "mid",
+  "t_s": 1.739,
+  "cue_start": 0.0,
+  "cue_end": 3.478,
+  "caption": "Empty input at the prompt"
+ },
+ {
+  "clip": "before",
+  "cue": 2,
+  "name": "typed-alpha-beta",
+  "position": "mid",
+  "t_s": 4.989,
+  "cue_start": 3.478,
+  "cue_end": 6.5,
+  "caption": "Type 'alpha beta' (cursor at end)"
+ },
+ {
+  "clip": "before",
+  "cue": 3,
+  "name": "after-direct-ctrl-y",
+  "position": "mid",
+  "t_s": 8.023,
+  "cue_start": 6.5,
+  "cue_end": 9.546,
+  "caption": "Ctrl-Y: all text left of the cursor is deleted"
+ },
+ {
+  "clip": "before",
+  "cue": 4,
+  "name": "typed-kill-u",
+  "position": "mid",
+  "t_s": 11.589,
+  "cue_start": 9.546,
+  "cue_end": 13.633,
+  "caption": "Clear input, type 'kill-u-sentinel' (cursor at end)"
+ },
+ {
+  "clip": "before",
+  "cue": 5,
+  "name": "after-ctrl-u",
+  "position": "mid",
+  "t_s": 15.132,
+  "cue_start": 13.633,
+  "cue_end": 16.631,
+  "caption": "Ctrl-U: the text is removed"
+ },
+ {
+  "clip": "before",
+  "cue": 6,
+  "name": "after-ctrl-u-ctrl-y",
+  "position": "mid",
+  "t_s": 18.166,
+  "cue_start": 16.631,
+  "cue_end": 19.701,
+  "caption": "Ctrl-Y: input stays empty, 'kill-u-sentinel' is not restored"
+ },
+ {
+  "clip": "before",
+  "cue": 7,
+  "name": "typed-kill-k-cursor-start",
+  "position": "mid",
+  "t_s": 21.751,
+  "cue_start": 19.701,
+  "cue_end": 23.8,
+  "caption": "Clear input, type 'kill-k-sentinel', Home moves the cursor to the start"
+ },
+ {
+  "clip": "before",
+  "cue": 8,
+  "name": "after-ctrl-k",
+  "position": "mid",
+  "t_s": 25.279,
+  "cue_start": 23.8,
+  "cue_end": 26.759,
+  "caption": "Ctrl-K: the text is removed"
+ },
+ {
+  "clip": "before",
+  "cue": 9,
+  "name": "after-ctrl-k-ctrl-y",
+  "position": "mid",
+  "t_s": 28.293,
+  "cue_start": 26.759,
+  "cue_end": 29.826,
+  "caption": "Ctrl-Y: input stays empty, 'kill-k-sentinel' is not restored"
+ },
+ {
+  "clip": "before",
+  "cue": 10,
+  "name": "typed-first-second",
+  "position": "mid",
+  "t_s": 31.763,
+  "cue_start": 29.826,
+  "cue_end": 33.7,
+  "caption": "Clear input, type 'first second' (cursor at end)"
+ },
+ {
+  "clip": "before",
+  "cue": 11,
+  "name": "after-ctrl-w",
+  "position": "mid",
+  "t_s": 35.25,
+  "cue_start": 33.7,
+  "cue_end": 36.8,
+  "caption": "Ctrl-W: the word 'second' is removed"
+ },
+ {
+  "clip": "before",
+  "cue": 12,
+  "name": "after-ctrl-w-ctrl-y",
+  "position": "mid",
+  "t_s": 38.289,
+  "cue_start": 36.8,
+  "cue_end": 39.778,
+  "caption": "Ctrl-Y: 'first ' is deleted too, 'second' is not restored"
+ },
+ {
+  "clip": "before",
+  "cue": 13,
+  "name": "final-reset",
+  "position": "mid",
+  "t_s": 41.123,
+  "cue_start": 39.778,
+  "cue_end": 42.467,
+  "caption": "Clear input: end of the demo"
+ },
+ {
+  "clip": "before",
+  "cue": 1,
+  "name": "empty-prompt",
+  "position": "end",
+  "t_s": 3.438,
+  "cue_start": 0.0,
+  "cue_end": 3.478,
+  "caption": "Empty input at the prompt"
+ },
+ {
+  "clip": "before",
+  "cue": 2,
+  "name": "typed-alpha-beta",
+  "position": "end",
+  "t_s": 6.46,
+  "cue_start": 3.478,
+  "cue_end": 6.5,
+  "caption": "Type 'alpha beta' (cursor at end)"
+ },
+ {
+  "clip": "before",
+  "cue": 3,
+  "name": "after-direct-ctrl-y",
+  "position": "end",
+  "t_s": 9.506,
+  "cue_start": 6.5,
+  "cue_end": 9.546,
+  "caption": "Ctrl-Y: all text left of the cursor is deleted"
+ },
+ {
+  "clip": "before",
+  "cue": 4,
+  "name": "typed-kill-u",
+  "position": "end",
+  "t_s": 13.593,
+  "cue_start": 9.546,
+  "cue_end": 13.633,
+  "caption": "Clear input, type 'kill-u-sentinel' (cursor at end)"
+ },
+ {
+  "clip": "before",
+  "cue": 5,
+  "name": "after-ctrl-u",
+  "position": "end",
+  "t_s": 16.591,
+  "cue_start": 13.633,
+  "cue_end": 16.631,
+  "caption": "Ctrl-U: the text is removed"
+ },
+ {
+  "clip": "before",
+  "cue": 6,
+  "name": "after-ctrl-u-ctrl-y",
+  "position": "end",
+  "t_s": 19.661,
+  "cue_start": 16.631,
+  "cue_end": 19.701,
+  "caption": "Ctrl-Y: input stays empty, 'kill-u-sentinel' is not restored"
+ },
+ {
+  "clip": "before",
+  "cue": 7,
+  "name": "typed-kill-k-cursor-start",
+  "position": "end",
+  "t_s": 23.76,
+  "cue_start": 19.701,
+  "cue_end": 23.8,
+  "caption": "Clear input, type 'kill-k-sentinel', Home moves the cursor to the start"
+ },
+ {
+  "clip": "before",
+  "cue": 8,
+  "name": "after-ctrl-k",
+  "position": "end",
+  "t_s": 26.719,
+  "cue_start": 23.8,
+  "cue_end": 26.759,
+  "caption": "Ctrl-K: the text is removed"
+ },
+ {
+  "clip": "before",
+  "cue": 9,
+  "name": "after-ctrl-k-ctrl-y",
+  "position": "end",
+  "t_s": 29.786,
+  "cue_start": 26.759,
+  "cue_end": 29.826,
+  "caption": "Ctrl-Y: input stays empty, 'kill-k-sentinel' is not restored"
+ },
+ {
+  "clip": "before",
+  "cue": 10,
+  "name": "typed-first-second",
+  "position": "end",
+  "t_s": 33.66,
+  "cue_start": 29.826,
+  "cue_end": 33.7,
+  "caption": "Clear input, type 'first second' (cursor at end)"
+ },
+ {
+  "clip": "before",
+  "cue": 11,
+  "name": "after-ctrl-w",
+  "position": "end",
+  "t_s": 36.76,
+  "cue_start": 33.7,
+  "cue_end": 36.8,
+  "caption": "Ctrl-W: the word 'second' is removed"
+ },
+ {
+  "clip": "before",
+  "cue": 12,
+  "name": "after-ctrl-w-ctrl-y",
+  "position": "end",
+  "t_s": 39.738,
+  "cue_start": 36.8,
+  "cue_end": 39.778,
+  "caption": "Ctrl-Y: 'first ' is deleted too, 'second' is not restored"
+ },
+ {
+  "clip": "before",
+  "cue": 13,
+  "name": "final-reset",
+  "position": "end",
+  "t_s": 42.427,
+  "cue_start": 39.778,
+  "cue_end": 42.467,
+  "caption": "Clear input: end of the demo"
+ },
+ {
+  "clip": "after",
+  "cue": 1,
+  "name": "empty-prompt",
+  "position": "start",
+  "t_s": 0.04,
+  "cue_start": 0.0,
+  "cue_end": 3.133,
+  "caption": "Empty input at the prompt"
+ },
+ {
+  "clip": "after",
+  "cue": 2,
+  "name": "typed-alpha-beta",
+  "position": "start",
+  "t_s": 3.173,
+  "cue_start": 3.133,
+  "cue_end": 6.123,
+  "caption": "Type 'alpha beta' (cursor at end)"
+ },
+ {
+  "clip": "after",
+  "cue": 3,
+  "name": "after-direct-ctrl-y",
+  "position": "start",
+  "t_s": 6.163,
+  "cue_start": 6.123,
+  "cue_end": 9.162,
+  "caption": "Ctrl-Y: 'alpha beta' is unchanged"
+ },
+ {
+  "clip": "after",
+  "cue": 4,
+  "name": "typed-kill-u",
+  "position": "start",
+  "t_s": 9.202,
+  "cue_start": 9.162,
+  "cue_end": 13.133,
+  "caption": "Clear input, type 'kill-u-sentinel' (cursor at end)"
+ },
+ {
+  "clip": "after",
+  "cue": 5,
+  "name": "after-ctrl-u",
+  "position": "start",
+  "t_s": 13.173,
+  "cue_start": 13.133,
+  "cue_end": 16.233,
+  "caption": "Ctrl-U: the text is removed"
+ },
+ {
+  "clip": "after",
+  "cue": 6,
+  "name": "after-ctrl-u-ctrl-y",
+  "position": "start",
+  "t_s": 16.273,
+  "cue_start": 16.233,
+  "cue_end": 19.207,
+  "caption": "Ctrl-Y: 'kill-u-sentinel' is restored"
+ },
+ {
+  "clip": "after",
+  "cue": 7,
+  "name": "typed-kill-k-cursor-start",
+  "position": "start",
+  "t_s": 19.247,
+  "cue_start": 19.207,
+  "cue_end": 23.3,
+  "caption": "Clear input, type 'kill-k-sentinel', Home moves the cursor to the start"
+ },
+ {
+  "clip": "after",
+  "cue": 8,
+  "name": "after-ctrl-k",
+  "position": "start",
+  "t_s": 23.34,
+  "cue_start": 23.3,
+  "cue_end": 26.3,
+  "caption": "Ctrl-K: the text is removed"
+ },
+ {
+  "clip": "after",
+  "cue": 9,
+  "name": "after-ctrl-k-ctrl-y",
+  "position": "start",
+  "t_s": 26.34,
+  "cue_start": 26.3,
+  "cue_end": 29.339,
+  "caption": "Ctrl-Y: 'kill-k-sentinel' is restored"
+ },
+ {
+  "clip": "after",
+  "cue": 10,
+  "name": "typed-first-second",
+  "position": "start",
+  "t_s": 29.379,
+  "cue_start": 29.339,
+  "cue_end": 33.2,
+  "caption": "Clear input, type 'first second' (cursor at end)"
+ },
+ {
+  "clip": "after",
+  "cue": 11,
+  "name": "after-ctrl-w",
+  "position": "start",
+  "t_s": 33.24,
+  "cue_start": 33.2,
+  "cue_end": 36.233,
+  "caption": "Ctrl-W: the word 'second' is removed"
+ },
+ {
+  "clip": "after",
+  "cue": 12,
+  "name": "after-ctrl-w-ctrl-y",
+  "position": "start",
+  "t_s": 36.273,
+  "cue_start": 36.233,
+  "cue_end": 39.261,
+  "caption": "Ctrl-Y: 'second' is restored, giving 'first second'"
+ },
+ {
+  "clip": "after",
+  "cue": 13,
+  "name": "final-reset",
+  "position": "start",
+  "t_s": 39.301,
+  "cue_start": 39.261,
+  "cue_end": 42.033,
+  "caption": "Clear input: end of the demo"
+ },
+ {
+  "clip": "after",
+  "cue": 1,
+  "name": "empty-prompt",
+  "position": "mid",
+  "t_s": 1.567,
+  "cue_start": 0.0,
+  "cue_end": 3.133,
+  "caption": "Empty input at the prompt"
+ },
+ {
+  "clip": "after",
+  "cue": 2,
+  "name": "typed-alpha-beta",
+  "position": "mid",
+  "t_s": 4.628,
+  "cue_start": 3.133,
+  "cue_end": 6.123,
+  "caption": "Type 'alpha beta' (cursor at end)"
+ },
+ {
+  "clip": "after",
+  "cue": 3,
+  "name": "after-direct-ctrl-y",
+  "position": "mid",
+  "t_s": 7.643,
+  "cue_start": 6.123,
+  "cue_end": 9.162,
+  "caption": "Ctrl-Y: 'alpha beta' is unchanged"
+ },
+ {
+  "clip": "after",
+  "cue": 4,
+  "name": "typed-kill-u",
+  "position": "mid",
+  "t_s": 11.148,
+  "cue_start": 9.162,
+  "cue_end": 13.133,
+  "caption": "Clear input, type 'kill-u-sentinel' (cursor at end)"
+ },
+ {
+  "clip": "after",
+  "cue": 5,
+  "name": "after-ctrl-u",
+  "position": "mid",
+  "t_s": 14.683,
+  "cue_start": 13.133,
+  "cue_end": 16.233,
+  "caption": "Ctrl-U: the text is removed"
+ },
+ {
+  "clip": "after",
+  "cue": 6,
+  "name": "after-ctrl-u-ctrl-y",
+  "position": "mid",
+  "t_s": 17.72,
+  "cue_start": 16.233,
+  "cue_end": 19.207,
+  "caption": "Ctrl-Y: 'kill-u-sentinel' is restored"
+ },
+ {
+  "clip": "after",
+  "cue": 7,
+  "name": "typed-kill-k-cursor-start",
+  "position": "mid",
+  "t_s": 21.254,
+  "cue_start": 19.207,
+  "cue_end": 23.3,
+  "caption": "Clear input, type 'kill-k-sentinel', Home moves the cursor to the start"
+ },
+ {
+  "clip": "after",
+  "cue": 8,
+  "name": "after-ctrl-k",
+  "position": "mid",
+  "t_s": 24.8,
+  "cue_start": 23.3,
+  "cue_end": 26.3,
+  "caption": "Ctrl-K: the text is removed"
+ },
+ {
+  "clip": "after",
+  "cue": 9,
+  "name": "after-ctrl-k-ctrl-y",
+  "position": "mid",
+  "t_s": 27.819,
+  "cue_start": 26.3,
+  "cue_end": 29.339,
+  "caption": "Ctrl-Y: 'kill-k-sentinel' is restored"
+ },
+ {
+  "clip": "after",
+  "cue": 10,
+  "name": "typed-first-second",
+  "position": "mid",
+  "t_s": 31.27,
+  "cue_start": 29.339,
+  "cue_end": 33.2,
+  "caption": "Clear input, type 'first second' (cursor at end)"
+ },
+ {
+  "clip": "after",
+  "cue": 11,
+  "name": "after-ctrl-w",
+  "position": "mid",
+  "t_s": 34.716,
+  "cue_start": 33.2,
+  "cue_end": 36.233,
+  "caption": "Ctrl-W: the word 'second' is removed"
+ },
+ {
+  "clip": "after",
+  "cue": 12,
+  "name": "after-ctrl-w-ctrl-y",
+  "position": "mid",
+  "t_s": 37.747,
+  "cue_start": 36.233,
+  "cue_end": 39.261,
+  "caption": "Ctrl-Y: 'second' is restored, giving 'first second'"
+ },
+ {
+  "clip": "after",
+  "cue": 13,
+  "name": "final-reset",
+  "position": "mid",
+  "t_s": 40.647,
+  "cue_start": 39.261,
+  "cue_end": 42.033,
+  "caption": "Clear input: end of the demo"
+ },
+ {
+  "clip": "after",
+  "cue": 1,
+  "name": "empty-prompt",
+  "position": "end",
+  "t_s": 3.093,
+  "cue_start": 0.0,
+  "cue_end": 3.133,
+  "caption": "Empty input at the prompt"
+ },
+ {
+  "clip": "after",
+  "cue": 2,
+  "name": "typed-alpha-beta",
+  "position": "end",
+  "t_s": 6.083,
+  "cue_start": 3.133,
+  "cue_end": 6.123,
+  "caption": "Type 'alpha beta' (cursor at end)"
+ },
+ {
+  "clip": "after",
+  "cue": 3,
+  "name": "after-direct-ctrl-y",
+  "position": "end",
+  "t_s": 9.122,
+  "cue_start": 6.123,
+  "cue_end": 9.162,
+  "caption": "Ctrl-Y: 'alpha beta' is unchanged"
+ },
+ {
+  "clip": "after",
+  "cue": 4,
+  "name": "typed-kill-u",
+  "position": "end",
+  "t_s": 13.093,
+  "cue_start": 9.162,
+  "cue_end": 13.133,
+  "caption": "Clear input, type 'kill-u-sentinel' (cursor at end)"
+ },
+ {
+  "clip": "after",
+  "cue": 5,
+  "name": "after-ctrl-u",
+  "position": "end",
+  "t_s": 16.193,
+  "cue_start": 13.133,
+  "cue_end": 16.233,
+  "caption": "Ctrl-U: the text is removed"
+ },
+ {
+  "clip": "after",
+  "cue": 6,
+  "name": "after-ctrl-u-ctrl-y",
+  "position": "end",
+  "t_s": 19.167,
+  "cue_start": 16.233,
+  "cue_end": 19.207,
+  "caption": "Ctrl-Y: 'kill-u-sentinel' is restored"
+ },
+ {
+  "clip": "after",
+  "cue": 7,
+  "name": "typed-kill-k-cursor-start",
+  "position": "end",
+  "t_s": 23.26,
+  "cue_start": 19.207,
+  "cue_end": 23.3,
+  "caption": "Clear input, type 'kill-k-sentinel', Home moves the cursor to the start"
+ },
+ {
+  "clip": "after",
+  "cue": 8,
+  "name": "after-ctrl-k",
+  "position": "end",
+  "t_s": 26.26,
+  "cue_start": 23.3,
+  "cue_end": 26.3,
+  "caption": "Ctrl-K: the text is removed"
+ },
+ {
+  "clip": "after",
+  "cue": 9,
+  "name": "after-ctrl-k-ctrl-y",
+  "position": "end",
+  "t_s": 29.299,
+  "cue_start": 26.3,
+  "cue_end": 29.339,
+  "caption": "Ctrl-Y: 'kill-k-sentinel' is restored"
+ },
+ {
+  "clip": "after",
+  "cue": 10,
+  "name": "typed-first-second",
+  "position": "end",
+  "t_s": 33.16,
+  "cue_start": 29.339,
+  "cue_end": 33.2,
+  "caption": "Clear input, type 'first second' (cursor at end)"
+ },
+ {
+  "clip": "after",
+  "cue": 11,
+  "name": "after-ctrl-w",
+  "position": "end",
+  "t_s": 36.193,
+  "cue_start": 33.2,
+  "cue_end": 36.233,
+  "caption": "Ctrl-W: the word 'second' is removed"
+ },
+ {
+  "clip": "after",
+  "cue": 12,
+  "name": "after-ctrl-w-ctrl-y",
+  "position": "end",
+  "t_s": 39.221,
+  "cue_start": 36.233,
+  "cue_end": 39.261,
+  "caption": "Ctrl-Y: 'second' is restored, giving 'first second'"
+ },
+ {
+  "clip": "after",
+  "cue": 13,
+  "name": "final-reset",
+  "position": "end",
+  "t_s": 41.993,
+  "cue_start": 39.261,
+  "cue_end": 42.033,
+  "caption": "Clear input: end of the demo"
+ },
+ {
+  "clip": "combined",
+  "cue": 1,
+  "name": "empty-prompt",
+  "position": "start",
+  "t_s": 0.468,
+  "cue_start": 0.428,
+  "cue_end": 3.478,
+  "caption": "L: Empty input at the prompt | R: Empty input at the prompt"
+ },
+ {
+  "clip": "combined",
+  "cue": 2,
+  "name": "typed-alpha-beta",
+  "position": "start",
+  "t_s": 3.601,
+  "cue_start": 3.561,
+  "cue_end": 6.5,
+  "caption": "L: Type 'alpha beta' (cursor at end) | R: Type 'alpha beta' (cursor at end)"
+ },
+ {
+  "clip": "combined",
+  "cue": 3,
+  "name": "after-direct-ctrl-y",
+  "position": "start",
+  "t_s": 6.591,
+  "cue_start": 6.551,
+  "cue_end": 9.546,
+  "caption": "L: Ctrl-Y: all text left of the cursor is deleted | R: Ctrl-Y: 'alpha beta' is unchanged"
+ },
+ {
+  "clip": "combined",
+  "cue": 4,
+  "name": "typed-kill-u",
+  "position": "start",
+  "t_s": 9.63,
+  "cue_start": 9.59,
+  "cue_end": 13.561,
+  "caption": "L: Clear input, type 'kill-u-sentinel' (cursor at end) | R: Clear input, type 'kill-u-sentinel' (cursor at end)"
+ },
+ {
+  "clip": "combined",
+  "cue": 5,
+  "name": "after-ctrl-u",
+  "position": "start",
+  "t_s": 13.673,
+  "cue_start": 13.633,
+  "cue_end": 16.631,
+  "caption": "L: Ctrl-U: the text is removed | R: Ctrl-U: the text is removed"
+ },
+ {
+  "clip": "combined",
+  "cue": 6,
+  "name": "after-ctrl-u-ctrl-y",
+  "position": "start",
+  "t_s": 16.701,
+  "cue_start": 16.661,
+  "cue_end": 19.635,
+  "caption": "L: Ctrl-Y: input stays empty, 'kill-u-sentinel' is not restored | R: Ctrl-Y: 'kill-u-sentinel' is restored"
+ },
+ {
+  "clip": "combined",
+  "cue": 7,
+  "name": "typed-kill-k-cursor-start",
+  "position": "start",
+  "t_s": 19.741,
+  "cue_start": 19.701,
+  "cue_end": 23.728,
+  "caption": "L: Clear input, type 'kill-k-sentinel', Home moves the cursor to the start | R: Clear input, type 'kill-k-sentinel', Home moves the cursor to the start"
+ },
+ {
+  "clip": "combined",
+  "cue": 8,
+  "name": "after-ctrl-k",
+  "position": "start",
+  "t_s": 23.84,
+  "cue_start": 23.8,
+  "cue_end": 26.728,
+  "caption": "L: Ctrl-K: the text is removed | R: Ctrl-K: the text is removed"
+ },
+ {
+  "clip": "combined",
+  "cue": 9,
+  "name": "after-ctrl-k-ctrl-y",
+  "position": "start",
+  "t_s": 26.799,
+  "cue_start": 26.759,
+  "cue_end": 29.767,
+  "caption": "L: Ctrl-Y: input stays empty, 'kill-k-sentinel' is not restored | R: Ctrl-Y: 'kill-k-sentinel' is restored"
+ },
+ {
+  "clip": "combined",
+  "cue": 10,
+  "name": "typed-first-second",
+  "position": "start",
+  "t_s": 29.866,
+  "cue_start": 29.826,
+  "cue_end": 33.628,
+  "caption": "L: Clear input, type 'first second' (cursor at end) | R: Clear input, type 'first second' (cursor at end)"
+ },
+ {
+  "clip": "combined",
+  "cue": 11,
+  "name": "after-ctrl-w",
+  "position": "start",
+  "t_s": 33.74,
+  "cue_start": 33.7,
+  "cue_end": 36.661,
+  "caption": "L: Ctrl-W: the word 'second' is removed | R: Ctrl-W: the word 'second' is removed"
+ },
+ {
+  "clip": "combined",
+  "cue": 12,
+  "name": "after-ctrl-w-ctrl-y",
+  "position": "start",
+  "t_s": 36.84,
+  "cue_start": 36.8,
+  "cue_end": 39.689,
+  "caption": "L: Ctrl-Y: 'first ' is deleted too, 'second' is not restored | R: Ctrl-Y: 'second' is restored, giving 'first second'"
+ },
+ {
+  "clip": "combined",
+  "cue": 13,
+  "name": "final-reset",
+  "position": "start",
+  "t_s": 39.818,
+  "cue_start": 39.778,
+  "cue_end": 42.461,
+  "caption": "L: Clear input: end of the demo | R: Clear input: end of the demo"
+ },
+ {
+  "clip": "combined",
+  "cue": 1,
+  "name": "empty-prompt",
+  "position": "mid",
+  "t_s": 1.953,
+  "cue_start": 0.428,
+  "cue_end": 3.478,
+  "caption": "L: Empty input at the prompt | R: Empty input at the prompt"
+ },
+ {
+  "clip": "combined",
+  "cue": 2,
+  "name": "typed-alpha-beta",
+  "position": "mid",
+  "t_s": 5.03,
+  "cue_start": 3.561,
+  "cue_end": 6.5,
+  "caption": "L: Type 'alpha beta' (cursor at end) | R: Type 'alpha beta' (cursor at end)"
+ },
+ {
+  "clip": "combined",
+  "cue": 3,
+  "name": "after-direct-ctrl-y",
+  "position": "mid",
+  "t_s": 8.049,
+  "cue_start": 6.551,
+  "cue_end": 9.546,
+  "caption": "L: Ctrl-Y: all text left of the cursor is deleted | R: Ctrl-Y: 'alpha beta' is unchanged"
+ },
+ {
+  "clip": "combined",
+  "cue": 4,
+  "name": "typed-kill-u",
+  "position": "mid",
+  "t_s": 11.575,
+  "cue_start": 9.59,
+  "cue_end": 13.561,
+  "caption": "L: Clear input, type 'kill-u-sentinel' (cursor at end) | R: Clear input, type 'kill-u-sentinel' (cursor at end)"
+ },
+ {
+  "clip": "combined",
+  "cue": 5,
+  "name": "after-ctrl-u",
+  "position": "mid",
+  "t_s": 15.132,
+  "cue_start": 13.633,
+  "cue_end": 16.631,
+  "caption": "L: Ctrl-U: the text is removed | R: Ctrl-U: the text is removed"
+ },
+ {
+  "clip": "combined",
+  "cue": 6,
+  "name": "after-ctrl-u-ctrl-y",
+  "position": "mid",
+  "t_s": 18.148,
+  "cue_start": 16.661,
+  "cue_end": 19.635,
+  "caption": "L: Ctrl-Y: input stays empty, 'kill-u-sentinel' is not restored | R: Ctrl-Y: 'kill-u-sentinel' is restored"
+ },
+ {
+  "clip": "combined",
+  "cue": 7,
+  "name": "typed-kill-k-cursor-start",
+  "position": "mid",
+  "t_s": 21.715,
+  "cue_start": 19.701,
+  "cue_end": 23.728,
+  "caption": "L: Clear input, type 'kill-k-sentinel', Home moves the cursor to the start | R: Clear input, type 'kill-k-sentinel', Home moves the cursor to the start"
+ },
+ {
+  "clip": "combined",
+  "cue": 8,
+  "name": "after-ctrl-k",
+  "position": "mid",
+  "t_s": 25.264,
+  "cue_start": 23.8,
+  "cue_end": 26.728,
+  "caption": "L: Ctrl-K: the text is removed | R: Ctrl-K: the text is removed"
+ },
+ {
+  "clip": "combined",
+  "cue": 9,
+  "name": "after-ctrl-k-ctrl-y",
+  "position": "mid",
+  "t_s": 28.263,
+  "cue_start": 26.759,
+  "cue_end": 29.767,
+  "caption": "L: Ctrl-Y: input stays empty, 'kill-k-sentinel' is not restored | R: Ctrl-Y: 'kill-k-sentinel' is restored"
+ },
+ {
+  "clip": "combined",
+  "cue": 10,
+  "name": "typed-first-second",
+  "position": "mid",
+  "t_s": 31.727,
+  "cue_start": 29.826,
+  "cue_end": 33.628,
+  "caption": "L: Clear input, type 'first second' (cursor at end) | R: Clear input, type 'first second' (cursor at end)"
+ },
+ {
+  "clip": "combined",
+  "cue": 11,
+  "name": "after-ctrl-w",
+  "position": "mid",
+  "t_s": 35.181,
+  "cue_start": 33.7,
+  "cue_end": 36.661,
+  "caption": "L: Ctrl-W: the word 'second' is removed | R: Ctrl-W: the word 'second' is removed"
+ },
+ {
+  "clip": "combined",
+  "cue": 12,
+  "name": "after-ctrl-w-ctrl-y",
+  "position": "mid",
+  "t_s": 38.245,
+  "cue_start": 36.8,
+  "cue_end": 39.689,
+  "caption": "L: Ctrl-Y: 'first ' is deleted too, 'second' is not restored | R: Ctrl-Y: 'second' is restored, giving 'first second'"
+ },
+ {
+  "clip": "combined",
+  "cue": 13,
+  "name": "final-reset",
+  "position": "mid",
+  "t_s": 41.12,
+  "cue_start": 39.778,
+  "cue_end": 42.461,
+  "caption": "L: Clear input: end of the demo | R: Clear input: end of the demo"
+ },
+ {
+  "clip": "combined",
+  "cue": 1,
+  "name": "empty-prompt",
+  "position": "end",
+  "t_s": 3.438,
+  "cue_start": 0.428,
+  "cue_end": 3.478,
+  "caption": "L: Empty input at the prompt | R: Empty input at the prompt"
+ },
+ {
+  "clip": "combined",
+  "cue": 2,
+  "name": "typed-alpha-beta",
+  "position": "end",
+  "t_s": 6.46,
+  "cue_start": 3.561,
+  "cue_end": 6.5,
+  "caption": "L: Type 'alpha beta' (cursor at end) | R: Type 'alpha beta' (cursor at end)"
+ },
+ {
+  "clip": "combined",
+  "cue": 3,
+  "name": "after-direct-ctrl-y",
+  "position": "end",
+  "t_s": 9.506,
+  "cue_start": 6.551,
+  "cue_end": 9.546,
+  "caption": "L: Ctrl-Y: all text left of the cursor is deleted | R: Ctrl-Y: 'alpha beta' is unchanged"
+ },
+ {
+  "clip": "combined",
+  "cue": 4,
+  "name": "typed-kill-u",
+  "position": "end",
+  "t_s": 13.521,
+  "cue_start": 9.59,
+  "cue_end": 13.561,
+  "caption": "L: Clear input, type 'kill-u-sentinel' (cursor at end) | R: Clear input, type 'kill-u-sentinel' (cursor at end)"
+ },
+ {
+  "clip": "combined",
+  "cue": 5,
+  "name": "after-ctrl-u",
+  "position": "end",
+  "t_s": 16.591,
+  "cue_start": 13.633,
+  "cue_end": 16.631,
+  "caption": "L: Ctrl-U: the text is removed | R: Ctrl-U: the text is removed"
+ },
+ {
+  "clip": "combined",
+  "cue": 6,
+  "name": "after-ctrl-u-ctrl-y",
+  "position": "end",
+  "t_s": 19.595,
+  "cue_start": 16.661,
+  "cue_end": 19.635,
+  "caption": "L: Ctrl-Y: input stays empty, 'kill-u-sentinel' is not restored | R: Ctrl-Y: 'kill-u-sentinel' is restored"
+ },
+ {
+  "clip": "combined",
+  "cue": 7,
+  "name": "typed-kill-k-cursor-start",
+  "position": "end",
+  "t_s": 23.688,
+  "cue_start": 19.701,
+  "cue_end": 23.728,
+  "caption": "L: Clear input, type 'kill-k-sentinel', Home moves the cursor to the start | R: Clear input, type 'kill-k-sentinel', Home moves the cursor to the start"
+ },
+ {
+  "clip": "combined",
+  "cue": 8,
+  "name": "after-ctrl-k",
+  "position": "end",
+  "t_s": 26.688,
+  "cue_start": 23.8,
+  "cue_end": 26.728,
+  "caption": "L: Ctrl-K: the text is removed | R: Ctrl-K: the text is removed"
+ },
+ {
+  "clip": "combined",
+  "cue": 9,
+  "name": "after-ctrl-k-ctrl-y",
+  "position": "end",
+  "t_s": 29.727,
+  "cue_start": 26.759,
+  "cue_end": 29.767,
+  "caption": "L: Ctrl-Y: input stays empty, 'kill-k-sentinel' is not restored | R: Ctrl-Y: 'kill-k-sentinel' is restored"
+ },
+ {
+  "clip": "combined",
+  "cue": 10,
+  "name": "typed-first-second",
+  "position": "end",
+  "t_s": 33.588,
+  "cue_start": 29.826,
+  "cue_end": 33.628,
+  "caption": "L: Clear input, type 'first second' (cursor at end) | R: Clear input, type 'first second' (cursor at end)"
+ },
+ {
+  "clip": "combined",
+  "cue": 11,
+  "name": "after-ctrl-w",
+  "position": "end",
+  "t_s": 36.621,
+  "cue_start": 33.7,
+  "cue_end": 36.661,
+  "caption": "L: Ctrl-W: the word 'second' is removed | R: Ctrl-W: the word 'second' is removed"
+ },
+ {
+  "clip": "combined",
+  "cue": 12,
+  "name": "after-ctrl-w-ctrl-y",
+  "position": "end",
+  "t_s": 39.649,
+  "cue_start": 36.8,
+  "cue_end": 39.689,
+  "caption": "L: Ctrl-Y: 'first ' is deleted too, 'second' is not restored | R: Ctrl-Y: 'second' is restored, giving 'first second'"
+ },
+ {
+  "clip": "combined",
+  "cue": 13,
+  "name": "final-reset",
+  "position": "end",
+  "t_s": 42.421,
+  "cue_start": 39.778,
+  "cue_end": 42.461,
+  "caption": "L: Clear input: end of the demo | R: Clear input: end of the demo"
+ }
+]

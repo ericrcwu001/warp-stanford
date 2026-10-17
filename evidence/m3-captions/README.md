@@ -1,0 +1,72 @@
+# M3 captions, side-by-side comparison and frame checks
+
+Everything here is generated from the two unchanged native recordings, `../01-before.mp4` (M1, unchanged build) and `../02-after.mp4` (M3, Option A build), and from their recorded video-clock event logs (`../m1-native/default-before/events-video.tsv`, `../m3-native/default-after/events-video.tsv`). Neither raw MP4 was modified: their SHA-256 values (`3a22f0ce…`, `7b83eefd…`) match the committed copies on `evidence/11743`. No footage was added, no clip was sped up or slowed down, and no audio or voice was recorded.
+
+## Files
+
+| Path | What it is |
+| --- | --- |
+| `make_captions.py` | Builds `../before.srt`, `../after.srt`, `../01-before-captioned.mp4`, `../02-after-captioned.mp4` and `../before-after-captioned.mp4`, and writes `timeline.json` |
+| `make_narration.py` | Writes `../NARRATION.md` from `timeline.json` (asserts every line is at most 165 wpm) and writes `media-check.md` (ffprobe over every MP4 under `evidence/`) |
+| `inspect_frames.py` | Extracts frames inside every cue of the three captioned videos and builds the inspection sheets |
+| `timeline.json` | Cue intervals per clip, side-by-side offsets, detected key-effect frames, durations |
+| `media-check.md` | Bytes, streams, codec, pixel format, size, frame rate, frame count, duration and hash of each MP4 |
+| `inspection/frames.json` | Every extracted frame: clip, cue, position (start, mid, end), time and caption |
+| `inspection/sheet-<clip>-<start|mid|end>-<a|b>.png` | Crops of the caption area and the input line for each cue, labeled with cue number and time |
+| `inspection/<before|after|combined>/NN-<state>-mid.png` | Full mid-cue frames for each caption (representative PNGs) |
+| `label-before.txt`, `label-after.txt` | Pane labels drawn at the top of each captioned clip |
+| `*.log` | Output of the generator runs |
+
+Rerun: `python3 evidence/m3-captions/make_captions.py && python3 evidence/m3-captions/inspect_frames.py && python3 evidence/m3-captions/make_narration.py` (needs ffmpeg with libass, ImageMagick and DejaVu fonts).
+
+## How the cues are derived
+
+- One cue per hold in `demo.sh default` (13 per clip), in the same order for both runs. The script asserts the two event logs have identical event kinds and details.
+- A "type" cue starts at the reset (`End`, 30 x `BackSpace`) or `type` event that leads into it, so its caption reads "Clear input, type …".
+- A key-result cue starts at the first frame whose input line visibly changes after the key event (more than 12 changed pixel columns in the input row, which excludes the blinking caret). If nothing changes, as with Ctrl-Y in the after run's direct probe and with Ctrl-Y after a kill in the before run, the cue starts at the key event. Detected frames are in `timeline.json` under `key_change_detection`; the effect appeared 0.03–0.10 s after the logged key event.
+- Each cue ends where the next one starts. The last cue ends at the end of the clip.
+- Captions state only what the input line shows (text present, removed, restored or unchanged). They do not mention the kill buffer.
+
+A first pass started key-result cues 0.10 s after the logged `hold` event. Edge-frame inspection showed that the preceding "type" captions then overlapped the first frames after Ctrl-U, Ctrl-K, Ctrl-W and Ctrl-Y (for example, "Clear input, type 'kill-u-sentinel'" over an already empty input). The cue boundaries were corrected to the detected change frames and all videos and frames were regenerated before the checks below.
+
+## Videos
+
+| File | Geometry | Duration | Notes |
+| --- | --- | --- | --- |
+| `../01-before-captioned.mp4` | 1600x1000, 30 fps | 42.467 s (same as raw) | `before.srt` burned in, pane label at top |
+| `../02-after-captioned.mp4` | 1600x1000, 30 fps | 42.033 s (same as raw) | `after.srt` burned in, pane label at top |
+| `../before-after-captioned.mp4` | 3200x1000 (two full-resolution 1600x1000 panes, before left, after right), 30 fps | 42.500 s | Normal speed. The after pane starts 0.428 s late by holding its first frame and holds its last frame for the final 0.04 s |
+
+Both panes keep native resolution so the small input-line text stays legible. Captions sit in the empty upper terminal area so they never cover the input line.
+
+The 0.428 s after-pane delay is the single constant shift that minimises the largest difference between matching events in the two logs. It compensates for x11grab starting 0.348 s later relative to the script in the M3 run. After the shift, the largest remaining mismatch between any pair of matching events is 0.089 s. The order and speed of both recordings are unchanged.
+
+All MP4s: H.264, yuv420p, one video stream, no audio, each under 25 MB (`media-check.md`, result PASS). Largest: `before-after-captioned.mp4`, 834,838 bytes.
+
+## Frame inspection
+
+For every cue in each of the three captioned videos, frames were extracted with `ffmpeg -ss T -i <video> -frames:v 1` at cue start + 0.04 s, the midpoint, and cue end − 0.04 s (117 frames). For the side-by-side video the window is the overlap of the two panes' cues on the combined clock, so the check includes the 0.428 s pane offset. All 18 sheets were read visually.
+
+Observed results (both edges of every cue):
+
+| Cue | Before pane input | After pane input | Matches caption |
+| --- | --- | --- | --- |
+| 1 Empty prompt | empty | empty | yes |
+| 2 Type 'alpha beta' | typing in progress at start, `alpha beta` at end | same | yes |
+| 3 Ctrl-Y | empty | `alpha beta` unchanged | yes |
+| 4 Clear, type 'kill-u-sentinel' | erasing/empty at start, `kill-u-sentinel` at end | `alpha beta` being erased at start, `kill-u-sentinel` at end | yes |
+| 5 Ctrl-U | empty | empty | yes |
+| 6 Ctrl-Y | empty (not restored) | `kill-u-sentinel` | yes |
+| 7 Clear, type 'kill-k-sentinel', Home | erasing at start, `kill-k-sentinel` with caret at the start at end | `kill-u-senti…` being erased at start, `kill-k-sentinel` at end | yes |
+| 8 Ctrl-K | empty | empty | yes |
+| 9 Ctrl-Y | empty (not restored) | `kill-k-sentinel` | yes |
+| 10 Clear, type 'first second' | erasing at start, `first second` at end | `kill-k-sentin…` being erased at start, `first second` at end | yes |
+| 11 Ctrl-W | `first ` | `first ` | yes |
+| 12 Ctrl-Y | empty (`first ` deleted, `second` not restored) | `first second` | yes |
+| 13 Clear input: end of demo | empty | `first sec…` being erased at start, empty at end | yes |
+
+The caret blinks, so it is visible only in some frames. "Cursor at end" and "Home moves the cursor to the start" describe the typed keys; the caret position is visible in some of the frames (for example, cue 7 end in the before clip).
+
+## Not covered
+
+Linux only (Xvfb, Openbox, software Vulkan). Native Windows, macOS, Wayland and real GPU were not run. `NARRATION.md` is a text script; nobody recorded it.

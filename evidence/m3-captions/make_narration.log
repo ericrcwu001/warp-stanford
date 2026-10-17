@@ -1,0 +1,8 @@
+| file | bytes | streams | audio streams | codec | pix_fmt | size | fps | frames | duration s | sha256 (first 16) |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| `01-before-captioned.mp4` | 441,995 | 1 | 0 | h264 | yuv420p | 1600x1000 | 30/1 | 1274 | 42.467 | 5882ff3280fe1fe8 |
+| `01-before.mp4` | 192,808 | 1 | 0 | h264 | yuv420p | 1600x1000 | 30/1 | 1274 | 42.467 | 3a22f0ce684263d0 |
+| `01-workaround.mp4` | 234,296 | 1 | 0 | h264 | yuv420p | 1600x1000 | 30/1 | 906 | 30.200 | 39f49a5051c2c667 |
+| `02-after-captioned.mp4` | 419,241 | 1 | 0 | h264 | yuv420p | 1600x1000 | 30/1 | 1261 | 42.033 | e8286049e441faf4 |
+| `02-after.mp4` | 197,402 | 1 | 0 | h264 | yuv420p | 1600x1000 | 30/1 | 1261 | 42.033 | 7b83eefdf34dc323 |
+| `before-after-captioned.mp4` | 834,838 | 1 | 0 | h264 | yuv420p | 3200x1000 | 30/1 | 1275 | 42.500 | 96b693b42e4de7d2 |

@@ -22,6 +22,11 @@ This directory stays untracked on `fix/11743-ctrl-y-yank`. It is to be published
 | `m3-native/OBSERVATIONS.md` | Fixed-build identity (HEAD, binary hash, three-file product diff, shell, backend), timing comparison with M1, literal per-step results paired with M1 |
 | `m3-native/default-after/` | Per-run launch/identity record, event timelines, ffprobe output, inspected key frames for `02-after.mp4` |
 | `m3-settings-after/` | Settings on the Option A build: editable "Yank (Last Killed Text)" with default Ctrl-Y, Delete All Left with no Linux shortcut, `ctrl y` search lists only Yank, Yank binding editor (Clear/Default/Cancel/Save). Script, launch record and README |
+| `before.srt`, `after.srt` | 13 captions each, derived from the recorded event timelines of `01-before.mp4` and `02-after.mp4`; captions describe only what the input line shows |
+| `01-before-captioned.mp4`, `02-after-captioned.mp4` | Raw clips with their SRT and a build label burned in. Same length as the raw clips (42.467 s, 42.033 s), 1600x1000, 30 fps, H.264, no audio |
+| `before-after-captioned.mp4` | Side-by-side comparison at normal speed: before left, after right, 3200x1000 (two native panes), 42.500 s, no audio. The after pane starts 0.428 s late by holding its first frame so matching steps line up (largest remaining event mismatch 0.089 s) |
+| `NARRATION.md` | Text-only narration table (start - end, caption on screen, line to say aloud), one row per caption for the side-by-side and each captioned clip, paced at about 150 wpm or slower. No voice track exists |
+| `m3-captions/` | Generator scripts, cue timeline, MP4 population check (`media-check.md`: every MP4 is one H.264 video stream, no audio, under 25 MB), extracted in-cue frames and inspection sheets with recorded results (`README.md`) |
 | `readiness-screenshots/` | Other readiness screenshots. `ctrl-y-integration-readiness.png` shows the synthetic test-user fixture and is not logged-out proof |
 
 M1 status (historical, at the M1 checkpoint): trace, research and proposal are written. The fix direction is not chosen. The next step is the student's decision on `PROPOSAL.md`.
@@ -35,3 +40,7 @@ The first publication attempt was stopped by a secret scanner on the two readine
 ## M3 update (2026-10-17)
 
 Option A is implemented on `fix/11743-ctrl-y-yank` (`02b29a0de`, tests `56f3560e9`). `02-after.mp4` replays `demo.sh default` unchanged (same SHA-256 as the M1 copy) on a normal `warp-oss` built from `56f3560e9`, in a fresh logged-out HOME. See `m3-native/OBSERVATIONS.md` and `m3-settings-after/README.md`. These are logged-out manual Linux runs, kept separate from the automated integration tests, which use a synthetic signed-in test user. Native Windows, macOS, Wayland and real GPU were not run.
+
+## M3 captions update (2026-10-17)
+
+`before.srt`, `after.srt`, the two captioned clips, `before-after-captioned.mp4` and `NARRATION.md` were generated from the unchanged `01-before.mp4` and `02-after.mp4` (hashes unchanged) and their event logs; see `m3-captions/README.md`. Frames inside every cue, at both edges and the midpoint, were extracted and inspected in all three captioned videos, including the side-by-side with its 0.428 s pane offset. No footage, voice or audio was added and nothing was sped up. Linux only; native Windows, macOS, Wayland and real GPU were not run.

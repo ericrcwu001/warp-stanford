@@ -1,0 +1,52 @@
+1
+00:00:00,000 --> 00:00:03,133
+Empty input at the prompt
+
+2
+00:00:03,133 --> 00:00:06,123
+Type 'alpha beta' (cursor at end)
+
+3
+00:00:06,123 --> 00:00:09,162
+Ctrl-Y: 'alpha beta' is unchanged
+
+4
+00:00:09,162 --> 00:00:13,133
+Clear input, type 'kill-u-sentinel' (cursor at end)
+
+5
+00:00:13,133 --> 00:00:16,233
+Ctrl-U: the text is removed
+
+6
+00:00:16,233 --> 00:00:19,207
+Ctrl-Y: 'kill-u-sentinel' is restored
+
+7
+00:00:19,207 --> 00:00:23,300
+Clear input, type 'kill-k-sentinel', Home moves the cursor to the start
+
+8
+00:00:23,300 --> 00:00:26,300
+Ctrl-K: the text is removed
+
+9
+00:00:26,300 --> 00:00:29,339
+Ctrl-Y: 'kill-k-sentinel' is restored
+
+10
+00:00:29,339 --> 00:00:33,200
+Clear input, type 'first second' (cursor at end)
+
+11
+00:00:33,200 --> 00:00:36,233
+Ctrl-W: the word 'second' is removed
+
+12
+00:00:36,233 --> 00:00:39,261
+Ctrl-Y: 'second' is restored, giving 'first second'
+
+13
+00:00:39,261 --> 00:00:42,033
+Clear input: end of the demo
+
