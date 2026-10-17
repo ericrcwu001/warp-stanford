@@ -1,0 +1,418 @@
+candidate=56f3560e9befd95235f9490a18d67956f1b72ac7 target_stanford_master=f411fbc20e6283a2abcdd1ed64bf5b67df864f82 start=2026-10-17T22:36:41Z
+Running ./script/format...
+Rust formatting succeeded...
+Checking for inline Rust test modules...
+Inline Rust test module check succeeded...
+Running clippy...
+   Compiling jobserver v0.1.32
+   Compiling cc v1.2.56
+    Checking hashbrown v0.16.0
+    Checking indexmap v2.12.0
+    Checking bytemuck v1.24.0
+    Checking tokio-util v0.7.18
+   Compiling cmake v0.1.58
+   Compiling aws-lc-sys v0.39.1
+   Compiling aws-lc-rs v1.16.2
+    Checking h2 v0.4.15
+   Compiling rustls v0.23.39
+    Checking hyper v1.8.1
+    Checking rustls-webpki v0.103.13
+    Checking hyper-util v0.1.16
+   Compiling ahash v0.7.8
+   Compiling hashbrown v0.12.3
+    Checking tokio-rustls v0.26.4
+   Compiling num-traits v0.2.19
+   Compiling rkyv v0.7.46
+   Compiling counter v0.5.7
+    Checking hyper-rustls v0.27.7
+   Compiling cynic-codegen v3.8.0
+   Compiling rand v0.8.6
+    Checking http-range-header v0.4.0
+    Checking tower-http v0.6.8
+   Compiling cynic-proc-macros v3.8.0
+    Checking rustls-platform-verifier v0.7.0
+    Checking memmap2 v0.9.7
+    Checking cynic v3.8.0
+    Checking tungstenite v0.24.0
+   Compiling wayland-backend v0.3.11
+    Checking reqwest v0.13.5
+   Compiling phf_generator v0.11.3
+    Checking graphql-ws-client v0.11.1
+    Checking async-tungstenite v0.28.2
+   Compiling phf_codegen v0.11.3
+   Compiling string_cache_codegen v0.5.4
+   Compiling web_atoms v0.1.3
+    Checking wayland-client v0.31.11
+    Checking websocket v0.1.0 (/home/factory-user/warp-stanford/crates/websocket)
+   Compiling signal-hook v0.3.18
+   Compiling clang-sys v1.8.1
+    Checking warp_errors v0.0.0 (/home/factory-user/warp-stanford/crates/warp_errors)
+    Checking markup5ever v0.35.0
+    Checking wayland-protocols v0.32.9
+    Checking castaway v0.2.4
+    Checking compact_str v0.9.0
+   Compiling strum_macros v0.28.0
+   Compiling instability v0.3.12
+   Compiling indoc v2.0.7
+    Checking html5ever v0.35.0
+    Checking strum v0.28.0
+    Checking wayland-protocols-wlr v0.3.9
+    Checking signal-hook-mio v0.2.5
+    Checking xml5ever v0.35.0
+    Checking lru v0.18.0
+    Checking unicode-truncate v2.0.1
+    Checking kasuari v0.4.11
+    Checking critical-section v1.2.0
+   Compiling bindgen v0.69.5
+    Checking petgraph v0.8.3
+    Checking ratatui-core v0.1.1
+    Checking markup5ever_rcdom v0.35.0+unofficial
+    Checking crossterm v0.29.0
+    Checking command v0.1.0 (/home/factory-user/warp-stanford/crates/command)
+   Compiling freetype-sys v0.20.1
+    Checking rustybuzz v0.20.1
+   Compiling openh264-sys2 v0.8.1
+    Checking fontdb v0.23.0
+   Compiling minimp4-sys v0.1.1
+    Checking tiny-skia-path v0.12.0
+    Checking line-clipping v0.3.7
+    Checking tree_magic_mini v3.2.2
+    Checking ratatui-widgets v0.3.1
+    Checking markdown_parser v0.1.0 (/home/factory-user/warp-stanford/crates/markdown_parser)
+    Checking safe_arch v0.7.4
+    Checking usvg v0.47.0
+    Checking wl-clipboard-rs v0.9.3
+    Checking wide v0.7.33
+    Checking freetype v0.7.2
+    Checking ratatui-macros v0.7.1
+    Checking image v0.25.9
+    Checking tiny-skia v0.12.0
+    Checking ratatui-crossterm v0.1.1
+    Checking sum_tree v0.1.0 (/home/factory-user/warp-stanford/crates/sum_tree)
+   Compiling warpui_core v0.1.0 (/home/factory-user/warp-stanford/crates/warpui_core)
+    Checking rgb v0.8.50
+    Checking font-kit v0.12.0 (https://github.com/warpdotdev/font-kit?rev=a04b225ecb639bb850f21d05212cfdc7465000f3#a04b225e)
+    Checking resvg v0.47.0
+    Checking ratatui v0.30.1
+    Checking arboard v3.6.1
+    Checking minimp4 v0.1.2
+    Checking openh264 v0.8.1
+    Checking warp_util v0.1.0 (/home/factory-user/warp-stanford/crates/warp_util)
+   Compiling zvariant_utils v3.2.0
+   Compiling zvariant_derive v5.6.0
+   Compiling zvariant v5.6.0
+   Compiling zbus_names v4.2.0
+   Compiling zbus_macros v5.9.0
+    Checking zbus v5.9.0
+    Checking num-complex v0.4.6
+    Checking num v0.4.3
+   Compiling ring v0.17.14
+    Checking toml_edit v0.25.6+spec-1.1.0
+    Checking secret-service v5.0.0
+    Checking warpui_extras v0.0.0 (/home/factory-user/warp-stanford/crates/warpui_extras)
+    Checking mockito v1.7.1
+    Checking settings v0.0.0 (/home/factory-user/warp-stanford/crates/settings)
+    Checking warp_core v0.0.0 (/home/factory-user/warp-stanford/crates/warp_core)
+    Checking rand_distr v0.5.1
+    Checking half v2.6.0
+   Compiling rustix v1.1.2
+   Compiling getrandom v0.3.4
+   Compiling tempfile v3.23.0
+   Compiling prost-build v0.14.3
+    Checking asset_cache v0.0.0 (/home/factory-user/warp-stanford/crates/asset_cache)
+    Checking naga-types v30.0.0
+    Checking naga v30.0.0
+    Checking wgpu-types v30.0.0
+    Checking gpu-allocator v0.28.0
+    Checking wgpu-naga-bridge v30.0.0
+    Checking font-types v0.7.3
+    Checking wgpu-hal v30.0.0
+    Checking wayland-csd-frame v0.3.0
+    Checking read-fonts v0.22.7
+    Checking wayland-cursor v0.31.8
+    Checking calloop-wayland-source v0.3.0
+    Checking tiny-skia-path v0.11.4
+   Compiling bindgen v0.70.1
+    Checking tiny-skia v0.11.4
+    Checking smithay-client-toolkit v0.19.2
+    Checking skrifa v0.22.3
+    Checking wgpu-core-deps-windows-linux-android v30.0.0
+    Checking swash v0.1.19
+    Checking wgpu-core v30.0.0
+    Checking sctk-adwaita v0.10.1
+   Compiling warpui v0.0.0 (/home/factory-user/warp-stanford/crates/warpui)
+    Checking wayland-protocols-plasma v0.3.9
+    Checking winit v0.30.13 (https://github.com/warpdotdev/winit.git?rev=14db95a686387211d57cf2afd1d908b2d82a20fe#14db95a6)
+    Checking cosmic-text v0.12.0 (https://github.com/warpdotdev/cosmic-text.git?rev=a7c7b71497542758e08f77390b8efce543b3181f#a7c7b714)
+    Checking wgpu v30.0.0
+    Checking notify-rust v4.11.7
+    Checking ciborium-ll v0.2.2
+    Checking aha-reqwest-eventsource v0.1.0
+   Compiling libsqlite3-sys v0.33.0
+   Compiling prost-reflect-build v0.16.0
+    Checking http_client v0.0.0 (/home/factory-user/warp-stanford/crates/http_client)
+   Compiling warp_multi_agent_api v0.0.0 (https://github.com/warpdotdev/warp-proto-apis.git?rev=00cdd6726f28fb6b32a6712f0ca3264dbd0956a1#00cdd672)
+   Compiling migrations_internals v2.3.0
+    Checking jaq-json v2.0.0
+    Checking diesel v2.3.10
+   Compiling migrations_macros v2.3.0
+   Compiling warp_graphql_schema v0.0.0 (/home/factory-user/warp-stanford/crates/warp_graphql_schema)
+    Checking jaq-fmts v0.1.0
+    Checking diesel_migrations v2.3.1
+    Checking jaq-all v0.1.0
+   Compiling warp_graphql v0.1.0 (/home/factory-user/warp-stanford/crates/graphql)
+    Checking local_control v0.0.0 (/home/factory-user/warp-stanford/crates/local_control)
+    Checking persistence v0.0.0 (/home/factory-user/warp-stanford/crates/persistence)
+   Compiling tink-proto v0.3.0 (https://github.com/warpdotdev/tink-rust?rev=54b9ac9af93b0c08b446a7bc0582836c9403a71b#54b9ac9a)
+    Checking warp_isolation_platform v0.1.0 (/home/factory-user/warp-stanford/crates/isolation_platform)
+   Compiling arborium-javascript v2.13.0
+    Checking warp_cli v0.0.0 (/home/factory-user/warp-stanford/crates/warp_cli)
+   Compiling arborium-css v2.13.0
+    Checking serde_yaml v0.9.34+deprecated
+   Compiling arborium-tree-sitter v2.13.0
+    Checking tink-core v0.3.0 (https://github.com/warpdotdev/tink-rust?rev=54b9ac9af93b0c08b446a7bc0582836c9403a71b#54b9ac9a)
+    Checking mermaid_to_svg v0.1.0 (https://github.com/warpdotdev/mermaid-to-svg.git?rev=8d3f789c2eb49335d7bf247a06bb649f59b6d4ed#8d3f789c)
+    Checking vim v0.1.0 (/home/factory-user/warp-stanford/crates/vim)
+    Checking watcher v0.1.0 (/home/factory-user/warp-stanford/crates/watcher)
+    Checking ipynb_parser v0.1.0 (/home/factory-user/warp-stanford/crates/ipynb_parser)
+   Compiling arborium-c v2.13.0
+   Compiling arborium-html v2.13.0
+   Compiling arborium-toml v2.13.0
+   Compiling arborium-scss v2.13.0
+   Compiling arborium-typescript v2.13.0
+   Compiling arborium-yaml v2.13.0
+    Checking warp_completer v0.1.0 (/home/factory-user/warp-stanford/crates/warp_completer)
+    Checking warp_editor v0.1.0 (/home/factory-user/warp-stanford/crates/editor)
+    Checking repo_metadata v0.1.0 (/home/factory-user/warp-stanford/crates/repo_metadata)
+    Checking tink-prf v0.3.0
+   Compiling zstd-sys v2.0.15+zstd.1.5.7
+   Compiling arborium-python v2.13.0
+   Compiling arborium-tsx v2.13.0
+   Compiling arborium-vue v2.13.0
+   Compiling arborium-nix v2.13.0
+   Compiling arborium-go v2.13.0
+   Compiling arborium-bash v2.13.0
+   Compiling arborium-jq v2.13.0
+   Compiling arborium-markdown v2.13.0
+   Compiling arborium-cpp v2.13.0
+   Compiling arborium-powershell v2.13.0
+   Compiling arborium-scala v2.13.0
+   Compiling arborium-objc v2.13.0
+   Compiling arborium-sql v2.13.0
+   Compiling arborium-json v2.13.0
+   Compiling arborium-ruby v2.13.0
+   Compiling arborium-lua v2.13.0
+   Compiling arborium-kotlin v2.13.0
+   Compiling arborium-elixir v2.13.0
+   Compiling arborium-starlark v2.13.0
+   Compiling arborium-java v2.13.0
+   Compiling arborium-c-sharp v2.13.0
+   Compiling arborium-swift v2.13.0
+   Compiling arborium-xml v2.13.0
+   Compiling arborium-php v2.13.0
+   Compiling arborium-rust v2.13.0
+   Compiling arborium-hcl v2.13.0
+   Compiling arborium-dockerfile v2.13.0
+   Compiling arborium v2.13.0
+    Checking tink-mac v0.3.0
+    Checking channel_versions v0.1.0 (/home/factory-user/warp-stanford/crates/channel_versions)
+    Checking arborium-highlight v2.13.0
+    Checking tink-daead v0.3.0
+    Checking tink-aead v0.3.0
+   Compiling zstd-safe v7.2.4
+    Checking tink-hybrid v0.3.0 (https://github.com/warpdotdev/tink-rust?rev=54b9ac9af93b0c08b446a7bc0582836c9403a71b#54b9ac9a)
+    Checking ashpd v0.11.1
+    Checking computer_use v0.0.0 (/home/factory-user/warp-stanford/crates/computer_use)
+    Checking zstd v0.13.3
+    Checking secret_redaction v0.0.0 (/home/factory-user/warp-stanford/crates/secret_redaction)
+    Checking warp_managed_secrets v0.1.0 (/home/factory-user/warp-stanford/crates/managed_secrets)
+    Checking languages v0.0.0 (/home/factory-user/warp-stanford/crates/languages)
+    Checking warp_assets v0.0.0 (/home/factory-user/warp-stanford/crates/warp_assets)
+    Checking process-wrap v10.0.1
+    Checking rmcp v3.5.0
+    Checking aws-smithy-types v1.4.7
+   Compiling ai v0.1.0 (/home/factory-user/warp-stanford/crates/ai)
+    Checking warp_terminal v0.0.0 (/home/factory-user/warp-stanford/crates/warp_terminal)
+    Checking syntax_tree v0.1.0 (/home/factory-user/warp-stanford/crates/syntax_tree)
+    Checking priority-queue v2.5.0
+   Compiling pulp v0.22.2
+   Compiling lzma-sys v0.1.20
+   Compiling bzip2-sys v0.1.13+1.0.8
+    Checking raw-cpuid v11.5.0
+    Checking reborrow v0.5.5
+    Checking pulp-wasm-simd-flag v0.1.0
+    Checking warp_server_auth v0.1.0 (/home/factory-user/warp-stanford/crates/warp_server_auth)
+   Compiling indexmap v1.9.3
+    Checking dyn-stack v0.13.0
+   Compiling seq-macro v0.3.6
+    Checking gemm-common v0.19.0
+   Compiling serde_yaml v0.8.26
+    Checking aws-smithy-runtime-api v1.12.0
+   Compiling uneval v0.2.3 (https://github.com/warpdotdev/uneval?rev=df4d9fad372aedc447e6f93ca0f930fabaf9dd1a#df4d9fad)
+   Compiling memmap v0.7.0
+   Compiling warp-workflows v0.1.0 (https://github.com/warpdotdev/workflows?rev=793a98ddda6ef19682aed66364faebd2829f0e01#793a98dd)
+    Checking bzip2 v0.5.2
+    Checking xz2 v0.1.7
+    Checking cloud_objects v0.1.0 (/home/factory-user/warp-stanford/crates/cloud_objects)
+    Checking zip v2.4.2
+    Checking cloud_object_persistence v0.1.0 (/home/factory-user/warp-stanford/crates/cloud_object_persistence)
+    Checking gemm-f32 v0.19.0
+   Compiling onig_sys v69.9.1
+    Checking axum v0.8.4
+    Checking gemm-f16 v0.19.0
+    Checking cloud_object_models v0.1.0 (/home/factory-user/warp-stanford/crates/cloud_object_models)
+    Checking aws-credential-types v1.2.14
+    Checking aws-smithy-http v0.63.6
+    Checking gemm-c64 v0.19.0
+    Checking gemm-f64 v0.19.0
+    Checking gemm-c32 v0.19.0
+   Compiling polling v3.11.0
+   Compiling yoke-derive v0.8.1
+    Checking typed-path v0.12.2
+   Compiling portable-atomic v1.11.1
+    Checking zip v7.2.0
+    Checking yoke v0.8.1
+   Compiling async-io v2.6.0
+    Checking gemm v0.19.0
+    Checking aws-smithy-observability v0.2.6
+    Checking aws-smithy-http-client v1.1.12
+    Checking float8 v0.6.0
+   Compiling derive_builder_core v0.20.1
+    Checking safetensors v0.7.0
+   Compiling esaxx-rs v0.1.10
+   Compiling async-signal v0.2.13
+    Checking candle-core v0.9.2
+   Compiling derive_builder_macro v0.20.1
+    Checking aws-smithy-runtime v1.11.1
+    Checking aws-sigv4 v1.4.3
+    Checking onig v6.5.1
+    Checking aws-types v1.3.15
+   Compiling candle-onnx v0.9.2
+    Checking console v0.15.11
+   Compiling monostate-impl v0.1.14
+   Compiling futures-sink v0.3.31
+    Checking number_prefix v0.4.0
+    Checking base64 v0.13.1
+   Compiling macro_rules_attribute-proc_macro v0.2.2
+    Checking macro_rules_attribute v0.2.2
+    Checking spm_precompiled v0.1.4
+   Compiling async-process v2.5.0
+    Checking indicatif v0.17.11
+   Compiling futures-channel v0.3.31
+    Checking monostate v0.1.14
+    Checking grep-searcher v0.1.16
+    Checking aws-runtime v1.7.3
+    Checking derive_builder v0.20.1
+    Checking candle-nn v0.9.2
+    Checking aws-smithy-json v0.62.5
+   Compiling libz-sys v1.1.25
+   Compiling remote_server v0.1.0 (/home/factory-user/warp-stanford/crates/remote_server)
+    Checking simple_logger v0.1.0 (/home/factory-user/warp-stanford/crates/simple_logger)
+    Checking ui_components v0.0.0 (/home/factory-user/warp-stanford/crates/ui_components)
+   Compiling parking_lot_core v0.9.12
+    Checking rayon-cond v0.4.0
+    Checking unicode-normalization-alignments v0.1.12
+    Checking dary_heap v0.3.7
+    Checking unicode_categories v0.1.1
+   Compiling futures-task v0.3.31
+   Compiling futures-util v0.3.31
+   Compiling gettext-sys v0.21.3
+    Checking tokenizers v0.21.4
+   Compiling parking_lot v0.12.5
+    Checking tantivy-sstable v0.7.0
+    Checking grep-printer v0.3.1
+    Checking warp_logging v0.0.0 (/home/factory-user/warp-stanford/crates/warp_logging)
+    Checking cloud_object_client v0.1.0 (/home/factory-user/warp-stanford/crates/cloud_object_client)
+    Checking axum-extra v0.10.1
+   Compiling toml v0.5.11
+    Checking tantivy-columnar v0.7.0
+   Compiling find-crate v0.6.3
+    Checking grep v0.4.1
+    Checking node_runtime v0.1.0 (/home/factory-user/warp-stanford/crates/node_runtime)
+    Checking jsonrpc v0.1.0 (/home/factory-user/warp-stanford/crates/jsonrpc)
+    Checking lru v0.16.3
+   Compiling libgit2-sys v0.18.3+1.9.2
+    Checking tantivy v0.26.0
+   Compiling palette_derive v0.6.1
+    Checking warp_server_client v0.1.0 (/home/factory-user/warp-stanford/crates/warp_server_client)
+    Checking input_classifier v0.0.0 (/home/factory-user/warp-stanford/crates/input_classifier)
+    Checking onboarding v0.1.0 (/home/factory-user/warp-stanford/crates/onboarding)
+    Checking aws-smithy-query v0.60.15
+    Checking toml_edit v0.22.27
+    Checking palette v0.6.1
+    Checking gettext-rs v0.7.0
+    Checking aws-sdk-sts v1.103.0
+    Checking lsp v0.1.0 (/home/factory-user/warp-stanford/crates/lsp)
+    Checking warp_ripgrep v0.1.0 (/home/factory-user/warp-stanford/crates/warp_ripgrep)
+   Compiling warp v0.1.0 (/home/factory-user/warp-stanford/app)
+    Checking aws-sdk-ssooidc v1.100.0
+    Checking aws-sdk-sso v1.98.0
+    Checking aws-sdk-signin v1.9.0
+    Checking build_cache v0.1.0 (/home/factory-user/warp-stanford/crates/build_cache)
+    Checking freedesktop-desktop-entry v0.5.0
+    Checking opentelemetry-otlp v0.32.0
+    Checking aws-config v1.8.16
+    Checking git2 v0.20.4
+    Checking kmeans_colors v0.5.0
+    Checking syntect v5.2.0
+    Checking toml v0.8.23
+    Checking warp_multi_agent_client v0.1.0 (/home/factory-user/warp-stanford/crates/warp_multi_agent_client)
+    Checking warp_files v0.1.0 (/home/factory-user/warp-stanford/crates/warp_files)
+    Checking warp_search_core v0.1.0 (/home/factory-user/warp-stanford/crates/warp_search_core)
+    Checking ipc v0.1.0 (/home/factory-user/warp-stanford/crates/ipc)
+   Compiling asset_macro v0.1.0 (/home/factory-user/warp-stanford/crates/asset_macro)
+    Checking app-installation-detection v0.1.0 (/home/factory-user/warp-stanford/crates/app-installation-detection)
+    Checking mcp v0.1.0 (/home/factory-user/warp-stanford/crates/mcp)
+    Checking http_server v0.0.0 (/home/factory-user/warp-stanford/crates/http_server)
+    Checking inquire v0.9.1
+    Checking warp_channel_config v0.0.0 (/home/factory-user/warp-stanford/crates/warp_channel_config)
+    Checking comfy-table v7.2.1
+    Checking signal-hook-tokio v0.3.1
+    Checking anstyle-parse v1.0.0
+    Checking anstream v1.0.0
+    Checking escape8259 v0.5.3
+    Checking libtest-mimic v0.8.2
+   Compiling warp_tui v0.0.0 (/home/factory-user/warp-stanford/crates/warp_tui)
+    Checking plotters-backend v0.3.5
+    Checking plotters-svg v0.3.5
+    Checking cast v0.3.0
+   Compiling wasm-bindgen-shared v0.2.117
+    Checking criterion-plot v0.5.0
+    Checking plotters v0.3.5
+    Checking ciborium v0.2.2
+    Checking tinytemplate v1.2.1
+    Checking anes v0.1.6
+    Checking oorandom v11.1.3
+    Checking criterion v0.5.1
+    Checking bitflags v2.13.0
+   Compiling wasm-bindgen-macro-support v0.2.117
+    Checking referencing v0.45.1
+    Checking fraction v0.15.3
+   Compiling wasm-bindgen v0.2.117
+    Checking jsonschema v0.45.1
+   Compiling wasm-bindgen-macro v0.2.117
+    Checking typenum v1.20.0
+    Checking generic-array v0.14.7
+    Checking smallvec v1.15.1
+    Checking rustfft v6.2.0
+    Checking crypto-common v0.1.6
+    Checking block-buffer v0.10.4
+    Checking syn v2.0.117
+    Checking regex-automata v0.4.9
+    Checking lock_api v0.4.14
+    Checking regex v1.11.1
+    Checking digest v0.10.7
+    Checking realfft v3.4.0
+    Checking integration v0.1.0 (/home/factory-user/warp-stanford/crates/integration)
+    Checking js-sys v0.3.94
+    Checking serde_json v1.0.150
+    Checking serde-wasm-bindgen v0.6.5
+    Checking rubato v0.16.1
+    Checking sha2 v0.10.9
+    Checking convert_case v0.7.1
+    Checking futures-test-sink v0.1.1
+    Checking voice_input v0.0.0 (/home/factory-user/warp-stanford/crates/voice_input)
+    Checking settings_value_derive v0.0.0 (/home/factory-user/warp-stanford/crates/settings_value_derive)
+    Checking warp_web_event_bus v0.0.0 (/home/factory-user/warp-stanford/crates/warp_web_event_bus)
+    Checking managed_secrets_wasm v0.1.0 (/home/factory-user/warp-stanford/crates/managed_secrets_wasm)
+DISK_GUARD avail=1180M at 2026-10-17T22:59:21Z

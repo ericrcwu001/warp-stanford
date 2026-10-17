@@ -1,0 +1,122 @@
+[+00:00.000] Step started: Wait for bootstrapping
+[+00:00.440] Assertion started: no pending model events
+[+00:00.465] Assertion passed: no pending model events
+[+00:00.739] Assertion started: no block executing
+[+00:00.739] Assertion passed: no block executing
+[+00:00.785] Assertion started: waiting for bootstrapping
+[+00:00.785] Assertion passed: waiting for bootstrapping
+[+00:00.785] Step succeeded: Wait for bootstrapping
+[+00:00.785] Step started: Open settings at Keybindings
+[+00:01.001] Action executed
+[+00:01.199] Assertion started: no pending model events
+[+00:01.199] Assertion passed: no pending model events
+[+00:01.428] Assertion started: no block executing
+[+00:01.428] Assertion passed: no block executing
+[+00:01.451] Assertion started: Settings is showing Keybindings
+[+00:01.451] Assertion passed: Settings is showing Keybindings
+[+00:01.451] Step succeeded: Open settings at Keybindings
+[+00:01.452] Step started: Search keyboard shortcuts for "Delete all left"
+[+00:01.468] Action executed
+[+00:01.510] Assertion started: no pending model events
+[+00:01.510] Assertion passed: no pending model events
+[+00:01.527] Assertion started: no block executing
+[+00:01.527] Assertion passed: no block executing
+[+00:01.527] Step succeeded: Search keyboard shortcuts for "Delete all left"
+[+00:01.527] Step started: Check the top shortcut row is editor_view:delete_all_left
+[+00:01.544] Assertion started: Top row is the only editor_view:delete_all_left row ("Delete All Left") with trigger None
+[+00:01.544] Assertion passed: Top row is the only editor_view:delete_all_left row ("Delete All Left") with trigger None
+[+00:01.544] Step succeeded: Check the top shortcut row is editor_view:delete_all_left
+[+00:01.544] Step started: Click the first shortcut row to edit it
+[+00:01.589] Assertion started: no pending model events
+[+00:01.589] Assertion passed: no pending model events
+[+00:01.606] Assertion started: no block executing
+[+00:01.606] Assertion passed: no block executing
+[+00:01.623] Assertion started: Shortcut editing suspends key binding dispatch
+[+00:01.623] Assertion passed: Shortcut editing suspends key binding dispatch
+[+00:01.623] Step succeeded: Click the first shortcut row to edit it
+[+00:01.623] Step started: Press ctrl-y in the shortcut editor
+[+00:01.623] Event: KeyDown 'y'
+[+00:01.630] Action executed
+[+00:01.669] Assertion started: no pending model events
+[+00:01.669] Assertion passed: no pending model events
+[+00:01.686] Assertion started: no block executing
+[+00:01.686] Assertion passed: no block executing
+[+00:01.703] Assertion started: First row captured ctrl-y
+[+00:01.703] Assertion passed: First row captured ctrl-y
+[+00:01.703] Step succeeded: Press ctrl-y in the shortcut editor
+[+00:01.915] Step started: Save Ctrl-Y for Delete all left
+[+00:01.925] Action executed
+[+00:01.960] Assertion started: no pending model events
+[+00:01.960] Assertion passed: no pending model events
+[+00:01.977] Assertion started: no block executing
+[+00:01.977] Assertion passed: no block executing
+[+00:01.994] Assertion started: First row trigger is Some("ctrl-y")
+[+00:01.995] Assertion passed: First row trigger is Some("ctrl-y")
+[+00:02.012] Assertion started: Key binding dispatch is re-enabled
+[+00:02.012] Assertion passed: Key binding dispatch is re-enabled
+[+00:02.012] Step succeeded: Save Ctrl-Y for Delete all left
+[+00:02.012] Step started: Search keyboard shortcuts for Yank
+[+00:02.029] Action executed
+[+00:02.066] Assertion started: no pending model events
+[+00:02.066] Assertion passed: no pending model events
+[+00:02.083] Assertion started: no block executing
+[+00:02.083] Assertion passed: no block executing
+[+00:02.083] Step succeeded: Search keyboard shortcuts for Yank
+[+00:02.084] Step started: Check the top shortcut row is editor_view:yank
+[+00:02.101] Assertion started: Top row is the only editor_view:yank row ("Yank (Last Killed Text)") with trigger Some("ctrl-y")
+[+00:02.101] Assertion passed: Top row is the only editor_view:yank row ("Yank (Last Killed Text)") with trigger Some("ctrl-y")
+[+00:02.101] Step succeeded: Check the top shortcut row is editor_view:yank
+[+00:02.101] Step started: Click the first shortcut row to edit it
+[+00:02.114] Action executed
+[+00:02.146] Assertion started: no pending model events
+[+00:02.146] Assertion passed: no pending model events
+[+00:02.163] Assertion started: no block executing
+[+00:02.163] Assertion passed: no block executing
+[+00:02.180] Assertion started: Shortcut editing suspends key binding dispatch
+[+00:02.180] Assertion passed: Shortcut editing suspends key binding dispatch
+[+00:02.180] Step succeeded: Click the first shortcut row to edit it
+[+00:02.381] Step started: Cancel editing the Yank shortcut
+[+00:02.386] Action executed
+[+00:02.416] Assertion started: no pending model events
+[+00:02.416] Assertion passed: no pending model events
+[+00:02.433] Assertion started: no block executing
+[+00:02.433] Assertion passed: no block executing
+[+00:02.450] Assertion started: First row trigger is Some("ctrl-y")
+[+00:02.450] Assertion passed: First row trigger is Some("ctrl-y")
+[+00:02.467] Assertion started: Key binding dispatch is re-enabled
+[+00:02.467] Assertion passed: Key binding dispatch is re-enabled
+[+00:02.467] Step succeeded: Cancel editing the Yank shortcut
+[+00:02.467] Step started: Close the settings tab
+[+00:02.608] Assertion started: no pending model events
+[+00:02.608] Assertion passed: no pending model events
+[+00:02.625] Assertion started: no block executing
+[+00:02.625] Assertion passed: no block executing
+[+00:02.642] Assertion started: Only the terminal tab remains
+[+00:02.642] Assertion passed: Only the terminal tab remains
+[+00:02.642] Step succeeded: Close the settings tab
+[+00:02.642] Step started: Check the terminal input is focused
+[+00:02.659] Assertion started: Terminal input editor is focused
+[+00:02.659] Assertion passed: Terminal input editor is focused
+[+00:02.659] Step succeeded: Check the terminal input is focused
+[+00:02.659] Step started: Check registered triggers of editor_view:delete_all_left
+[+00:02.676] Assertion started: All 3 editor_view:delete_all_left registrations use Keystrokes([Keystroke { ctrl: true, alt: false, shift: false, cmd: false, meta: false, key: "y" }]) over default Empty
+[+00:02.676] Assertion passed: All 3 editor_view:delete_all_left registrations use Keystrokes([Keystroke { ctrl: true, alt: false, shift: false, cmd: false, meta: false, key: "y" }]) over default Empty
+[+00:02.676] Step succeeded: Check registered triggers of editor_view:delete_all_left
+[+00:02.676] Step started: Type the sentinel into the input
+[+00:02.676] Event: TypedCharacters 'echo yank-sentinel'
+[+00:02.745] Assertion started: no pending model events
+[+00:02.746] Assertion passed: no pending model events
+[+00:02.779] Assertion started: no block executing
+[+00:02.779] Assertion passed: no block executing
+[+00:02.796] Assertion started: Input contains exactly the sentinel
+[+00:02.797] Assertion passed: Input contains exactly the sentinel
+[+00:02.797] Step succeeded: Type the sentinel into the input
+[+00:02.797] Step started: Press ctrl-y
+[+00:02.797] Event: KeyDown 'y'
+[+00:02.832] Assertion started: no pending model events
+[+00:02.833] Assertion passed: no pending model events
+[+00:02.865] Assertion started: no block executing
+[+00:02.865] Assertion passed: no block executing
+[+00:02.882] Assertion started: Input is exactly "" after ctrl-y
+[+00:02.882] Assertion passed: Input is exactly "" after ctrl-y
+[+00:02.882] Step succeeded: Press ctrl-y

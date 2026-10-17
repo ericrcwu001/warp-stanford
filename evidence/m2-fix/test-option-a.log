@@ -1,0 +1,10 @@
+   Compiling warp v0.1.0 (/home/factory-user/warp-stanford/app)
+   Compiling integration v0.1.0 (/home/factory-user/warp-stanford/crates/integration)
+    Finished `dev` profile [unoptimized] target(s) in 6m 57s
+────────────
+ Nextest run ID 7fa11bcd-efa5-4099-95c7-5a2f318be57d with nextest profile: default
+    Starting 2 tests across 1 binary (337 tests skipped)
+        PASS [   3.426s] (1/2) integration::integration ui_tests::test_ctrl_y_yanks_killed_input
+        PASS [   2.182s] (2/2) integration::integration ui_tests::test_home_key_should_not_appear_in_input
+────────────
+     Summary [   5.620s] 2 tests run: 2 passed, 337 skipped

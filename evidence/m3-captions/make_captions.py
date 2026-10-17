@@ -2,7 +2,8 @@
 """Builds before.srt/after.srt, captioned clips and the side-by-side comparison for #11743.
 
 Cues come only from the recorded video-clock event logs of the two unchanged demo.sh runs.
-Run from anywhere: python3 evidence/m3-captions/make_captions.py
+Run from the evidence/ directory: cd evidence && python3 m3-captions/make_captions.py
+(the side-by-side subtitle filter reads before.srt/after.srt relative to the working directory).
 """
 import json
 import pathlib

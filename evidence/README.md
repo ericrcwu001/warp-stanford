@@ -28,6 +28,12 @@ This directory stays untracked on `fix/11743-ctrl-y-yank`. It is to be published
 | `NARRATION.md` | Text-only narration table (start - end, caption on screen, line to say aloud), one row per caption for the side-by-side and each captioned clip, paced at about 150 wpm or slower. No voice track exists |
 | `m3-captions/` | Generator scripts, cue timeline, MP4 population check (`media-check.md`: every MP4 is one H.264 video stream, no audio, under 25 MB), extracted in-cue frames and inspection sheets with recorded results (`README.md`) |
 | `readiness-screenshots/` | Other readiness screenshots. `ctrl-y-integration-readiness.png` shows the synthetic test-user fixture and is not logged-out proof |
+| `m2-fix/` | Option A product commit `02b29a0de`: first green run of the M1 regression (2 passed, 337 skipped), integration + warp GUI Clippy with `-D warnings` (exit 0), formatter (no changes) |
+| `m2-option-a/logs/` | Test commit `56f3560e9`: the 10-case Option A run (`yank-m2-run2.log`: 10 passed, 337 skipped), earlier run, check, Clippy and formatter logs |
+| `m2-option-a/artifacts/test_yank_settings_conflict_warning/2026-10-17T21-21-00/` | Screenshots of the existing conflict warning when Delete all left is bound to Ctrl-Y, taken by the automated test (synthetic test user, Xvfb), plus its recording log. Other test artifacts stay local |
+| `m4-final-validation/` | M4 records: Stanford target already merged (candidate unchanged), fresh 10-case run (10 passed, 337 skipped), and the single **incomplete** `./script/presubmit` log with the list of steps that never ran |
+| `BRIEFING.md` | Nine-section student briefing: summary, base-SHA root cause, every diff hunk and scope concerns, tests with verbatim red/green output, manual evidence, unverified coverage, reviewer questions, explain-it-back questions and answers, fresh-checkout commands |
+| `PR_DRAFT.md` | Local PR description draft following `.github/pull_request_template.md`, for the student to edit and open. Not posted |
 
 M1 status (historical, at the M1 checkpoint): trace, research and proposal are written. The fix direction is not chosen. The next step is the student's decision on `PROPOSAL.md`.
 
@@ -44,3 +50,11 @@ Option A is implemented on `fix/11743-ctrl-y-yank` (`02b29a0de`, tests `56f3560e
 ## M3 captions update (2026-10-17)
 
 `before.srt`, `after.srt`, the two captioned clips, `before-after-captioned.mp4` and `NARRATION.md` were generated from the unchanged `01-before.mp4` and `02-after.mp4` (hashes unchanged) and their event logs; see `m3-captions/README.md`. Frames inside every cue, at both edges and the midpoint, were extracted and inspected in all three captioned videos, including the side-by-side with its 0.428 s pane offset. No footage, voice or audio was added and nothing was sped up. Linux only; native Windows, macOS, Wayland and real GPU were not run.
+
+## M4 update (2026-10-17)
+
+- `stanford/master` is still `f411fbc20`, so the merge was already up to date and the candidate stayed `56f3560e9`. The fresh 10-case run passed (10 passed, 337 skipped).
+- `./script/presubmit` ran once and did **not** complete: the format and inline-test checks passed, then the disk guard stopped workspace Clippy at 1180 MiB free before any diagnostic. Workspace and GUI Clippy, clang-format, factory-files validator, wgslfmt, ShellCheck, PSScriptAnalyzer, workspace nextest and doc tests never ran. It was not retried. See `m4-final-validation/README.md`.
+- The fix branch was pushed with `git push -u origin fix/11743-ctrl-y-yank` (exit 0, new branch at `56f3560e9befd95235f9490a18d67956f1b72ac7`): https://github.com/ericrcwu001/warp-stanford/tree/fix/11743-ctrl-y-yank. It contains only the three product files and the integration tests; no `evidence/` files.
+- `m3-captions/README.md` and the `make_captions.py` docstring now say to run the optional caption regeneration from `evidence/`. The scripts' logic and the delivered media are unchanged.
+- Start with `BRIEFING.md`, then `PR_DRAFT.md`. No pull request, issue, comment, label or reaction was created; the student opens the PR and talks to maintainers.

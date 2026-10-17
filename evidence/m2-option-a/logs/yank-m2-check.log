@@ -1,0 +1,12 @@
+    Checking warp v0.1.0 (/home/factory-user/warp-stanford/app)
+   Compiling integration v0.1.0 (/home/factory-user/warp-stanford/crates/integration)
+warning: unused import: `UpdateView`
+  --> crates/integration/src/test/yank.rs:18:24
+   |
+18 | use warpui_core::{App, UpdateView, ViewHandle, WindowId, async_assert, async_assert_eq};
+   |                        ^^^^^^^^^^
+   |
+   = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+
+warning: `integration` (lib) generated 1 warning (run `cargo fix --lib -p integration` to apply 1 suggestion)
+    Finished `dev` profile [unoptimized] target(s) in 2m 01s

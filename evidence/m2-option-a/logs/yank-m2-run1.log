@@ -1,0 +1,867 @@
+   Compiling integration v0.1.0 (/home/factory-user/warp-stanford/crates/integration)
+    Finished `dev` profile [unoptimized] target(s) in 40.89s
+────────────
+ Nextest run ID 18b0d100-ed01-41cf-8790-91693142fdb3 with nextest profile: default
+    Starting 10 tests across 1 binary (337 tests skipped)
+        PASS [   3.768s] ( 1/10) integration::integration ui_tests::test_ctrl_y_yanks_killed_input
+        PASS [   2.084s] ( 2/10) integration::integration ui_tests::test_home_key_should_not_appear_in_input
+        FAIL [  12.145s] ( 3/10) integration::integration ui_tests::test_yank_saved_custom_trigger
+  stdout ───
+
+    running 1 test
+    Running integration test: test_yank_saved_custom_trigger
+    Setting env var ORIGINAL_HOME to /home/factory-user for test
+    Setting env var HOME to /home/factory-user/warp-stanford/target/debug/build/integration-00220792400bd191/out/tmp/test_yank_saved_custom_trigger for test
+    Setting env var WARP_TEST_DISABLE_KEYBINDING_SAVE to true for test
+    Initializing preferences file at "/home/factory-user/warp-stanford/target/debug/build/integration-00220792400bd191/out/tmp/test_yank_saved_custom_trigger/.config/warp-terminal-integration/user_preferences.json"
+    Clearing env var ORIGINAL_HOME
+    Clearing env var WARP_TEST_DISABLE_KEYBINDING_SAVE
+    Clearing env var HOME
+    test ui_tests::test_yank_saved_custom_trigger ... FAILED
+
+    failures:
+
+    failures:
+        ui_tests::test_yank_saved_custom_trigger
+
+    test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 346 filtered out; finished in 12.14s
+
+  stderr ───
+    21:17:59.032 [INFO] [warp_terminal::local_tty::server] Spawning terminal server process...
+    21:17:59.061 [INFO] [warp_terminal::local_tty::server::event_loop] Running terminal server...
+    21:17:59.064 [INFO] [warpui::windowing::winit::event_loop] Running app with windowing system: X11
+    21:17:59.201 [INFO] [warp::settings::init] Migrating public settings from native store to settings.toml
+    21:17:59.201 [INFO] [warp::settings::init] Settings file migration complete — migrated 0 settings, 0 failed
+    21:17:59.292 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:17:59.385 [INFO] [warp::persistence::sqlite] Connecting to SQLite database
+    21:17:59.499 [WARN] [warp::persistence::sqlite] SQLite error 284 (Automatic indexing used - database might benefit from additional indexes): automatic index on object_permissions(subject_type)
+    21:17:59.599 [ERROR] [errors::report_error] Failed to deserialize API keys: EOF while parsing a value at line 1 column 0
+    21:17:59.599 [ERROR] [errors::report_error] Failed to deserialize custom endpoint keys: EOF while parsing a value at line 1 column 0
+    21:17:59.599 [ERROR] [errors::report_error] Failed to deserialize Grok tokens: EOF while parsing a value at line 1 column 0
+    21:17:59.601 [INFO] [warp] Starting warp with channel state ChannelState { channel: Integration, additional_features: {}, config: ChannelConfig { app_id: AppId { qualifier: "dev", organization: "warp", application_name: "WarpIntegration" }, logfile_name: "warp_integration.log", server_config: WarpServerConfig { server_root_url: "http://192.0.2.0:9", rtc_server_url: "ws://192.0.2.0:9/graphql/v2", session_sharing_server_url: None, firebase_auth_api_key: "", iap_config: None }, oz_config: OzConfig { oz_root_url: "http://192.0.2.0:9", workload_audience_url: None }, telemetry_config: None, autoupdate_config: None, crash_reporting_config: None, mcp_static_config: None } } and version None
+    21:17:59.629 [INFO] [warp::app_services] Initializing app services
+    21:17:59.630 [ERROR] [warp::app_services::linux] Failed to initialize org.freedesktop.Application D-Bus service: I/O error: No such file or directory (os error 2): No such file or directory (os error 2)
+    21:17:59.679 [INFO] [warp::ai::mcp::templatable_manager::native] Converting 0 legacy MCP servers into templatable MCP servers
+    21:17:59.681 [INFO] [warp::auth::auth_manager] Attempted to refresh a user with no login token, skipping
+    21:17:59.683 [INFO] [warp::ai::execution_profiles::profiles] Initialized execution profile model with state: Unsynced, file_backed_profiles: true
+    21:17:59.684 [INFO] [warpui_core::core::app] dispatching global action for root_view:open_from_restored
+    21:17:59.806 [INFO] [warp::terminal::local_tty::terminal_manager] Creating terminal model with 0 restored blocks
+    21:17:59.812 [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+    21:17:59.812 [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+    21:17:59.832 [INFO] [warp::ai::persisted_workspace] Cleaning up index metadata from SQLite
+    21:17:59.837 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:17:59.837 [WARN] [warpui_core::core::app] Action HandleFocusChange was dispatched, but no view handled it
+    21:17:59.838 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:17:59.838 [WARN] [warpui_core::core::app] Action HandleFocusChange was dispatched, but no view handled it
+    21:17:59.841 [WARN] [warp::terminal::view] Tried to update block filter query without active_filter_editor_block_index set
+    21:17:59.844 [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+    21:17:59.844 [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+    21:17:59.865 [WARN] [warp::ai::blocklist::suggested_agent_mode_workflow_modal] SuggestedAgentModeWorkflowModal has not been initialized
+    21:17:59.868 [WARN] [warp::terminal::share_block_modal] Tried to render share modal without a model
+    21:17:59.890 [WARN] [warp::workspace::native_modal] No alert dialog was set for the native modal
+    21:17:59.891 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:17:59.892 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:17:59.909 [WARN] [warpui::windowing::winit::linux::zbus::desktop_settings] Encountered error while watching for desktop settings change events: I/O error: No such file or directory (os error 2)
+    21:17:59.920 [WARN] [warp::ai::chatgpt_subscription] Failed to refresh ChatGPT connection: received non-OK response code 501 Not Implemented
+    21:17:59.921 [INFO] [warp::ai::mcp::file_based_manager] Initial global file-based MCP scan complete: 0 auto-started server(s) to await before the first turn
+    21:17:59.921 [WARN] [errors::report_error] Failed to fetch available harnesses: received non-OK response code 501 Not Implemented
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    21:17:59.926 [INFO] [warpui::rendering::wgpu::resources] Enabled wgpu backends: Backends(VULKAN)
+    21:17:59.926 [INFO] [warpui::rendering::wgpu::resources] Available wgpu adapters (in priority order):
+    21:17:59.932 [INFO] [warpui::rendering::wgpu::resources] Cpu: llvmpipe (LLVM 20.1.2, 256 bits)
+    Backend: Vulkan
+    Driver: llvmpipe (Mesa 25.2.8-0ubuntu0.24.04.4 (LLVM 20.1.2))
+    Can present: true
+    Supported texture format: Some(Bgra8UnormSrgb)
+    Supported alpha mode: [PreMultiplied, Inherit]
+    21:17:59.932 [INFO] [warpui::rendering::wgpu::resources] Verifying adapter "llvmpipe (LLVM 20.1.2, 256 bits)" is valid...
+    21:17:59.961 [INFO] [warpui::rendering::wgpu::resources] Using Vulkan Cpu (llvmpipe (LLVM 20.1.2, 256 bits)) for rendering new window.
+    21:18:00.030 [INFO] [warp::referral_theme_status] Unable to retrieve user referral info
+    21:18:00.031 [WARN] [warp::ai::chatgpt_subscription] Failed to refresh ChatGPT connection: received non-OK response code 501 Not Implemented
+    21:18:00.033 [WARN] [errors::report_error] Failed to fetch conversation usage: received non-OK response code 501 Not Implemented
+    21:18:00.033 [WARN] [errors::report_error] Failed to fetch conversation usage: received non-OK response code 501 Not Implemented
+    21:18:00.035 [WARN] [warp::ai_assistant::requests] Failed to retrieve initial request limit info: received non-OK response code 501 Not Implemented
+    21:18:00.045 [INFO] [warp_terminal::local_tty::unix] Starting shell /usr/bin/zsh
+    21:18:00.046 [INFO] [warp_terminal::local_tty::server::event_loop] Successfully spawned tty with pid: 165479
+    21:18:00.046 [INFO] [warp_terminal::local_tty::unix] Successfully spawned child zsh process with pid 165479
+    21:18:00.046 [INFO] [warpui_core::integration::driver] Spawning integration test with 6 steps
+    21:18:00.053 [INFO] [warpui_core::integration::driver] Test artifacts directory: /home/factory-user/warp-stanford/evidence/m2-option-a/artifacts/test_yank_saved_custom_trigger/2026-10-17T21-18-00
+    21:18:00.053 [INFO] [warpui_core::integration::driver] Running test step 'Wait for bootstrapping' on window id WindowId(0)
+    21:18:00.053 [INFO] [warpui_core::integration::step] Running test step 'Wait for bootstrapping' at frame 7 with 0 events
+    21:18:00.084 [INFO] [warp_terminal::model::ansi] Received InitShell hook
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    21:18:00.454 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:00.457 [INFO] [warpui_core::platform::app] window resized
+    21:18:00.457 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:00.460 [INFO] [warpui_core::integration::step] entering assertion loop for 'no pending model events'
+    21:18:00.460 [INFO] [warp::integration_testing::step] events pending false
+    21:18:00.518 [INFO] [warp_terminal::model::ansi] Received CommandFinished hook
+    21:18:00.518 [INFO] [warp::terminal::model::terminal_model] Tried to exit the alternate screen, but it was already inactive
+    21:18:00.522 [INFO] [warp::terminal::model::block] Block finished with new state DoneWithExecution
+    21:18:00.523 [INFO] [warp::terminal::model::blocks] Incrementing stage from WarpInput to ScriptExecution
+    21:18:00.524 [INFO] [warp_terminal::model::ansi] Received Precmd hook
+    21:18:00.545 [INFO] [warpui_core::platform::app] active window changed: Some(WindowId(0))
+    21:18:00.550 [INFO] [warpui_core::core::app] dispatching global action for root_view:update_quake_mode_state
+    21:18:00.550 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:00.550 [INFO] [warpui_core::integration::step] entering assertion loop for 'no block executing'
+    21:18:00.551 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:00.563 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:00.566 [INFO] [warp_terminal::model::ansi] Received Bootstrapped hook
+    21:18:00.567 [INFO] [warp::terminal::model::early_output] Configured typeahead mode as ShellReported
+    21:18:00.568 [INFO] [warp::terminal::model::session::command_executor] creating a local executor!
+    21:18:00.568 [INFO] [warp::terminal::model::session] Parsed shell version string: Some([Number(5), Number(9)])
+    21:18:00.568 [INFO] [warp::terminal::model::session] Shell is bootstrapped with session_id SessionId(18296368713748499458)
+    21:18:00.568 [INFO] [warp_terminal::model::ansi] Received CommandFinished hook
+    21:18:00.568 [INFO] [warp::terminal::model::terminal_model] Tried to exit the alternate screen, but it was already inactive
+    21:18:00.569 [INFO] [warp::terminal::model::block] Block finished with new state DoneWithExecution
+    21:18:00.569 [INFO] [warp::terminal::model::session] No history file found for shell zsh, starting with empty history
+    21:18:00.569 [INFO] [warp::terminal::model::blocks] Incrementing stage from Bootstrapped to PostBootstrapPrecmd
+    21:18:00.571 [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+    21:18:00.571 [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+    21:18:00.571 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:00.581 [INFO] [warp_terminal::model::ansi] Received Precmd hook
+    21:18:00.595 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:00.610 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:00.679 [INFO] [warpui_core::integration::step] entering assertion loop for 'waiting for bootstrapping'
+    21:18:00.679 [INFO] [warpui_core::integration::driver] Test step 'Wait for bootstrapping' succeeded.
+    21:18:00.679 [INFO] [warpui_core::integration::driver] Running test step 'Check registered triggers of editor_view:yank' on window id WindowId(0)
+    21:18:00.679 [INFO] [warpui_core::integration::step] Running test step 'Check registered triggers of editor_view:yank' at frame 44 with 0 events
+    21:18:00.689 [INFO] [warp_terminal::model::ansi] Received InputBuffer hook
+    21:18:00.689 [INFO] [warp::terminal::model::early_output] Ignoring empty input buffer
+    21:18:00.864 [INFO] [warpui_core::integration::step] entering assertion loop for 'All 1 editor_view:yank registrations use Keystrokes([Keystroke { ctrl: true, alt: true, shift: false, cmd: false, meta: false, key: "y" }]) over default Keystrokes([Keystroke { ctrl: true, alt: false, shift: false, cmd: false, meta: false, key: "y" }])'
+    21:18:00.864 [INFO] [warpui_core::integration::driver] Test step 'Check registered triggers of editor_view:yank' succeeded.
+    21:18:00.864 [INFO] [warpui_core::integration::driver] Running test step 'Type the sentinel into the input' on window id WindowId(0)
+    21:18:00.864 [INFO] [warpui_core::integration::step] Running test step 'Type the sentinel into the input' at frame 47 with 1 events
+    21:18:00.864 [INFO] [warpui_core::integration::step] Dispatching event TypedCharacters { chars: "echo yank-sentinel" }
+    21:18:00.864 [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("echo yank-sentinel"))
+    21:18:00.908 [INFO] [warpui_core::integration::step] entering assertion loop for 'no pending model events'
+    21:18:00.908 [INFO] [warp::integration_testing::step] events pending false
+    21:18:00.964 [INFO] [warpui_core::integration::step] entering assertion loop for 'no block executing'
+    21:18:00.964 [INFO] [warpui_core::core::app] notifying view observers and updating windows for timer id 0
+    21:18:00.970 [INFO] [warpui_core::core::app] notifying view observers and updating windows for timer id 1
+    21:18:01.004 [INFO] [warpui_core::integration::step] entering assertion loop for 'Input contains exactly the sentinel'
+    21:18:01.004 [INFO] [warpui_core::integration::driver] Test step 'Type the sentinel into the input' succeeded.
+    21:18:01.004 [INFO] [warpui_core::integration::driver] Running test step 'Press ctrl-u' on window id WindowId(0)
+    21:18:01.004 [INFO] [warpui_core::integration::step] Running test step 'Press ctrl-u' at frame 58 with 1 events
+    21:18:01.004 [INFO] [warpui_core::integration::step] Dispatching event KeyDown { keystroke: Keystroke { ctrl: true, alt: false, shift: false, cmd: false, meta: false, key: "u" }, chars: "u", details: KeyEventDetails { left_alt: false, right_alt: false, key_without_modifiers: None }, is_composing: false }
+    21:18:01.005 [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::ClearAndCopyLines
+    21:18:01.040 [INFO] [warpui_core::integration::step] entering assertion loop for 'no pending model events'
+    21:18:01.040 [INFO] [warp::integration_testing::step] events pending false
+    21:18:01.072 [INFO] [warpui_core::integration::step] entering assertion loop for 'no block executing'
+    21:18:01.089 [INFO] [warpui_core::integration::step] entering assertion loop for 'Input is exactly "" after ctrl-u'
+    21:18:01.090 [INFO] [warpui_core::integration::driver] Test step 'Press ctrl-u' succeeded.
+    21:18:01.090 [INFO] [warpui_core::integration::driver] Running test step 'Press ctrl-y' on window id WindowId(0)
+    21:18:01.090 [INFO] [warpui_core::integration::step] Running test step 'Press ctrl-y' at frame 62 with 1 events
+    21:18:01.090 [INFO] [warpui_core::integration::step] Dispatching event KeyDown { keystroke: Keystroke { ctrl: true, alt: false, shift: false, cmd: false, meta: false, key: "y" }, chars: "y", details: KeyEventDetails { left_alt: false, right_alt: false, key_without_modifiers: None }, is_composing: false }
+    21:18:01.092 [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UnhandledModifierKey("ctrl-y")
+    21:18:01.098 [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("y"))
+    21:18:01.140 [INFO] [warpui_core::integration::step] entering assertion loop for 'no pending model events'
+    21:18:01.141 [INFO] [warp::integration_testing::step] events pending false
+    21:18:01.182 [INFO] [warpui_core::integration::step] entering assertion loop for 'no block executing'
+    21:18:01.211 [INFO] [warpui_core::integration::step] entering assertion loop for 'Input is exactly "" after ctrl-y'
+    21:18:11.105 [ERROR] [errors::report_error] Test step failed [step=Press ctrl-y, assertion=Input is exactly "" after ctrl-y]
+
+    thread 'main' (165305) panicked at /home/factory-user/warp-stanford/crates/warpui_core/src/integration/driver.rs:651:25:
+    Test step 'Press ctrl-y' failed after 1 attempts: assertion failed: `Incorrect input box contents:
+    Expected ""
+    Actual: "y"`
+      left: `"y"`,
+     right: `""`
+    Failed in step group: Unspecified
+    (Backtrace disabled; run with `RUST_BACKTRACE=1` environment variable to display a backtrace)
+    note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+    Test step 'Press ctrl-y' failed after 1 attempts: assertion failed: `Incorrect input box contents:
+    Expected ""
+    Actual: "y"`
+      left: `"y"`,
+     right: `""`
+    Failed in step group: Unspecified
+    (Backtrace disabled; run with `RUST_BACKTRACE=1` environment variable to display a backtrace)
+
+    Error: "Test test_yank_saved_custom_trigger failed with exit code 1"
+
+        PASS [   2.589s] ( 4/10) integration::integration ui_tests::test_yank_saved_delete_all_left_ctrl_y
+        PASS [   2.324s] ( 5/10) integration::integration ui_tests::test_yank_saved_delete_all_left_none
+        PASS [   2.628s] ( 6/10) integration::integration ui_tests::test_yank_saved_delete_all_left_rebound
+        FAIL [  12.322s] ( 7/10) integration::integration ui_tests::test_yank_saved_none
+  stdout ───
+
+    running 1 test
+    Running integration test: test_yank_saved_none
+    Setting env var ORIGINAL_HOME to /home/factory-user for test
+    Setting env var HOME to /home/factory-user/warp-stanford/target/debug/build/integration-00220792400bd191/out/tmp/test_yank_saved_none for test
+    Setting env var WARP_TEST_DISABLE_KEYBINDING_SAVE to true for test
+    Initializing preferences file at "/home/factory-user/warp-stanford/target/debug/build/integration-00220792400bd191/out/tmp/test_yank_saved_none/.config/warp-terminal-integration/user_preferences.json"
+    Clearing env var ORIGINAL_HOME
+    Clearing env var HOME
+    Clearing env var WARP_TEST_DISABLE_KEYBINDING_SAVE
+    test ui_tests::test_yank_saved_none ... FAILED
+
+    failures:
+
+    failures:
+        ui_tests::test_yank_saved_none
+
+    test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 346 filtered out; finished in 12.31s
+
+  stderr ───
+    21:18:18.722 [INFO] [warp_terminal::local_tty::server] Spawning terminal server process...
+    21:18:18.752 [INFO] [warp_terminal::local_tty::server::event_loop] Running terminal server...
+    21:18:18.755 [INFO] [warpui::windowing::winit::event_loop] Running app with windowing system: X11
+    21:18:18.885 [INFO] [warp::settings::init] Migrating public settings from native store to settings.toml
+    21:18:18.886 [INFO] [warp::settings::init] Settings file migration complete — migrated 0 settings, 0 failed
+    21:18:18.966 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:19.025 [INFO] [warp::persistence::sqlite] Connecting to SQLite database
+    21:18:19.135 [WARN] [warp::persistence::sqlite] SQLite error 284 (Automatic indexing used - database might benefit from additional indexes): automatic index on object_permissions(subject_type)
+    21:18:19.267 [ERROR] [errors::report_error] Failed to deserialize API keys: EOF while parsing a value at line 1 column 0
+    21:18:19.267 [ERROR] [errors::report_error] Failed to deserialize custom endpoint keys: EOF while parsing a value at line 1 column 0
+    21:18:19.267 [ERROR] [errors::report_error] Failed to deserialize Grok tokens: EOF while parsing a value at line 1 column 0
+    21:18:19.271 [INFO] [warp] Starting warp with channel state ChannelState { channel: Integration, additional_features: {}, config: ChannelConfig { app_id: AppId { qualifier: "dev", organization: "warp", application_name: "WarpIntegration" }, logfile_name: "warp_integration.log", server_config: WarpServerConfig { server_root_url: "http://192.0.2.0:9", rtc_server_url: "ws://192.0.2.0:9/graphql/v2", session_sharing_server_url: None, firebase_auth_api_key: "", iap_config: None }, oz_config: OzConfig { oz_root_url: "http://192.0.2.0:9", workload_audience_url: None }, telemetry_config: None, autoupdate_config: None, crash_reporting_config: None, mcp_static_config: None } } and version None
+    21:18:19.301 [INFO] [warp::app_services] Initializing app services
+    21:18:19.301 [ERROR] [warp::app_services::linux] Failed to initialize org.freedesktop.Application D-Bus service: I/O error: No such file or directory (os error 2): No such file or directory (os error 2)
+    21:18:19.374 [INFO] [warp::ai::mcp::templatable_manager::native] Converting 0 legacy MCP servers into templatable MCP servers
+    21:18:19.376 [INFO] [warp::auth::auth_manager] Attempted to refresh a user with no login token, skipping
+    21:18:19.379 [INFO] [warp::ai::execution_profiles::profiles] Initialized execution profile model with state: Unsynced, file_backed_profiles: true
+    21:18:19.381 [INFO] [warpui_core::core::app] dispatching global action for root_view:open_from_restored
+    21:18:19.547 [INFO] [warp::terminal::local_tty::terminal_manager] Creating terminal model with 0 restored blocks
+    21:18:19.559 [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+    21:18:19.559 [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+    21:18:19.579 [INFO] [warp::ai::persisted_workspace] Cleaning up index metadata from SQLite
+    21:18:19.583 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:19.583 [WARN] [warpui_core::core::app] Action HandleFocusChange was dispatched, but no view handled it
+    21:18:19.585 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:19.585 [WARN] [warpui_core::core::app] Action HandleFocusChange was dispatched, but no view handled it
+    21:18:19.588 [WARN] [warp::terminal::view] Tried to update block filter query without active_filter_editor_block_index set
+    21:18:19.590 [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+    21:18:19.591 [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+    21:18:19.611 [WARN] [warp::ai::blocklist::suggested_agent_mode_workflow_modal] SuggestedAgentModeWorkflowModal has not been initialized
+    21:18:19.614 [WARN] [warp::terminal::share_block_modal] Tried to render share modal without a model
+    21:18:19.634 [WARN] [warp::workspace::native_modal] No alert dialog was set for the native modal
+    21:18:19.635 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:19.636 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:19.653 [WARN] [warpui::windowing::winit::linux::zbus::desktop_settings] Encountered error while watching for desktop settings change events: I/O error: No such file or directory (os error 2)
+    21:18:19.663 [WARN] [warp::ai::chatgpt_subscription] Failed to refresh ChatGPT connection: received non-OK response code 501 Not Implemented
+    21:18:19.664 [INFO] [warp::ai::mcp::file_based_manager] Initial global file-based MCP scan complete: 0 auto-started server(s) to await before the first turn
+    21:18:19.664 [WARN] [errors::report_error] Failed to fetch available harnesses: received non-OK response code 501 Not Implemented
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    21:18:19.669 [INFO] [warpui::rendering::wgpu::resources] Enabled wgpu backends: Backends(VULKAN)
+    21:18:19.669 [INFO] [warpui::rendering::wgpu::resources] Available wgpu adapters (in priority order):
+    21:18:19.675 [INFO] [warpui::rendering::wgpu::resources] Cpu: llvmpipe (LLVM 20.1.2, 256 bits)
+    Backend: Vulkan
+    Driver: llvmpipe (Mesa 25.2.8-0ubuntu0.24.04.4 (LLVM 20.1.2))
+    Can present: true
+    Supported texture format: Some(Bgra8UnormSrgb)
+    Supported alpha mode: [PreMultiplied, Inherit]
+    21:18:19.675 [INFO] [warpui::rendering::wgpu::resources] Verifying adapter "llvmpipe (LLVM 20.1.2, 256 bits)" is valid...
+    21:18:19.704 [INFO] [warpui::rendering::wgpu::resources] Using Vulkan Cpu (llvmpipe (LLVM 20.1.2, 256 bits)) for rendering new window.
+    21:18:19.773 [INFO] [warp::referral_theme_status] Unable to retrieve user referral info
+    21:18:19.774 [WARN] [warp::ai::chatgpt_subscription] Failed to refresh ChatGPT connection: received non-OK response code 501 Not Implemented
+    21:18:19.776 [WARN] [errors::report_error] Failed to fetch conversation usage: received non-OK response code 501 Not Implemented
+    21:18:19.776 [WARN] [errors::report_error] Failed to fetch conversation usage: received non-OK response code 501 Not Implemented
+    21:18:19.778 [WARN] [warp::ai_assistant::requests] Failed to retrieve initial request limit info: received non-OK response code 501 Not Implemented
+    21:18:19.787 [INFO] [warp_terminal::local_tty::unix] Starting shell /usr/bin/zsh
+    21:18:19.788 [INFO] [warp_terminal::local_tty::server::event_loop] Successfully spawned tty with pid: 166869
+    21:18:19.788 [INFO] [warp_terminal::local_tty::unix] Successfully spawned child zsh process with pid 166869
+    21:18:19.789 [INFO] [warpui_core::integration::driver] Spawning integration test with 5 steps
+    21:18:19.789 [INFO] [warpui_core::integration::driver] Test artifacts directory: /home/factory-user/warp-stanford/evidence/m2-option-a/artifacts/test_yank_saved_none/2026-10-17T21-18-19
+    21:18:19.789 [INFO] [warpui_core::integration::driver] Running test step 'Wait for bootstrapping' on window id WindowId(0)
+    21:18:19.789 [INFO] [warpui_core::integration::step] Running test step 'Wait for bootstrapping' at frame 7 with 0 events
+    21:18:19.812 [INFO] [warp_terminal::model::ansi] Received InitShell hook
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    21:18:20.144 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:20.146 [INFO] [warpui_core::platform::app] window resized
+    21:18:20.146 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:20.155 [INFO] [warpui_core::integration::step] entering assertion loop for 'no pending model events'
+    21:18:20.155 [INFO] [warp::integration_testing::step] events pending true
+    21:18:20.219 [INFO] [warp_terminal::model::ansi] Received CommandFinished hook
+    21:18:20.220 [INFO] [warp::terminal::model::terminal_model] Tried to exit the alternate screen, but it was already inactive
+    21:18:20.223 [INFO] [warp::terminal::model::block] Block finished with new state DoneWithExecution
+    21:18:20.224 [INFO] [warp::terminal::model::blocks] Incrementing stage from WarpInput to ScriptExecution
+    21:18:20.225 [INFO] [warp_terminal::model::ansi] Received Precmd hook
+    21:18:20.246 [INFO] [warpui_core::platform::app] active window changed: Some(WindowId(0))
+    21:18:20.250 [INFO] [warpui_core::core::app] dispatching global action for root_view:update_quake_mode_state
+    21:18:20.250 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:20.251 [INFO] [warp::integration_testing::step] events pending false
+    21:18:20.252 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:20.263 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:20.270 [INFO] [warpui_core::integration::step] entering assertion loop for 'no block executing'
+    21:18:20.278 [INFO] [warp_terminal::model::ansi] Received Bootstrapped hook
+    21:18:20.278 [INFO] [warp::terminal::model::early_output] Configured typeahead mode as ShellReported
+    21:18:20.281 [INFO] [warp_terminal::model::ansi] Received CommandFinished hook
+    21:18:20.281 [INFO] [warp::terminal::model::terminal_model] Tried to exit the alternate screen, but it was already inactive
+    21:18:20.281 [INFO] [warp::terminal::model::block] Block finished with new state DoneWithExecution
+    21:18:20.281 [INFO] [warp::terminal::model::blocks] Incrementing stage from Bootstrapped to PostBootstrapPrecmd
+    21:18:20.294 [INFO] [warp_terminal::model::ansi] Received Precmd hook
+    21:18:20.492 [INFO] [warp::terminal::model::session::command_executor] creating a local executor!
+    21:18:20.492 [INFO] [warp::terminal::model::session] Parsed shell version string: Some([Number(5), Number(9)])
+    21:18:20.492 [INFO] [warp::terminal::model::session] Shell is bootstrapped with session_id SessionId(1209596296770636546)
+    21:18:20.492 [INFO] [warp::terminal::model::session] No history file found for shell zsh, starting with empty history
+    21:18:20.494 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:20.516 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:20.530 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:20.592 [INFO] [warpui_core::integration::step] entering assertion loop for 'waiting for bootstrapping'
+    21:18:20.592 [INFO] [warpui_core::integration::driver] Test step 'Wait for bootstrapping' succeeded.
+    21:18:20.592 [INFO] [warpui_core::integration::driver] Running test step 'Check registered triggers of editor_view:yank' on window id WindowId(0)
+    21:18:20.592 [INFO] [warpui_core::integration::step] Running test step 'Check registered triggers of editor_view:yank' at frame 47 with 0 events
+    21:18:20.722 [INFO] [warpui_core::integration::step] entering assertion loop for 'All 1 editor_view:yank registrations use Empty over default Keystrokes([Keystroke { ctrl: true, alt: false, shift: false, cmd: false, meta: false, key: "y" }])'
+    21:18:20.722 [INFO] [warpui_core::integration::driver] Test step 'Check registered triggers of editor_view:yank' succeeded.
+    21:18:20.722 [INFO] [warpui_core::integration::driver] Running test step 'Type the sentinel into the input' on window id WindowId(0)
+    21:18:20.722 [INFO] [warpui_core::integration::step] Running test step 'Type the sentinel into the input' at frame 49 with 1 events
+    21:18:20.722 [INFO] [warpui_core::integration::step] Dispatching event TypedCharacters { chars: "echo yank-sentinel" }
+    21:18:20.722 [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("echo yank-sentinel"))
+    21:18:20.728 [INFO] [warp_terminal::model::ansi] Received InputBuffer hook
+    21:18:20.728 [INFO] [warp::terminal::model::early_output] Ignoring empty input buffer
+    21:18:20.750 [INFO] [warpui_core::core::app] notifying view observers and updating windows for timer id 0
+    21:18:20.755 [INFO] [warpui_core::core::app] notifying view observers and updating windows for timer id 1
+    21:18:20.787 [INFO] [warpui_core::integration::step] entering assertion loop for 'no pending model events'
+    21:18:20.787 [INFO] [warp::integration_testing::step] events pending false
+    21:18:20.858 [INFO] [warpui_core::integration::step] entering assertion loop for 'no block executing'
+    21:18:20.887 [INFO] [warpui_core::integration::step] entering assertion loop for 'Input contains exactly the sentinel'
+    21:18:20.887 [INFO] [warpui_core::integration::driver] Test step 'Type the sentinel into the input' succeeded.
+    21:18:20.887 [INFO] [warpui_core::integration::driver] Running test step 'Press ctrl-u' on window id WindowId(0)
+    21:18:20.887 [INFO] [warpui_core::integration::step] Running test step 'Press ctrl-u' at frame 61 with 1 events
+    21:18:20.887 [INFO] [warpui_core::integration::step] Dispatching event KeyDown { keystroke: Keystroke { ctrl: true, alt: false, shift: false, cmd: false, meta: false, key: "u" }, chars: "u", details: KeyEventDetails { left_alt: false, right_alt: false, key_without_modifiers: None }, is_composing: false }
+    21:18:20.888 [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::ClearAndCopyLines
+    21:18:20.925 [INFO] [warpui_core::integration::step] entering assertion loop for 'no pending model events'
+    21:18:20.925 [INFO] [warp::integration_testing::step] events pending false
+    21:18:20.961 [INFO] [warpui_core::integration::step] entering assertion loop for 'no block executing'
+    21:18:20.978 [INFO] [warpui_core::integration::step] entering assertion loop for 'Input is exactly "" after ctrl-u'
+    21:18:20.978 [INFO] [warpui_core::integration::driver] Test step 'Press ctrl-u' succeeded.
+    21:18:20.978 [INFO] [warpui_core::integration::driver] Running test step 'Press ctrl-y' on window id WindowId(0)
+    21:18:20.978 [INFO] [warpui_core::integration::step] Running test step 'Press ctrl-y' at frame 65 with 1 events
+    21:18:20.978 [INFO] [warpui_core::integration::step] Dispatching event KeyDown { keystroke: Keystroke { ctrl: true, alt: false, shift: false, cmd: false, meta: false, key: "y" }, chars: "y", details: KeyEventDetails { left_alt: false, right_alt: false, key_without_modifiers: None }, is_composing: false }
+    21:18:20.981 [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UnhandledModifierKey("ctrl-y")
+    21:18:20.986 [INFO] [warpui_core::core::app] dispatching typed action: warp::editor::view::EditorAction::UserInsert(UserInput("y"))
+    21:18:21.031 [INFO] [warpui_core::integration::step] entering assertion loop for 'no pending model events'
+    21:18:21.032 [INFO] [warp::integration_testing::step] events pending false
+    21:18:21.080 [INFO] [warpui_core::integration::step] entering assertion loop for 'no block executing'
+    21:18:21.109 [INFO] [warpui_core::integration::step] entering assertion loop for 'Input is exactly "" after ctrl-y'
+    21:18:30.992 [ERROR] [errors::report_error] Test step failed [step=Press ctrl-y, assertion=Input is exactly "" after ctrl-y]
+
+    thread 'main' (166695) panicked at /home/factory-user/warp-stanford/crates/warpui_core/src/integration/driver.rs:651:25:
+    Test step 'Press ctrl-y' failed after 1 attempts: assertion failed: `Incorrect input box contents:
+    Expected ""
+    Actual: "y"`
+      left: `"y"`,
+     right: `""`
+    Failed in step group: Unspecified
+    (Backtrace disabled; run with `RUST_BACKTRACE=1` environment variable to display a backtrace)
+    note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+    Test step 'Press ctrl-y' failed after 1 attempts: assertion failed: `Incorrect input box contents:
+    Expected ""
+    Actual: "y"`
+      left: `"y"`,
+     right: `""`
+    Failed in step group: Unspecified
+    (Backtrace disabled; run with `RUST_BACKTRACE=1` environment variable to display a backtrace)
+
+    Error: "Test test_yank_saved_none failed with exit code 1"
+
+        FAIL [  12.421s] ( 8/10) integration::integration ui_tests::test_yank_settings_clear_then_reset
+  stdout ───
+
+    running 1 test
+    Running integration test: test_yank_settings_clear_then_reset
+    Setting env var ORIGINAL_HOME to /home/factory-user for test
+    Setting env var HOME to /home/factory-user/warp-stanford/target/debug/build/integration-00220792400bd191/out/tmp/test_yank_settings_clear_then_reset for test
+    Setting env var WARP_TEST_DISABLE_KEYBINDING_SAVE to true for test
+    Initializing preferences file at "/home/factory-user/warp-stanford/target/debug/build/integration-00220792400bd191/out/tmp/test_yank_settings_clear_then_reset/.config/warp-terminal-integration/user_preferences.json"
+    Clearing env var ORIGINAL_HOME
+    Clearing env var HOME
+    Clearing env var WARP_TEST_DISABLE_KEYBINDING_SAVE
+    test ui_tests::test_yank_settings_clear_then_reset ... FAILED
+
+    failures:
+
+    failures:
+        ui_tests::test_yank_settings_clear_then_reset
+
+    test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 346 filtered out; finished in 12.41s
+
+  stderr ───
+    21:18:31.045 [INFO] [warp_terminal::local_tty::server] Spawning terminal server process...
+    21:18:31.081 [INFO] [warp_terminal::local_tty::server::event_loop] Running terminal server...
+    21:18:31.087 [INFO] [warpui::windowing::winit::event_loop] Running app with windowing system: X11
+    21:18:31.219 [INFO] [warp::settings::init] Migrating public settings from native store to settings.toml
+    21:18:31.220 [INFO] [warp::settings::init] Settings file migration complete — migrated 0 settings, 0 failed
+    21:18:31.324 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:31.396 [INFO] [warp::persistence::sqlite] Connecting to SQLite database
+    21:18:31.523 [WARN] [warp::persistence::sqlite] SQLite error 284 (Automatic indexing used - database might benefit from additional indexes): automatic index on object_permissions(subject_type)
+    21:18:31.623 [ERROR] [errors::report_error] Failed to deserialize API keys: EOF while parsing a value at line 1 column 0
+    21:18:31.623 [ERROR] [errors::report_error] Failed to deserialize custom endpoint keys: EOF while parsing a value at line 1 column 0
+    21:18:31.623 [ERROR] [errors::report_error] Failed to deserialize Grok tokens: EOF while parsing a value at line 1 column 0
+    21:18:31.624 [INFO] [warp] Starting warp with channel state ChannelState { channel: Integration, additional_features: {}, config: ChannelConfig { app_id: AppId { qualifier: "dev", organization: "warp", application_name: "WarpIntegration" }, logfile_name: "warp_integration.log", server_config: WarpServerConfig { server_root_url: "http://192.0.2.0:9", rtc_server_url: "ws://192.0.2.0:9/graphql/v2", session_sharing_server_url: None, firebase_auth_api_key: "", iap_config: None }, oz_config: OzConfig { oz_root_url: "http://192.0.2.0:9", workload_audience_url: None }, telemetry_config: None, autoupdate_config: None, crash_reporting_config: None, mcp_static_config: None } } and version None
+    21:18:31.653 [INFO] [warp::app_services] Initializing app services
+    21:18:31.653 [ERROR] [warp::app_services::linux] Failed to initialize org.freedesktop.Application D-Bus service: I/O error: No such file or directory (os error 2): No such file or directory (os error 2)
+    21:18:31.705 [INFO] [warp::ai::mcp::templatable_manager::native] Converting 0 legacy MCP servers into templatable MCP servers
+    21:18:31.707 [INFO] [warp::auth::auth_manager] Attempted to refresh a user with no login token, skipping
+    21:18:31.709 [INFO] [warp::ai::execution_profiles::profiles] Initialized execution profile model with state: Unsynced, file_backed_profiles: true
+    21:18:31.711 [INFO] [warpui_core::core::app] dispatching global action for root_view:open_from_restored
+    21:18:31.823 [INFO] [warp::terminal::local_tty::terminal_manager] Creating terminal model with 0 restored blocks
+    21:18:31.829 [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+    21:18:31.829 [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+    21:18:31.849 [INFO] [warp::ai::persisted_workspace] Cleaning up index metadata from SQLite
+    21:18:31.853 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:31.853 [WARN] [warpui_core::core::app] Action HandleFocusChange was dispatched, but no view handled it
+    21:18:31.854 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:31.854 [WARN] [warpui_core::core::app] Action HandleFocusChange was dispatched, but no view handled it
+    21:18:31.857 [WARN] [warp::terminal::view] Tried to update block filter query without active_filter_editor_block_index set
+    21:18:31.860 [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+    21:18:31.860 [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+    21:18:31.879 [WARN] [warp::ai::blocklist::suggested_agent_mode_workflow_modal] SuggestedAgentModeWorkflowModal has not been initialized
+    21:18:31.882 [WARN] [warp::terminal::share_block_modal] Tried to render share modal without a model
+    21:18:31.901 [WARN] [warp::workspace::native_modal] No alert dialog was set for the native modal
+    21:18:31.902 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:31.903 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:31.919 [WARN] [warpui::windowing::winit::linux::zbus::desktop_settings] Encountered error while watching for desktop settings change events: I/O error: No such file or directory (os error 2)
+    21:18:31.931 [WARN] [warp::ai::chatgpt_subscription] Failed to refresh ChatGPT connection: received non-OK response code 501 Not Implemented
+    21:18:31.931 [INFO] [warp::ai::mcp::file_based_manager] Initial global file-based MCP scan complete: 0 auto-started server(s) to await before the first turn
+    21:18:31.931 [WARN] [errors::report_error] Failed to fetch available harnesses: received non-OK response code 501 Not Implemented
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    21:18:31.936 [INFO] [warpui::rendering::wgpu::resources] Enabled wgpu backends: Backends(VULKAN)
+    21:18:31.936 [INFO] [warpui::rendering::wgpu::resources] Available wgpu adapters (in priority order):
+    21:18:31.942 [INFO] [warpui::rendering::wgpu::resources] Cpu: llvmpipe (LLVM 20.1.2, 256 bits)
+    Backend: Vulkan
+    Driver: llvmpipe (Mesa 25.2.8-0ubuntu0.24.04.4 (LLVM 20.1.2))
+    Can present: true
+    Supported texture format: Some(Bgra8UnormSrgb)
+    Supported alpha mode: [PreMultiplied, Inherit]
+    21:18:31.942 [INFO] [warpui::rendering::wgpu::resources] Verifying adapter "llvmpipe (LLVM 20.1.2, 256 bits)" is valid...
+    21:18:31.968 [INFO] [warpui::rendering::wgpu::resources] Using Vulkan Cpu (llvmpipe (LLVM 20.1.2, 256 bits)) for rendering new window.
+    21:18:32.043 [INFO] [warp::referral_theme_status] Unable to retrieve user referral info
+    21:18:32.043 [WARN] [warp::ai::chatgpt_subscription] Failed to refresh ChatGPT connection: received non-OK response code 501 Not Implemented
+    21:18:32.045 [WARN] [errors::report_error] Failed to fetch conversation usage: received non-OK response code 501 Not Implemented
+    21:18:32.045 [WARN] [errors::report_error] Failed to fetch conversation usage: received non-OK response code 501 Not Implemented
+    21:18:32.047 [WARN] [warp::ai_assistant::requests] Failed to retrieve initial request limit info: received non-OK response code 501 Not Implemented
+    21:18:32.057 [INFO] [warp_terminal::local_tty::unix] Starting shell /usr/bin/zsh
+    21:18:32.058 [INFO] [warp_terminal::local_tty::server::event_loop] Successfully spawned tty with pid: 167251
+    21:18:32.058 [INFO] [warp_terminal::local_tty::unix] Successfully spawned child zsh process with pid 167251
+    21:18:32.058 [INFO] [warpui_core::integration::driver] Spawning integration test with 22 steps
+    21:18:32.059 [INFO] [warpui_core::integration::driver] Test artifacts directory: /home/factory-user/warp-stanford/evidence/m2-option-a/artifacts/test_yank_settings_clear_then_reset/2026-10-17T21-18-32
+    21:18:32.059 [INFO] [warpui_core::integration::driver] Running test step 'Wait for bootstrapping' on window id WindowId(0)
+    21:18:32.059 [INFO] [warpui_core::integration::step] Running test step 'Wait for bootstrapping' at frame 7 with 0 events
+    21:18:32.087 [INFO] [warp_terminal::model::ansi] Received InitShell hook
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    21:18:32.397 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:32.400 [INFO] [warpui_core::platform::app] window resized
+    21:18:32.400 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:32.402 [INFO] [warpui_core::integration::step] entering assertion loop for 'no pending model events'
+    21:18:32.402 [INFO] [warp::integration_testing::step] events pending false
+    21:18:32.413 [INFO] [warpui_core::platform::app] active window changed: Some(WindowId(0))
+    21:18:32.422 [INFO] [warpui_core::core::app] dispatching global action for root_view:update_quake_mode_state
+    21:18:32.422 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:32.478 [INFO] [warp_terminal::model::ansi] Received CommandFinished hook
+    21:18:32.478 [INFO] [warp::terminal::model::terminal_model] Tried to exit the alternate screen, but it was already inactive
+    21:18:32.482 [INFO] [warp::terminal::model::block] Block finished with new state DoneWithExecution
+    21:18:32.483 [INFO] [warp::terminal::model::blocks] Incrementing stage from WarpInput to ScriptExecution
+    21:18:32.484 [INFO] [warp_terminal::model::ansi] Received Precmd hook
+    21:18:32.505 [INFO] [warpui_core::integration::step] entering assertion loop for 'no block executing'
+    21:18:32.505 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:32.513 [INFO] [warp_terminal::model::ansi] Received Bootstrapped hook
+    21:18:32.514 [INFO] [warp::terminal::model::early_output] Configured typeahead mode as ShellReported
+    21:18:32.515 [INFO] [warp_terminal::model::ansi] Received CommandFinished hook
+    21:18:32.515 [INFO] [warp::terminal::model::terminal_model] Tried to exit the alternate screen, but it was already inactive
+    21:18:32.515 [INFO] [warp::terminal::model::block] Block finished with new state DoneWithExecution
+    21:18:32.516 [INFO] [warp::terminal::model::blocks] Incrementing stage from Bootstrapped to PostBootstrapPrecmd
+    21:18:32.519 [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+    21:18:32.519 [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+    21:18:32.523 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:32.527 [INFO] [warp::terminal::model::session::command_executor] creating a local executor!
+    21:18:32.527 [INFO] [warp::terminal::model::session] Parsed shell version string: Some([Number(5), Number(9)])
+    21:18:32.527 [INFO] [warp::terminal::model::session] Shell is bootstrapped with session_id SessionId(12873261435718527602)
+    21:18:32.528 [INFO] [warp::terminal::model::session] No history file found for shell zsh, starting with empty history
+    21:18:32.528 [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+    21:18:32.529 [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+    21:18:32.529 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:32.530 [INFO] [warp_terminal::model::ansi] Received Precmd hook
+    21:18:32.548 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:32.562 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:32.636 [INFO] [warpui_core::integration::step] entering assertion loop for 'waiting for bootstrapping'
+    21:18:32.637 [INFO] [warpui_core::integration::driver] Test step 'Wait for bootstrapping' succeeded.
+    21:18:32.637 [INFO] [warpui_core::integration::driver] Running test step 'Open settings at Keybindings' on window id WindowId(0)
+    21:18:32.637 [INFO] [warpui_core::integration::step] Running test step 'Open settings at Keybindings' at frame 45 with 0 events
+    21:18:32.637 [INFO] [warpui_core::core::app] dispatching typed action: warp::workspace::action::WorkspaceAction::ShowSettingsPage(Keybindings)
+    21:18:32.637 [INFO] [warpui_core::core::view::context] enabling actions for window id 0
+    21:18:32.650 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:32.651 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:32.654 [WARN] [warp::terminal::share_block_modal] Tried to render share modal without a model
+    21:18:32.863 [INFO] [warp_terminal::model::ansi] Received InputBuffer hook
+    21:18:32.863 [INFO] [warp::terminal::model::early_output] Ignoring empty input buffer
+    21:18:33.005 [INFO] [warpui_core::integration::step] entering assertion loop for 'no pending model events'
+    21:18:33.005 [INFO] [warp::integration_testing::step] events pending false
+    21:18:33.005 [INFO] [warpui_core::core::app] notifying view observers and updating windows for timer id 0
+    21:18:33.027 [INFO] [warpui_core::core::app] notifying view observers and updating windows for timer id 1
+    21:18:33.048 [INFO] [warpui_core::integration::step] entering assertion loop for 'no block executing'
+    21:18:33.303 [INFO] [warpui_core::integration::step] entering assertion loop for 'Settings is showing Keybindings'
+    21:18:33.303 [INFO] [warpui_core::integration::driver] Test step 'Open settings at Keybindings' succeeded.
+    21:18:33.303 [INFO] [warpui_core::integration::driver] Running test step 'Search keyboard shortcuts for "Yank (last killed text)"' on window id WindowId(0)
+    21:18:33.304 [INFO] [warpui_core::integration::step] Running test step 'Search keyboard shortcuts for "Yank (last killed text)"' at frame 57 with 0 events
+    21:18:33.369 [INFO] [warpui_core::integration::step] entering assertion loop for 'no pending model events'
+    21:18:33.369 [INFO] [warp::integration_testing::step] events pending false
+    21:18:33.386 [INFO] [warpui_core::integration::step] entering assertion loop for 'no block executing'
+    21:18:33.386 [INFO] [warpui_core::integration::driver] Test step 'Search keyboard shortcuts for "Yank (last killed text)"' succeeded.
+    21:18:33.387 [INFO] [warpui_core::integration::driver] Running test step 'Check the top shortcut row is editor_view:yank' on window id WindowId(0)
+    21:18:33.387 [INFO] [warpui_core::integration::step] Running test step 'Check the top shortcut row is editor_view:yank' at frame 61 with 0 events
+    21:18:33.403 [INFO] [warpui_core::integration::step] entering assertion loop for 'Top row is the only editor_view:yank row ("Yank (last killed text)") with trigger Some("ctrl-y")'
+    21:18:43.392 [ERROR] [errors::report_error] Test step failed [step=Check the top shortcut row is editor_view:yank, assertion=Top row is the only editor_view:yank row ("Yank (last killed text)") with trigger Some("ctrl-y")]
+
+    thread 'main' (167075) panicked at /home/factory-user/warp-stanford/crates/warpui_core/src/integration/driver.rs:651:25:
+    Test step 'Check the top shortcut row is editor_view:yank' failed after 1 attempts: assertion failed: `Unexpected (top row, number of editor_view:yank rows)`
+      left: `(Some(("editor_view:yank", "Yank (Last Killed Text)", Some(Keystroke { ctrl: true, alt: false, shift: false, cmd: false, meta: false, key: "y" }))), 1)`,
+     right: `(Some(("editor_view:yank", "Yank (last killed text)", Some(Keystroke { ctrl: true, alt: false, shift: false, cmd: false, meta: false, key: "y" }))), 1)`
+    Failed in step group: Unspecified
+    (Backtrace disabled; run with `RUST_BACKTRACE=1` environment variable to display a backtrace)
+    note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+    Test step 'Check the top shortcut row is editor_view:yank' failed after 1 attempts: assertion failed: `Unexpected (top row, number of editor_view:yank rows)`
+      left: `(Some(("editor_view:yank", "Yank (Last Killed Text)", Some(Keystroke { ctrl: true, alt: false, shift: false, cmd: false, meta: false, key: "y" }))), 1)`,
+     right: `(Some(("editor_view:yank", "Yank (last killed text)", Some(Keystroke { ctrl: true, alt: false, shift: false, cmd: false, meta: false, key: "y" }))), 1)`
+    Failed in step group: Unspecified
+    (Backtrace disabled; run with `RUST_BACKTRACE=1` environment variable to display a backtrace)
+
+    Error: "Test test_yank_settings_clear_then_reset failed with exit code 1"
+
+        FAIL [  12.731s] ( 9/10) integration::integration ui_tests::test_yank_settings_conflict_warning
+  stdout ───
+
+    running 1 test
+    Running integration test: test_yank_settings_conflict_warning
+    Setting env var ORIGINAL_HOME to /home/factory-user for test
+    Setting env var HOME to /home/factory-user/warp-stanford/target/debug/build/integration-00220792400bd191/out/tmp/test_yank_settings_conflict_warning for test
+    Setting env var WARP_TEST_DISABLE_KEYBINDING_SAVE to true for test
+    Initializing preferences file at "/home/factory-user/warp-stanford/target/debug/build/integration-00220792400bd191/out/tmp/test_yank_settings_conflict_warning/.config/warp-terminal-integration/user_preferences.json"
+    Clearing env var WARP_TEST_DISABLE_KEYBINDING_SAVE
+    Clearing env var HOME
+    Clearing env var ORIGINAL_HOME
+    test ui_tests::test_yank_settings_conflict_warning ... FAILED
+
+    failures:
+
+    failures:
+        ui_tests::test_yank_settings_conflict_warning
+
+    test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 346 filtered out; finished in 12.72s
+
+  stderr ───
+    21:18:43.470 [INFO] [warp_terminal::local_tty::server] Spawning terminal server process...
+    21:18:43.509 [INFO] [warp_terminal::local_tty::server::event_loop] Running terminal server...
+    21:18:43.510 [INFO] [warpui::windowing::winit::event_loop] Running app with windowing system: X11
+    21:18:43.663 [INFO] [warp::settings::init] Migrating public settings from native store to settings.toml
+    21:18:43.663 [INFO] [warp::settings::init] Settings file migration complete — migrated 0 settings, 0 failed
+    21:18:43.750 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:43.836 [INFO] [warp::persistence::sqlite] Connecting to SQLite database
+    21:18:43.943 [WARN] [warp::persistence::sqlite] SQLite error 284 (Automatic indexing used - database might benefit from additional indexes): automatic index on object_permissions(subject_type)
+    21:18:44.036 [ERROR] [errors::report_error] Failed to deserialize API keys: EOF while parsing a value at line 1 column 0
+    21:18:44.036 [ERROR] [errors::report_error] Failed to deserialize custom endpoint keys: EOF while parsing a value at line 1 column 0
+    21:18:44.036 [ERROR] [errors::report_error] Failed to deserialize Grok tokens: EOF while parsing a value at line 1 column 0
+    21:18:44.037 [INFO] [warp] Starting warp with channel state ChannelState { channel: Integration, additional_features: {}, config: ChannelConfig { app_id: AppId { qualifier: "dev", organization: "warp", application_name: "WarpIntegration" }, logfile_name: "warp_integration.log", server_config: WarpServerConfig { server_root_url: "http://192.0.2.0:9", rtc_server_url: "ws://192.0.2.0:9/graphql/v2", session_sharing_server_url: None, firebase_auth_api_key: "", iap_config: None }, oz_config: OzConfig { oz_root_url: "http://192.0.2.0:9", workload_audience_url: None }, telemetry_config: None, autoupdate_config: None, crash_reporting_config: None, mcp_static_config: None } } and version None
+    21:18:44.070 [INFO] [warp::app_services] Initializing app services
+    21:18:44.070 [ERROR] [warp::app_services::linux] Failed to initialize org.freedesktop.Application D-Bus service: I/O error: No such file or directory (os error 2): No such file or directory (os error 2)
+    21:18:44.143 [INFO] [warp::ai::mcp::templatable_manager::native] Converting 0 legacy MCP servers into templatable MCP servers
+    21:18:44.145 [INFO] [warp::auth::auth_manager] Attempted to refresh a user with no login token, skipping
+    21:18:44.147 [INFO] [warp::ai::execution_profiles::profiles] Initialized execution profile model with state: Unsynced, file_backed_profiles: true
+    21:18:44.149 [INFO] [warpui_core::core::app] dispatching global action for root_view:open_from_restored
+    21:18:44.268 [INFO] [warp::terminal::local_tty::terminal_manager] Creating terminal model with 0 restored blocks
+    21:18:44.276 [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+    21:18:44.276 [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+    21:18:44.301 [INFO] [warp::ai::persisted_workspace] Cleaning up index metadata from SQLite
+    21:18:44.305 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:44.305 [WARN] [warpui_core::core::app] Action HandleFocusChange was dispatched, but no view handled it
+    21:18:44.306 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:44.306 [WARN] [warpui_core::core::app] Action HandleFocusChange was dispatched, but no view handled it
+    21:18:44.309 [WARN] [warp::terminal::view] Tried to update block filter query without active_filter_editor_block_index set
+    21:18:44.311 [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+    21:18:44.311 [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+    21:18:44.330 [WARN] [warp::ai::blocklist::suggested_agent_mode_workflow_modal] SuggestedAgentModeWorkflowModal has not been initialized
+    21:18:44.333 [WARN] [warp::terminal::share_block_modal] Tried to render share modal without a model
+    21:18:44.352 [WARN] [warp::workspace::native_modal] No alert dialog was set for the native modal
+    21:18:44.353 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:44.355 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:44.370 [WARN] [warpui::windowing::winit::linux::zbus::desktop_settings] Encountered error while watching for desktop settings change events: I/O error: No such file or directory (os error 2)
+    21:18:44.383 [WARN] [warp::ai::chatgpt_subscription] Failed to refresh ChatGPT connection: received non-OK response code 501 Not Implemented
+    21:18:44.384 [INFO] [warp::ai::mcp::file_based_manager] Initial global file-based MCP scan complete: 0 auto-started server(s) to await before the first turn
+    21:18:44.384 [WARN] [errors::report_error] Failed to fetch available harnesses: received non-OK response code 501 Not Implemented
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    21:18:44.389 [INFO] [warpui::rendering::wgpu::resources] Enabled wgpu backends: Backends(VULKAN)
+    21:18:44.389 [INFO] [warpui::rendering::wgpu::resources] Available wgpu adapters (in priority order):
+    21:18:44.395 [INFO] [warpui::rendering::wgpu::resources] Cpu: llvmpipe (LLVM 20.1.2, 256 bits)
+    Backend: Vulkan
+    Driver: llvmpipe (Mesa 25.2.8-0ubuntu0.24.04.4 (LLVM 20.1.2))
+    Can present: true
+    Supported texture format: Some(Bgra8UnormSrgb)
+    Supported alpha mode: [PreMultiplied, Inherit]
+    21:18:44.395 [INFO] [warpui::rendering::wgpu::resources] Verifying adapter "llvmpipe (LLVM 20.1.2, 256 bits)" is valid...
+    21:18:44.422 [INFO] [warpui::rendering::wgpu::resources] Using Vulkan Cpu (llvmpipe (LLVM 20.1.2, 256 bits)) for rendering new window.
+    21:18:44.490 [INFO] [warp::referral_theme_status] Unable to retrieve user referral info
+    21:18:44.491 [WARN] [warp::ai::chatgpt_subscription] Failed to refresh ChatGPT connection: received non-OK response code 501 Not Implemented
+    21:18:44.493 [WARN] [errors::report_error] Failed to fetch conversation usage: received non-OK response code 501 Not Implemented
+    21:18:44.493 [WARN] [errors::report_error] Failed to fetch conversation usage: received non-OK response code 501 Not Implemented
+    21:18:44.495 [WARN] [warp::ai_assistant::requests] Failed to retrieve initial request limit info: received non-OK response code 501 Not Implemented
+    21:18:44.504 [INFO] [warp_terminal::local_tty::unix] Starting shell /usr/bin/zsh
+    21:18:44.506 [INFO] [warp_terminal::local_tty::server::event_loop] Successfully spawned tty with pid: 167621
+    21:18:44.506 [INFO] [warp_terminal::local_tty::unix] Successfully spawned child zsh process with pid 167621
+    21:18:44.506 [INFO] [warpui_core::integration::driver] Spawning integration test with 16 steps
+    21:18:44.507 [INFO] [warpui_core::integration::driver] Test artifacts directory: /home/factory-user/warp-stanford/evidence/m2-option-a/artifacts/test_yank_settings_conflict_warning/2026-10-17T21-18-44
+    21:18:44.507 [INFO] [warpui_core::integration::driver] Running test step 'Wait for bootstrapping' on window id WindowId(0)
+    21:18:44.507 [INFO] [warpui_core::integration::step] Running test step 'Wait for bootstrapping' at frame 7 with 0 events
+    21:18:44.533 [INFO] [warp_terminal::model::ansi] Received InitShell hook
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    21:18:44.884 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:44.888 [INFO] [warpui_core::platform::app] window resized
+    21:18:44.888 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:44.946 [INFO] [warp_terminal::model::ansi] Received CommandFinished hook
+    21:18:44.946 [INFO] [warp::terminal::model::terminal_model] Tried to exit the alternate screen, but it was already inactive
+    21:18:44.949 [INFO] [warp::terminal::model::block] Block finished with new state DoneWithExecution
+    21:18:44.951 [INFO] [warp::terminal::model::blocks] Incrementing stage from WarpInput to ScriptExecution
+    21:18:44.953 [INFO] [warp_terminal::model::ansi] Received Precmd hook
+    21:18:44.968 [INFO] [warpui_core::integration::step] entering assertion loop for 'no pending model events'
+    21:18:44.968 [INFO] [warp::integration_testing::step] events pending true
+    21:18:44.968 [INFO] [warpui_core::platform::app] active window changed: Some(WindowId(0))
+    21:18:44.973 [INFO] [warpui_core::core::app] dispatching global action for root_view:update_quake_mode_state
+    21:18:44.973 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:44.975 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:44.989 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:44.998 [INFO] [warp::integration_testing::step] events pending false
+    21:18:44.999 [INFO] [warp_terminal::model::ansi] Received Bootstrapped hook
+    21:18:44.999 [INFO] [warp::terminal::model::early_output] Configured typeahead mode as ShellReported
+    21:18:45.001 [INFO] [warp_terminal::model::ansi] Received CommandFinished hook
+    21:18:45.001 [INFO] [warp::terminal::model::terminal_model] Tried to exit the alternate screen, but it was already inactive
+    21:18:45.001 [INFO] [warp::terminal::model::block] Block finished with new state DoneWithExecution
+    21:18:45.002 [INFO] [warp::terminal::model::blocks] Incrementing stage from Bootstrapped to PostBootstrapPrecmd
+    21:18:45.013 [INFO] [warp_terminal::model::ansi] Received Precmd hook
+    21:18:45.176 [INFO] [warp::terminal::model::session::command_executor] creating a local executor!
+    21:18:45.176 [INFO] [warp::terminal::model::session] Parsed shell version string: Some([Number(5), Number(9)])
+    21:18:45.177 [INFO] [warp::terminal::model::session] Shell is bootstrapped with session_id SessionId(18182197010100556898)
+    21:18:45.177 [INFO] [warp::terminal::model::session] No history file found for shell zsh, starting with empty history
+    21:18:45.179 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:45.208 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:45.233 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:45.271 [INFO] [warpui_core::integration::step] entering assertion loop for 'no block executing'
+    21:18:45.340 [INFO] [warpui_core::integration::step] entering assertion loop for 'waiting for bootstrapping'
+    21:18:45.340 [INFO] [warpui_core::integration::driver] Test step 'Wait for bootstrapping' succeeded.
+    21:18:45.340 [INFO] [warpui_core::integration::driver] Running test step 'Open settings at Keybindings' on window id WindowId(0)
+    21:18:45.341 [INFO] [warpui_core::integration::step] Running test step 'Open settings at Keybindings' at frame 43 with 0 events
+    21:18:45.341 [INFO] [warpui_core::core::app] dispatching typed action: warp::workspace::action::WorkspaceAction::ShowSettingsPage(Keybindings)
+    21:18:45.341 [INFO] [warpui_core::core::view::context] enabling actions for window id 0
+    21:18:45.360 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:45.364 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:45.369 [WARN] [warp::terminal::share_block_modal] Tried to render share modal without a model
+    21:18:45.612 [INFO] [warp_terminal::model::ansi] Received InputBuffer hook
+    21:18:45.612 [INFO] [warp::terminal::model::early_output] Ignoring empty input buffer
+    21:18:45.720 [INFO] [warpui_core::core::app] notifying view observers and updating windows for timer id 0
+    21:18:45.744 [INFO] [warpui_core::core::app] notifying view observers and updating windows for timer id 1
+    21:18:45.768 [INFO] [warpui_core::integration::step] entering assertion loop for 'no pending model events'
+    21:18:45.768 [INFO] [warp::integration_testing::step] events pending false
+    21:18:45.791 [INFO] [warpui_core::integration::step] entering assertion loop for 'no block executing'
+    21:18:46.034 [INFO] [warpui_core::integration::step] entering assertion loop for 'Settings is showing Keybindings'
+    21:18:46.034 [INFO] [warpui_core::integration::driver] Test step 'Open settings at Keybindings' succeeded.
+    21:18:46.035 [INFO] [warpui_core::integration::driver] Running test step 'Search keyboard shortcuts for "Delete all left"' on window id WindowId(0)
+    21:18:46.035 [INFO] [warpui_core::integration::step] Running test step 'Search keyboard shortcuts for "Delete all left"' at frame 55 with 0 events
+    21:18:46.100 [INFO] [warpui_core::integration::step] entering assertion loop for 'no pending model events'
+    21:18:46.100 [INFO] [warp::integration_testing::step] events pending false
+    21:18:46.117 [INFO] [warpui_core::integration::step] entering assertion loop for 'no block executing'
+    21:18:46.117 [INFO] [warpui_core::integration::driver] Test step 'Search keyboard shortcuts for "Delete all left"' succeeded.
+    21:18:46.117 [INFO] [warpui_core::integration::driver] Running test step 'Check the top shortcut row is editor_view:delete_all_left' on window id WindowId(0)
+    21:18:46.117 [INFO] [warpui_core::integration::step] Running test step 'Check the top shortcut row is editor_view:delete_all_left' at frame 59 with 0 events
+    21:18:46.134 [INFO] [warpui_core::integration::step] entering assertion loop for 'Top row is the only editor_view:delete_all_left row ("Delete all left") with trigger None'
+    21:18:56.133 [ERROR] [errors::report_error] Test step failed [step=Check the top shortcut row is editor_view:delete_all_left, assertion=Top row is the only editor_view:delete_all_left row ("Delete all left") with trigger None]
+
+    thread 'main' (167447) panicked at /home/factory-user/warp-stanford/crates/warpui_core/src/integration/driver.rs:651:25:
+    Test step 'Check the top shortcut row is editor_view:delete_all_left' failed after 1 attempts: assertion failed: `Unexpected (top row, number of editor_view:delete_all_left rows)`
+      left: `(Some(("editor_view:delete_all_left", "Delete All Left", None)), 1)`,
+     right: `(Some(("editor_view:delete_all_left", "Delete all left", None)), 1)`
+    Failed in step group: Unspecified
+    (Backtrace disabled; run with `RUST_BACKTRACE=1` environment variable to display a backtrace)
+    note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+    Test step 'Check the top shortcut row is editor_view:delete_all_left' failed after 1 attempts: assertion failed: `Unexpected (top row, number of editor_view:delete_all_left rows)`
+      left: `(Some(("editor_view:delete_all_left", "Delete All Left", None)), 1)`,
+     right: `(Some(("editor_view:delete_all_left", "Delete all left", None)), 1)`
+    Failed in step group: Unspecified
+    (Backtrace disabled; run with `RUST_BACKTRACE=1` environment variable to display a backtrace)
+
+    Error: "Test test_yank_settings_conflict_warning failed with exit code 1"
+
+        FAIL [  12.705s] (10/10) integration::integration ui_tests::test_yank_settings_rebind
+  stdout ───
+
+    running 1 test
+    Running integration test: test_yank_settings_rebind
+    Setting env var ORIGINAL_HOME to /home/factory-user for test
+    Setting env var HOME to /home/factory-user/warp-stanford/target/debug/build/integration-00220792400bd191/out/tmp/test_yank_settings_rebind for test
+    Setting env var WARP_TEST_DISABLE_KEYBINDING_SAVE to true for test
+    Initializing preferences file at "/home/factory-user/warp-stanford/target/debug/build/integration-00220792400bd191/out/tmp/test_yank_settings_rebind/.config/warp-terminal-integration/user_preferences.json"
+    Clearing env var ORIGINAL_HOME
+    Clearing env var WARP_TEST_DISABLE_KEYBINDING_SAVE
+    Clearing env var HOME
+    test ui_tests::test_yank_settings_rebind ... FAILED
+
+    failures:
+
+    failures:
+        ui_tests::test_yank_settings_rebind
+
+    test result: FAILED. 0 passed; 1 failed; 0 ignored; 0 measured; 346 filtered out; finished in 12.70s
+
+  stderr ───
+    21:18:56.198 [INFO] [warp_terminal::local_tty::server] Spawning terminal server process...
+    21:18:56.226 [INFO] [warp_terminal::local_tty::server::event_loop] Running terminal server...
+    21:18:56.231 [INFO] [warpui::windowing::winit::event_loop] Running app with windowing system: X11
+    21:18:56.387 [INFO] [warp::settings::init] Migrating public settings from native store to settings.toml
+    21:18:56.387 [INFO] [warp::settings::init] Settings file migration complete — migrated 0 settings, 0 failed
+    21:18:56.481 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:56.542 [INFO] [warp::persistence::sqlite] Connecting to SQLite database
+    21:18:56.659 [WARN] [warp::persistence::sqlite] SQLite error 284 (Automatic indexing used - database might benefit from additional indexes): automatic index on object_permissions(subject_type)
+    21:18:56.769 [ERROR] [errors::report_error] Failed to deserialize API keys: EOF while parsing a value at line 1 column 0
+    21:18:56.769 [ERROR] [errors::report_error] Failed to deserialize custom endpoint keys: EOF while parsing a value at line 1 column 0
+    21:18:56.769 [ERROR] [errors::report_error] Failed to deserialize Grok tokens: EOF while parsing a value at line 1 column 0
+    21:18:56.770 [INFO] [warp] Starting warp with channel state ChannelState { channel: Integration, additional_features: {}, config: ChannelConfig { app_id: AppId { qualifier: "dev", organization: "warp", application_name: "WarpIntegration" }, logfile_name: "warp_integration.log", server_config: WarpServerConfig { server_root_url: "http://192.0.2.0:9", rtc_server_url: "ws://192.0.2.0:9/graphql/v2", session_sharing_server_url: None, firebase_auth_api_key: "", iap_config: None }, oz_config: OzConfig { oz_root_url: "http://192.0.2.0:9", workload_audience_url: None }, telemetry_config: None, autoupdate_config: None, crash_reporting_config: None, mcp_static_config: None } } and version None
+    21:18:56.817 [INFO] [warp::app_services] Initializing app services
+    21:18:56.817 [ERROR] [warp::app_services::linux] Failed to initialize org.freedesktop.Application D-Bus service: I/O error: No such file or directory (os error 2): No such file or directory (os error 2)
+    21:18:56.867 [INFO] [warp::ai::mcp::templatable_manager::native] Converting 0 legacy MCP servers into templatable MCP servers
+    21:18:56.869 [INFO] [warp::auth::auth_manager] Attempted to refresh a user with no login token, skipping
+    21:18:56.871 [INFO] [warp::ai::execution_profiles::profiles] Initialized execution profile model with state: Unsynced, file_backed_profiles: true
+    21:18:56.872 [INFO] [warpui_core::core::app] dispatching global action for root_view:open_from_restored
+    21:18:56.977 [INFO] [warp::terminal::local_tty::terminal_manager] Creating terminal model with 0 restored blocks
+    21:18:56.984 [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+    21:18:56.984 [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+    21:18:57.002 [INFO] [warp::ai::persisted_workspace] Cleaning up index metadata from SQLite
+    21:18:57.007 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:57.007 [WARN] [warpui_core::core::app] Action HandleFocusChange was dispatched, but no view handled it
+    21:18:57.008 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:57.008 [WARN] [warpui_core::core::app] Action HandleFocusChange was dispatched, but no view handled it
+    21:18:57.011 [WARN] [warp::terminal::view] Tried to update block filter query without active_filter_editor_block_index set
+    21:18:57.013 [WARN] [warp::context_chips::current_prompt] Generator for GitDiffStats: could not prepare execution context
+    21:18:57.013 [WARN] [warp::context_chips::current_prompt] Generator for KubernetesContext: could not prepare execution context
+    21:18:57.036 [WARN] [warp::ai::blocklist::suggested_agent_mode_workflow_modal] SuggestedAgentModeWorkflowModal has not been initialized
+    21:18:57.039 [WARN] [warp::terminal::share_block_modal] Tried to render share modal without a model
+    21:18:57.066 [WARN] [warp::workspace::native_modal] No alert dialog was set for the native modal
+    21:18:57.068 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:57.069 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:57.086 [WARN] [warpui::windowing::winit::linux::zbus::desktop_settings] Encountered error while watching for desktop settings change events: I/O error: No such file or directory (os error 2)
+    21:18:57.097 [WARN] [warp::ai::chatgpt_subscription] Failed to refresh ChatGPT connection: received non-OK response code 501 Not Implemented
+    21:18:57.097 [INFO] [warp::ai::mcp::file_based_manager] Initial global file-based MCP scan complete: 0 auto-started server(s) to await before the first turn
+    21:18:57.097 [WARN] [errors::report_error] Failed to fetch available harnesses: received non-OK response code 501 Not Implemented
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    21:18:57.102 [INFO] [warpui::rendering::wgpu::resources] Enabled wgpu backends: Backends(VULKAN)
+    21:18:57.102 [INFO] [warpui::rendering::wgpu::resources] Available wgpu adapters (in priority order):
+    21:18:57.108 [INFO] [warpui::rendering::wgpu::resources] Cpu: llvmpipe (LLVM 20.1.2, 256 bits)
+    Backend: Vulkan
+    Driver: llvmpipe (Mesa 25.2.8-0ubuntu0.24.04.4 (LLVM 20.1.2))
+    Can present: true
+    Supported texture format: Some(Bgra8UnormSrgb)
+    Supported alpha mode: [PreMultiplied, Inherit]
+    21:18:57.108 [INFO] [warpui::rendering::wgpu::resources] Verifying adapter "llvmpipe (LLVM 20.1.2, 256 bits)" is valid...
+    21:18:57.137 [INFO] [warpui::rendering::wgpu::resources] Using Vulkan Cpu (llvmpipe (LLVM 20.1.2, 256 bits)) for rendering new window.
+    21:18:57.207 [INFO] [warp::referral_theme_status] Unable to retrieve user referral info
+    21:18:57.207 [WARN] [warp::ai::chatgpt_subscription] Failed to refresh ChatGPT connection: received non-OK response code 501 Not Implemented
+    21:18:57.209 [WARN] [errors::report_error] Failed to fetch conversation usage: received non-OK response code 501 Not Implemented
+    21:18:57.209 [WARN] [errors::report_error] Failed to fetch conversation usage: received non-OK response code 501 Not Implemented
+    21:18:57.211 [WARN] [warp::ai_assistant::requests] Failed to retrieve initial request limit info: received non-OK response code 501 Not Implemented
+    21:18:57.220 [INFO] [warp_terminal::local_tty::unix] Starting shell /usr/bin/zsh
+    21:18:57.222 [INFO] [warp_terminal::local_tty::server::event_loop] Successfully spawned tty with pid: 168004
+    21:18:57.222 [INFO] [warp_terminal::local_tty::unix] Successfully spawned child zsh process with pid 168004
+    21:18:57.222 [INFO] [warpui_core::integration::driver] Spawning integration test with 14 steps
+    21:18:57.222 [INFO] [warpui_core::integration::driver] Test artifacts directory: /home/factory-user/warp-stanford/evidence/m2-option-a/artifacts/test_yank_settings_rebind/2026-10-17T21-18-57
+    21:18:57.222 [INFO] [warpui_core::integration::driver] Running test step 'Wait for bootstrapping' on window id WindowId(0)
+    21:18:57.222 [INFO] [warpui_core::integration::step] Running test step 'Wait for bootstrapping' at frame 7 with 0 events
+    21:18:57.249 [INFO] [warp_terminal::model::ansi] Received InitShell hook
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    error: XDG_RUNTIME_DIR is invalid or not set in the environment.
+    21:18:57.590 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:57.594 [INFO] [warpui_core::platform::app] window resized
+    21:18:57.594 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:57.603 [INFO] [warpui_core::integration::step] entering assertion loop for 'no pending model events'
+    21:18:57.603 [INFO] [warp::integration_testing::step] events pending true
+    21:18:57.670 [INFO] [warpui_core::platform::app] active window changed: Some(WindowId(0))
+    21:18:57.676 [INFO] [warp_terminal::model::ansi] Received CommandFinished hook
+    21:18:57.676 [INFO] [warp::terminal::model::terminal_model] Tried to exit the alternate screen, but it was already inactive
+    21:18:57.680 [INFO] [warp::terminal::model::block] Block finished with new state DoneWithExecution
+    21:18:57.682 [INFO] [warp::terminal::model::blocks] Incrementing stage from WarpInput to ScriptExecution
+    21:18:57.683 [INFO] [warp_terminal::model::ansi] Received Precmd hook
+    21:18:57.685 [INFO] [warpui_core::core::app] dispatching global action for root_view:update_quake_mode_state
+    21:18:57.685 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:57.686 [INFO] [warp::integration_testing::step] events pending true
+    21:18:57.686 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:57.707 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:57.717 [INFO] [warp::integration_testing::step] events pending false
+    21:18:57.733 [INFO] [warp_terminal::model::ansi] Received Bootstrapped hook
+    21:18:57.733 [INFO] [warp::terminal::model::early_output] Configured typeahead mode as ShellReported
+    21:18:57.735 [INFO] [warp_terminal::model::ansi] Received CommandFinished hook
+    21:18:57.735 [INFO] [warp::terminal::model::terminal_model] Tried to exit the alternate screen, but it was already inactive
+    21:18:57.735 [INFO] [warp::terminal::model::block] Block finished with new state DoneWithExecution
+    21:18:57.735 [INFO] [warp::terminal::model::blocks] Incrementing stage from Bootstrapped to PostBootstrapPrecmd
+    21:18:57.747 [INFO] [warp_terminal::model::ansi] Received Precmd hook
+    21:18:57.896 [INFO] [warp::terminal::model::session::command_executor] creating a local executor!
+    21:18:57.896 [INFO] [warp::terminal::model::session] Parsed shell version string: Some([Number(5), Number(9)])
+    21:18:57.896 [INFO] [warp::terminal::model::session] Shell is bootstrapped with session_id SessionId(15313076520042920451)
+    21:18:57.897 [INFO] [warp::terminal::model::session] No history file found for shell zsh, starting with empty history
+    21:18:57.898 [INFO] [warpui_core::core::app] dispatching global action for workspace:save_app
+    21:18:57.918 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:57.934 [INFO] [warpui_core::core::app] dispatching typed action: warp::pane_group::PaneGroupAction::HandleFocusChange
+    21:18:57.952 [INFO] [warpui_core::integration::step] entering assertion loop for 'no block executing'
+    21:18:57.960 [INFO] [warp::terminal::model::session::command_executor::local_command_executor] Sent SIGKILL to process group 168149
+    21:18:57.999 [INFO] [warpui_core::integration::step] entering assertion loop for 'waiting for bootstrapping'
+    21:18:57.999 [INFO] [warpui_core::integration::driver] Test step 'Wait for bootstrapping' succeeded.
+    21:18:57.999 [INFO] [warpui_core::integration::driver] Running test step 'Open settings at Keybindings' on window id WindowId(0)
+    21:18:57.999 [INFO] [warpui_core::integration::step] Running test step 'Open settings at Keybindings' at frame 46 with 0 events
+    21:18:58.000 [INFO] [warpui_core::core::app] dispatching typed action: warp::workspace::action::WorkspaceAction::ShowSettingsPage(Keybindings)
+    21:18:58.000 [INFO] [warpui_core::core::view::context] enabling actions for window id 0
+    21:18:58.009 [WARN] [warp::terminal::share_block_modal] Tried to render share modal without a model
+    21:18:58.016 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:58.018 [INFO] [warpui::windowing::winit::delegate] Unable to fetch Linux system color scheme: I/O error: No such file or directory (os error 2)
+    21:18:58.231 [INFO] [warp_terminal::model::ansi] Received InputBuffer hook
+    21:18:58.231 [INFO] [warp::terminal::model::early_output] Ignoring empty input buffer
+    21:18:58.404 [INFO] [warpui_core::core::app] notifying view observers and updating windows for timer id 0
+    21:18:58.429 [INFO] [warpui_core::core::app] notifying view observers and updating windows for timer id 1
+    21:18:58.479 [INFO] [warpui_core::integration::step] entering assertion loop for 'no pending model events'
+    21:18:58.479 [INFO] [warp::integration_testing::step] events pending false
+    21:18:58.730 [INFO] [warpui_core::integration::step] entering assertion loop for 'no block executing'
+    21:18:58.755 [INFO] [warpui_core::integration::step] entering assertion loop for 'Settings is showing Keybindings'
+    21:18:58.755 [INFO] [warpui_core::integration::driver] Test step 'Open settings at Keybindings' succeeded.
+    21:18:58.755 [INFO] [warpui_core::integration::driver] Running test step 'Search keyboard shortcuts for "Yank (last killed text)"' on window id WindowId(0)
+    21:18:58.755 [INFO] [warpui_core::integration::step] Running test step 'Search keyboard shortcuts for "Yank (last killed text)"' at frame 59 with 0 events
+    21:18:58.822 [INFO] [warpui_core::integration::step] entering assertion loop for 'no pending model events'
+    21:18:58.823 [INFO] [warp::integration_testing::step] events pending false
+    21:18:58.840 [INFO] [warpui_core::integration::step] entering assertion loop for 'no block executing'
+    21:18:58.840 [INFO] [warpui_core::integration::driver] Test step 'Search keyboard shortcuts for "Yank (last killed text)"' succeeded.
+    21:18:58.840 [INFO] [warpui_core::integration::driver] Running test step 'Check the top shortcut row is editor_view:yank' on window id WindowId(0)
+    21:18:58.840 [INFO] [warpui_core::integration::step] Running test step 'Check the top shortcut row is editor_view:yank' at frame 62 with 0 events
+    21:18:58.857 [INFO] [warpui_core::integration::step] entering assertion loop for 'Top row is the only editor_view:yank row ("Yank (last killed text)") with trigger Some("ctrl-y")'
+    21:19:08.848 [ERROR] [errors::report_error] Test step failed [step=Check the top shortcut row is editor_view:yank, assertion=Top row is the only editor_view:yank row ("Yank (last killed text)") with trigger Some("ctrl-y")]
+
+    thread 'main' (167831) panicked at /home/factory-user/warp-stanford/crates/warpui_core/src/integration/driver.rs:651:25:
+    Test step 'Check the top shortcut row is editor_view:yank' failed after 1 attempts: assertion failed: `Unexpected (top row, number of editor_view:yank rows)`
+      left: `(Some(("editor_view:yank", "Yank (Last Killed Text)", Some(Keystroke { ctrl: true, alt: false, shift: false, cmd: false, meta: false, key: "y" }))), 1)`,
+     right: `(Some(("editor_view:yank", "Yank (last killed text)", Some(Keystroke { ctrl: true, alt: false, shift: false, cmd: false, meta: false, key: "y" }))), 1)`
+    Failed in step group: Unspecified
+    (Backtrace disabled; run with `RUST_BACKTRACE=1` environment variable to display a backtrace)
+    note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+
+    Test step 'Check the top shortcut row is editor_view:yank' failed after 1 attempts: assertion failed: `Unexpected (top row, number of editor_view:yank rows)`
+      left: `(Some(("editor_view:yank", "Yank (Last Killed Text)", Some(Keystroke { ctrl: true, alt: false, shift: false, cmd: false, meta: false, key: "y" }))), 1)`,
+     right: `(Some(("editor_view:yank", "Yank (last killed text)", Some(Keystroke { ctrl: true, alt: false, shift: false, cmd: false, meta: false, key: "y" }))), 1)`
+    Failed in step group: Unspecified
+    (Backtrace disabled; run with `RUST_BACKTRACE=1` environment variable to display a backtrace)
+
+    Error: "Test test_yank_settings_rebind failed with exit code 1"
+
+────────────
+     Summary [  75.726s] 10 tests run: 5 passed, 5 failed, 337 skipped
+        FAIL [  12.145s] ( 3/10) integration::integration ui_tests::test_yank_saved_custom_trigger
+        FAIL [  12.322s] ( 7/10) integration::integration ui_tests::test_yank_saved_none
+        FAIL [  12.421s] ( 8/10) integration::integration ui_tests::test_yank_settings_clear_then_reset
+        FAIL [  12.731s] ( 9/10) integration::integration ui_tests::test_yank_settings_conflict_warning
+        FAIL [  12.705s] (10/10) integration::integration ui_tests::test_yank_settings_rebind
+error: test run failed
