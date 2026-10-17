@@ -37,19 +37,27 @@ git remote add stanford https://github.com/warpdotdev/warp-stanford.git
 export WARP_SKIP_SUDO_PROMPT=1
 export WARP_SKIP_COMMON_SKILLS_INSTALL=1
 
+# Warp's install_rust only passes -y to rustup on GitHub Actions; install it non-interactively here.
+# rust-toolchain.toml then pulls Rust 1.92 on first cargo use.
+if ! command -v cargo >/dev/null; then
+  curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y --profile minimal --default-toolchain none
+fi
+. "$HOME/.cargo/env"
+
 # Build + runtime deps (apt packages, protoc, Rust 1.92 from rust-toolchain.toml, cargo build tools).
-./script/linux/install_runtime_deps
+./script/linux/install_runtime_deps </dev/null
 
 # Make cargo visible to the rest of this script and to future shells.
 . "$HOME/.cargo/env"
 grep -q '.cargo/env' "$HOME/.bashrc" || echo '. "$HOME/.cargo/env"' >> "$HOME/.bashrc"
 
 # Test tooling: cargo-nextest and wgslfmt (used by presubmit). Skips gcloud from install_test_deps.
-./script/install_cargo_test_deps
+./script/install_cargo_test_deps </dev/null
 
 # Shared Warp agent skills pinned in skills-lock.json, installed into .agents/skills
 # (Factory droids read .agents/skills via its compatibility path).
-WARP_COMMON_SKILLS_INSTALL_TARGET=project ./script/bootstrap --install-common-skills-in-repo || \
+./script/resolve_common_skills install_common_skills -- \
+  --repo-root "$PWD" --project --if-needed --non-interactive </dev/null || \
   echo "common-skills install failed; mission will retry at runtime"
 
 # Warm the build cache so sessions don't start with a ~30 min cold compile.
