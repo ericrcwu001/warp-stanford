@@ -341,6 +341,14 @@ integration_tests! {
     #[cfg(any(target_os = "linux", target_os = "freebsd"))]
     test_middle_click_paste,
     test_ctrl_y_yanks_killed_input,
+    test_yank_settings_rebind,
+    test_yank_settings_clear_then_reset,
+    test_yank_settings_conflict_warning,
+    test_yank_saved_delete_all_left_none,
+    test_yank_saved_delete_all_left_rebound,
+    test_yank_saved_delete_all_left_ctrl_y,
+    test_yank_saved_none,
+    test_yank_saved_custom_trigger,
     test_agent_mode_pane_minimum_size,
 
     test_rule_creation,
