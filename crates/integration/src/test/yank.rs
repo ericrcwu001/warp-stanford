@@ -224,6 +224,20 @@ fn click_first_row() -> TestStep {
         )
 }
 
+fn assert_first_row_conflict(
+    expected: bool,
+) -> impl FnMut(&mut App, WindowId) -> AssertionOutcome + 'static {
+    move |app, window_id| {
+        keybindings_view(app, window_id).read(app, |view, _| {
+            async_assert_eq!(
+                view.row_has_conflict(0),
+                expected,
+                "Unexpected conflict warning state on the first shortcut row"
+            )
+        })
+    }
+}
+
 fn capture_keystroke_in_first_row(key: &'static str) -> TestStep {
     new_step_with_default_assertions(&format!("Press {key} in the shortcut editor"))
         .with_keystrokes(&[key])
@@ -348,9 +362,18 @@ pub fn test_yank_settings_conflict_warning() -> Builder {
                 None
             },
         ))
-        .with_step(click_first_row())
+        // On macOS, Delete all left's default Cmd-Backspace already conflicts with
+        // `terminal:executing_command_delete_line_start`; elsewhere it has no default.
+        .with_step(click_first_row().add_named_assertion(
+            "Delete all left conflicts only through its macOS default",
+            assert_first_row_conflict(OperatingSystem::get().is_mac()),
+        ))
         .with_step(
             capture_keystroke_in_first_row("ctrl-y")
+                .add_named_assertion(
+                    "Delete all left shows the conflict warning for Ctrl-Y",
+                    assert_first_row_conflict(true),
+                )
                 .with_take_screenshot("delete_all_left_ctrl_y_conflict.png"),
         )
         .with_step(dispatch_keybindings_action(
@@ -372,7 +395,14 @@ pub fn test_yank_settings_conflict_warning() -> Builder {
             YANK_SETTINGS_LABEL,
             Some("ctrl-y"),
         ))
-        .with_step(click_first_row().with_take_screenshot("yank_ctrl_y_conflict.png"))
+        .with_step(
+            click_first_row()
+                .add_named_assertion(
+                    "Yank shows the conflict warning for Ctrl-Y",
+                    assert_first_row_conflict(true),
+                )
+                .with_take_screenshot("yank_ctrl_y_conflict.png"),
+        )
         .with_step(dispatch_keybindings_action(
             "Cancel editing the Yank shortcut",
             || KeybindingsViewAction::CancelKeyStrokeEditing(0),

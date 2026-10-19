@@ -815,8 +815,8 @@ pub fn init(ctx: &mut AppContext) {
         .with_context_predicate(id!("EditorView") & !id!("IMEOpen"))
         // VSCode only binds a default binding on Mac, see https://github.com/microsoft/vscode/blob/ceda6cc4856841f1550a60327a3eaf3a1d0c306a/src/vs/editor/contrib/linesOperations/browser/linesOperations.ts#L657.
         .with_mac_key_binding("cmd-delete"),
-        // Registered before `delete_all_left` so that a user's saved custom `ctrl-y` binding for
-        // `delete_all_left` (its former Linux/Windows default) still takes precedence over Yank.
+        // Last-registered editable bindings win, so this must stay above `delete_all_left` for a
+        // saved `ctrl-y` on that action to beat Yank.
         EditableBinding::new(
             "editor_view:yank",
             "Yank (last killed text)",
@@ -8473,8 +8473,8 @@ pub enum Event {
     /// Signifies that something has been pasted into the view
     Paste,
     MiddleClickPaste,
-    /// Emitted when the 'delete all left' keybinding is triggered (cmd-delete on mac, ctrl-y on
-    /// linux).
+    /// Emitted when the 'delete all left' keybinding is triggered (cmd-backspace on macOS; no
+    /// default on Linux/Windows).
     DeleteAllLeft,
     /// Notify the user that they're using a MacOS-style binding that conflicts with a non-MacOS-style binding.
     EmacsBindingUsed,
