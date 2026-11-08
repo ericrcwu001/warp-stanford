@@ -301,25 +301,26 @@ pub fn test_long_running_block_bottom_padding() {
 }
 
 #[test]
-fn test_is_normal_screen_pager_requires_application_keyboard_modes() {
+fn test_has_pager_keyboard_modes_requires_application_keyboard_modes() {
     let mut block = TestBlockBuilder::new().build();
     block.start();
     block.preexec(Default::default());
-    assert!(!block.is_normal_screen_pager());
+    assert!(!block.has_pager_keyboard_modes());
 
     // `less -X` and `more` send these sequences when they start.
     block.set_mode(ansi::Mode::CursorKeys);
-    assert!(!block.is_normal_screen_pager());
+    assert!(!block.has_pager_keyboard_modes());
     block.set_keypad_application_mode();
-    assert!(block.is_normal_screen_pager());
+    assert!(block.has_pager_keyboard_modes());
 
     // They undo them when they exit.
     block.unset_keypad_application_mode();
-    assert!(!block.is_normal_screen_pager());
+    block.unset_mode(ansi::Mode::CursorKeys);
+    assert!(!block.has_pager_keyboard_modes());
 }
 
 #[test]
-fn test_is_normal_screen_pager_excludes_repl_with_bracketed_paste() {
+fn test_has_pager_keyboard_modes_excludes_repl_with_bracketed_paste() {
     let mut block = TestBlockBuilder::new().build();
     block.start();
     block.preexec(Default::default());
@@ -329,7 +330,7 @@ fn test_is_normal_screen_pager_excludes_repl_with_bracketed_paste() {
     block.set_keypad_application_mode();
     block.set_mode(ansi::Mode::BracketedPaste);
 
-    assert!(!block.is_normal_screen_pager());
+    assert!(!block.has_pager_keyboard_modes());
 }
 
 #[test]
