@@ -414,20 +414,24 @@ impl SnackbarHeader {
     }
 
     /// Returns whether the snackbar should be hidden when there is a long running command.
-    /// While a command is executing, we hide the snackbar if:
-    /// 1) The user has scrolled OR
-    /// 2) The height of the block's _output_ grid is taller than the content area.
-    /// In the latter case, we hide the snackbar to make sure that commands like `git log` and
-    /// `less` (which simulate full screen apps) don't have the snackbar shown on top of them.
+    /// If the user has scrolled, we always show the snackbar. Otherwise, we hide it if:
+    /// 1) The block's _output_ grid fits in the content area OR
+    /// 2) The block is running a pager on the normal screen.
+    /// In the latter case, the output grows taller than the content area as the user pages, and
+    /// the snackbar would cover the top rows of the page that the pager is displaying.
     fn should_hide_snackbar_during_long_running_command(
         block: &Block,
         params: &BlockGridParams,
         scroll_position: ScrollPosition,
         element_size: Vector2F,
     ) -> bool {
-        // A user has scrolled iff they are fixed at a pixel position. Otherwise, they are fixed to
-        // the bottom of a block.
-        let has_scrolled = matches!(scroll_position, ScrollPosition::FixedAtPosition { .. });
+        // A user has scrolled iff they are fixed at a position. Otherwise, they are fixed to the
+        // bottom of a block.
+        let has_scrolled = matches!(
+            scroll_position,
+            ScrollPosition::FixedAtPosition { .. }
+                | ScrollPosition::FixedWithinLongRunningBlock { .. }
+        );
 
         let block_output_taller_than_content_area =
             block.output_grid_displayed_height().into_lines()
@@ -435,7 +439,7 @@ impl SnackbarHeader {
                     .to_lines(params.grid_render_params.size_info.cell_height_px)
                 > HEIGHT_FUDGE_FACTOR_LINES;
 
-        !has_scrolled && !block_output_taller_than_content_area
+        !has_scrolled && (!block_output_taller_than_content_area || block.is_normal_screen_pager())
     }
 
     fn clear_state(&mut self) {

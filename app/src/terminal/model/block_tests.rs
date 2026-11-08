@@ -301,6 +301,38 @@ pub fn test_long_running_block_bottom_padding() {
 }
 
 #[test]
+fn test_is_normal_screen_pager_requires_application_keyboard_modes() {
+    let mut block = TestBlockBuilder::new().build();
+    block.start();
+    block.preexec(Default::default());
+    assert!(!block.is_normal_screen_pager());
+
+    // `less -X` and `more` send these sequences when they start.
+    block.set_mode(ansi::Mode::CursorKeys);
+    assert!(!block.is_normal_screen_pager());
+    block.set_keypad_application_mode();
+    assert!(block.is_normal_screen_pager());
+
+    // They undo them when they exit.
+    block.unset_keypad_application_mode();
+    assert!(!block.is_normal_screen_pager());
+}
+
+#[test]
+fn test_is_normal_screen_pager_excludes_repl_with_bracketed_paste() {
+    let mut block = TestBlockBuilder::new().build();
+    block.start();
+    block.preexec(Default::default());
+
+    // The Python 3.13+ REPL enables the same keyboard modes as a pager, plus bracketed paste.
+    block.set_mode(ansi::Mode::CursorKeys);
+    block.set_keypad_application_mode();
+    block.set_mode(ansi::Mode::BracketedPaste);
+
+    assert!(!block.is_normal_screen_pager());
+}
+
+#[test]
 pub fn empty_pre_bootstrap_block_is_not_long_running() {
     warpui::r#async::block_on(async {
         let mut block = TestBlockBuilder::new()
