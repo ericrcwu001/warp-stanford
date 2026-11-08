@@ -307,7 +307,7 @@ fn test_has_pager_keyboard_modes_requires_application_keyboard_modes() {
     block.preexec(Default::default());
     assert!(!block.has_pager_keyboard_modes());
 
-    // `less -X` and `more` send these sequences when they start.
+    // `less -X` and macOS `more` send these sequences when they start.
     block.set_mode(ansi::Mode::CursorKeys);
     assert!(!block.has_pager_keyboard_modes());
     block.set_keypad_application_mode();
